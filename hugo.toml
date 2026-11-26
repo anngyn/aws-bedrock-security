@@ -1,0 +1,44 @@
+baseURL = 'https://anngyn.github.io/aws-bedrock-security/'
+locale = 'en-US'
+title = 'Agentic SecOps Workshop'
+theme = 'hugo-theme-relearn'
+contentDir = '.hugo-content'
+disableKinds = ['taxonomy', 'term', 'RSS']
+
+[params]
+  author.name = 'Workshop community mirror'
+  themeVariant = ['relearn-light', 'relearn-dark']
+  disableLandingPageButton = true
+  collapsibleMenu = true
+  alwaysopen = false
+  ordersectionsby = 'weight'
+  showVisitedLinks = true
+  disableExplicitIndexURLs = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = 'github-dark'
+
+[outputs]
+  home = ['html']
+  section = ['html']
+  page = ['html']
+
+[[module.mounts]]
+  source = 'static'
+  target = 'static/static'
+
+[caches.images]
+  dir = ':cacheDir/images'
+
+[[menu.shortcuts]]
+  name = 'Original AWS workshop'
+  url = 'https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US'
+  weight = 10
+
+[[menu.shortcuts]]
+  name = 'Source on GitHub'
+  url = 'https://github.com/anngyn/aws-bedrock-security'
+  weight = 20

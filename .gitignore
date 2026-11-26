@@ -1,0 +1,9 @@
+.DS_Store
+.tools/
+.hugo-content/
+.hugo_build.lock
+public/
+resources/_gen/
+__pycache__/
+workshop.html
+qa/

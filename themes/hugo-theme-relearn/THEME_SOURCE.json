@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/McShelby/hugo-theme-relearn",
+  "version": "9.5.2",
+  "tag_object": "880d30fa1915e5ede60d47869d66e223ed44da0c",
+  "archive_sha256": "0470452fcea004cdbe382d4658b89104c4c1e895e10e8b7dea7130d6ba05531e",
+  "vendored_files": 413,
+  "included_roots": [
+    "LICENSE",
+    "README.md",
+    "assets",
+    "data",
+    "go.mod",
+    "hugo.toml",
+    "hugo.yaml",
+    "i18n",
+    "layouts",
+    "package.json",
+    "static",
+    "theme.toml",
+    "content"
+  ],
+  "commit": "17007df970da2e80c7c0966d8b71d9d8d2c2d4e0"
+}

@@ -1,0 +1,2154 @@
+[
+  {
+    "page": "Agentic Security Operations Workflow with Amazon Bedrock",
+    "page_path": "/",
+    "kind": "img",
+    "label": "Workshop Architecture",
+    "original": "static/ServiceIntegrationPage0.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegrationPage0.png",
+    "local": "static/ServiceIntegrationPage0.png"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "Cybersecurity Agent Factory Use Cases",
+    "original": "../static/Cybersecurity-agent-factory-use-cases.gif",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/Cybersecurity-agent-factory-use-cases.gif",
+    "local": "static/Cybersecurity-agent-factory-use-cases.gif"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "How the Cybersecurity Agent Factory Works",
+    "original": "../static/how-it-works.gif",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/how-it-works.gif",
+    "local": "static/how-it-works.gif"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "autobotAI Architecture",
+    "original": "../static/autobotAI-data-and-permissions.drawio.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/autobotAI-data-and-permissions.drawio.png",
+    "local": "static/autobotAI-data-and-permissions.drawio.png"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "Service Integration Architecture",
+    "original": "../static/ServiceIntegration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegration.png",
+    "local": "static/ServiceIntegration.png"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "GuardDuty to autobotAI Response Flow",
+    "original": "../static/generated-diagrams/guardduty-autobotai-flow.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/generated-diagrams/guardduty-autobotai-flow.png",
+    "local": "static/generated-diagrams/guardduty-autobotai-flow.png"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "img",
+    "label": "Security Hub Multi-Account Architecture",
+    "original": "../static/securityhubmultiaccount.drawio.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubmultiaccount.drawio.png",
+    "local": "static/securityhubmultiaccount.drawio.png"
+  },
+  {
+    "page": "Module 0: Environment Setup & Service Introduction",
+    "page_path": "/module0",
+    "kind": "text-url",
+    "label": "https://autobot.live)**",
+    "original": "https://autobot.live)**",
+    "resolved": "https://autobot.live)**"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Workshop Studio Sign In",
+    "original": "../static/preparation/1-sign-in.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/1-sign-in.png",
+    "local": "static/preparation/1-sign-in.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Enter Email for OTP",
+    "original": "../static/preparation/2-otp-email.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/2-otp-email.png",
+    "local": "static/preparation/2-otp-email.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Email Passcode",
+    "original": "../static/preparation/3-outlook-screenshot.jpg",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/3-outlook-screenshot.jpg",
+    "local": "static/preparation/3-outlook-screenshot.jpg"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Enter Passcode",
+    "original": "../static/preparation/4-otp-passcode.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/4-otp-passcode.png",
+    "local": "static/preparation/4-otp-passcode.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Event Access Code",
+    "original": "../static/preparation/5-event-access-code.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/5-event-access-code.png",
+    "local": "static/preparation/5-event-access-code.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Terms and Conditions",
+    "original": "../static/preparation/6-terms-and-conditions.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/6-terms-and-conditions.png",
+    "local": "static/preparation/6-terms-and-conditions.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "img",
+    "label": "Open AWS Console",
+    "original": "../static/preparation/consolelogin.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/consolelogin.png",
+    "local": "static/preparation/consolelogin.png"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Amazon Bedrock Console",
+    "original": "https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2#/modelaccess",
+    "resolved": "https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2#/modelaccess"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Download cfn-self-paced.yaml",
+    "original": "https://static.us-east-1.prod.workshops.aws/public/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/static/cfn-self-paced.yaml",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/static/cfn-self-paced.yaml",
+    "local": "static/cfn-self-paced.yaml"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "AWS CloudFormation Console",
+    "original": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "CloudFormation Console",
+    "original": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Console",
+    "original": "https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Console",
+    "original": "https://us-west-2.console.aws.amazon.com/securityhub/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/securityhub/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Console",
+    "original": "https://us-west-2.console.aws.amazon.com/inspector/v2/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/inspector/v2/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "Console",
+    "original": "https://us-west-2.console.aws.amazon.com/config/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/config/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "CloudFormation Console",
+    "original": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2",
+    "resolved": "https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2"
+  },
+  {
+    "page": "Preparation",
+    "page_path": "/module0-5-preparation",
+    "kind": "a",
+    "label": "S3 Console",
+    "original": "https://s3.console.aws.amazon.com/s3/home?region=us-west-2",
+    "resolved": "https://s3.console.aws.amazon.com/s3/home?region=us-west-2"
+  },
+  {
+    "page": "Module 1: autobotAI Platform Setup & Integration",
+    "page_path": "/module1",
+    "kind": "img",
+    "label": "Integration Architecture",
+    "original": "../static/IntegrationArchitecture.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/IntegrationArchitecture.png",
+    "local": "static/IntegrationArchitecture.png"
+  },
+  {
+    "page": "Module 1: autobotAI Platform Setup & Integration",
+    "page_path": "/module1",
+    "kind": "a",
+    "label": "Module 1.1: Signing Up on autobotAI Platform",
+    "original": "1.1/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module1/1.1",
+    "local": "#chapter-04"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "a",
+    "label": "https://autobot.live/app#/start",
+    "original": "https://autobot.live/app#/start",
+    "resolved": "https://autobot.live/app#/start"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "img",
+    "label": "Sign Up Page",
+    "original": "../../static/sign-up.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sign-up.png",
+    "local": "static/sign-up.png"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "img",
+    "label": "Close the Community Edition Popup",
+    "original": "../../static/community-edition-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/community-edition-popup.png",
+    "local": "static/community-edition-popup.png"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "img",
+    "label": "Subscription Popup",
+    "original": "../../static/subscription-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/subscription-popup.png",
+    "local": "static/subscription-popup.png"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "img",
+    "label": "Coupon Popup",
+    "original": "../../static/coupon-code-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/coupon-code-popup.png",
+    "local": "static/coupon-code-popup.png"
+  },
+  {
+    "page": "1.1 Signing Up on autobotAI Platform",
+    "page_path": "/module1/1-1",
+    "kind": "text-url",
+    "label": "https://autobot.live/app#/start](https://autobot.live/app#/start",
+    "original": "https://autobot.live/app#/start](https://autobot.live/app#/start",
+    "resolved": "https://autobot.live/app#/start](https://autobot.live/app#/start"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "a",
+    "label": "sign in to your AWS account",
+    "original": "https://console.aws.amazon.com/",
+    "resolved": "https://console.aws.amazon.com/"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Integrations Page",
+    "original": "../../static/mod1-overview-page.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-overview-page.png",
+    "local": "static/mod1-overview-page.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "AWS Integration Setup",
+    "original": "../../static/mod1-aws-integration-setup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-aws-integration-setup.png",
+    "local": "static/mod1-aws-integration-setup.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Select Additional AWS Integrations",
+    "original": "../../static/mod1-select-additional-integrations.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-select-additional-integrations.png",
+    "local": "static/mod1-select-additional-integrations.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Launch Stack",
+    "original": "../../static/mod1-launch-stack.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-launch-stack.png",
+    "local": "static/mod1-launch-stack.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Deploy Stack1",
+    "original": "../../static/region.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/region.png",
+    "local": "static/region.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Deploy Stack2",
+    "original": "../../static/aws-launch-stack2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/aws-launch-stack2.png",
+    "local": "static/aws-launch-stack2.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Test Button Appearing",
+    "original": "../../static/test-button-appearing-new.jpg",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/test-button-appearing-new.jpg",
+    "local": "static/test-button-appearing-new.jpg"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Create SES Identity",
+    "original": "../../static/ses-verify1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify1.png",
+    "local": "static/ses-verify1.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Verify SES Email",
+    "original": "../../static/ses-verify2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify2.png",
+    "local": "static/ses-verify2.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Step 1 – Configure Global AI Preferences",
+    "original": "../../static/mod1-ai-configuration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-ai-configuration.png",
+    "local": "static/mod1-ai-configuration.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Amazon Bedrock Integration",
+    "original": "../../static/bedrock.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bedrock.png",
+    "local": "static/bedrock.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Search for Athena",
+    "original": "../../static/athena-search.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena-search.png",
+    "local": "static/athena-search.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Amazon Athena Integration",
+    "original": "../../static/athena.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena.png",
+    "local": "static/athena.png"
+  },
+  {
+    "page": "1.2 Creating AWS Integrations",
+    "page_path": "/module1/1-2",
+    "kind": "img",
+    "label": "Amazon SES Integration",
+    "original": "../../static/ses.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses.png",
+    "local": "static/ses.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "a",
+    "label": "https://github.com/settings/tokens",
+    "original": "https://github.com/settings/tokens",
+    "resolved": "https://github.com/settings/tokens"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "Generate GitHub Token",
+    "original": "../../static/github-1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-1.png",
+    "local": "static/github-1.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "Copy GitHub Token",
+    "original": "../../static/github-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-2.png",
+    "local": "static/github-2.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "GitHub Integration Setup",
+    "original": "../../static/mod1-github-setup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-github-setup.png",
+    "local": "static/mod1-github-setup.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "a",
+    "label": "https://www.abuseipdb.com/register?plan=free",
+    "original": "https://www.abuseipdb.com/register?plan=free",
+    "resolved": "https://www.abuseipdb.com/register?plan=free"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "AbuseIPDB Integration",
+    "original": "../../static/abdb.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb.png",
+    "local": "static/abdb.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "AbuseIPDB Integration2",
+    "original": "../../static/abdb-verify.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-verify.png",
+    "local": "static/abdb-verify.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "img",
+    "label": "AbuseIPDB Integration3",
+    "original": "../../static/abdb-apikey.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-apikey.png",
+    "local": "static/abdb-apikey.png"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "text-url",
+    "label": "https://github.com/settings/tokens](https://github.com/settings/tokens",
+    "original": "https://github.com/settings/tokens](https://github.com/settings/tokens",
+    "resolved": "https://github.com/settings/tokens](https://github.com/settings/tokens"
+  },
+  {
+    "page": "1.3 Adding GitHub and AbuseIPDB Integrations",
+    "page_path": "/module1/1-3",
+    "kind": "text-url",
+    "label": "https://www.abuseipdb.com/register?plan=free](https://www.abuseipdb.com/register?plan=free",
+    "original": "https://www.abuseipdb.com/register?plan=free](https://www.abuseipdb.com/register?plan=free",
+    "resolved": "https://www.abuseipdb.com/register?plan=free](https://www.abuseipdb.com/register?plan=free"
+  },
+  {
+    "page": "Module 2: WAF Log Analysis & Rule Building with Autonomous Orchestrator (Optimus)",
+    "page_path": "/module2",
+    "kind": "img",
+    "label": "Before Agentic SecOps - No WAF Rules & Unnoticed Attacks",
+    "original": "../static/mod2-before-secops.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-before-secops.png",
+    "local": "static/mod2-before-secops.png"
+  },
+  {
+    "page": "Module 2: WAF Log Analysis & Rule Building with Autonomous Orchestrator (Optimus)",
+    "page_path": "/module2",
+    "kind": "img",
+    "label": "After Agentic SecOps - Created New Rules Based on Detected Threats and Prevented Multiple Attacks",
+    "original": "../static/mod2-after-secops.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-after-secops.png",
+    "local": "static/mod2-after-secops.png"
+  },
+  {
+    "page": "Module 2: WAF Log Analysis & Rule Building with Autonomous Orchestrator (Optimus)",
+    "page_path": "/module2",
+    "kind": "a",
+    "label": "Module 2.1: Configuring Optimus & Running WAF Log Analysis",
+    "original": "2.1/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module2/2.1",
+    "local": "#chapter-08"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Open Optimus",
+    "original": "../../static/optimus-header.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-header.png",
+    "local": "static/optimus-header.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Set the default AI model",
+    "original": "../../static/mod2-provider-image.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-provider-image.png",
+    "local": "static/mod2-provider-image.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Set the model parameters and enable No limit for Max Iterations",
+    "original": "../../static/mod2-parameter-image.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-parameter-image.png",
+    "local": "static/mod2-parameter-image.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Optimus knowledge & skills",
+    "original": "../../static/mod2-knowledge-image.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-knowledge-image.png",
+    "local": "static/mod2-knowledge-image.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Select the WAF Log Threat Analysis template",
+    "original": "../../static/optimus-waf-template-box.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-template-box.png",
+    "local": "static/optimus-waf-template-box.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Optimus running the WAF log analysis",
+    "original": "../../static/optimus-waf-analysis.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-analysis.png",
+    "local": "static/optimus-waf-analysis.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "img",
+    "label": "Optimus WAF threat report and prioritized remediation plan",
+    "original": "../../static/optimus-waf-report.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-report.png",
+    "local": "static/optimus-waf-report.png"
+  },
+  {
+    "page": "2.1 Configuring Optimus & Running WAF Log Analysis",
+    "page_path": "/module2/2-1",
+    "kind": "a",
+    "label": "Module 2.2: Building WAF Rules from the Threat Findings",
+    "original": "../2.2/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module2/2.2",
+    "local": "#chapter-09"
+  },
+  {
+    "page": "Module 3: Agentic Database Access Management (DAM) with Just-in-time Access",
+    "page_path": "/module3",
+    "kind": "img",
+    "label": "Agentic Database Access Workflow",
+    "original": "../static/jit-access-workflow.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/jit-access-workflow.png",
+    "local": "static/jit-access-workflow.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "a",
+    "label": "https://autobot.live/app#/library",
+    "original": "https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Bedrock Integration",
+    "original": "../../static/model_configuration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/model_configuration.png",
+    "local": "static/model_configuration.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Model Configuration",
+    "original": "../../static/ai_model.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ai_model.png",
+    "local": "static/ai_model.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Model Configuration",
+    "original": "../../static/update-model-in-Risk-eval-node.jpg",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/update-model-in-Risk-eval-node.jpg",
+    "local": "static/update-model-in-Risk-eval-node.jpg"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Email Notification Setup",
+    "original": "../../static/notification_node_configuration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/notification_node_configuration.png",
+    "local": "static/notification_node_configuration.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Navigate to Bots Page",
+    "original": "../../static/rds-nav-to-bots-page.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-nav-to-bots-page.png",
+    "local": "static/rds-nav-to-bots-page.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "img",
+    "label": "Publish Bot to Service Portal",
+    "original": "../../static/rds-publish-to-service-portal.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-publish-to-service-portal.png",
+    "local": "static/rds-publish-to-service-portal.png"
+  },
+  {
+    "page": "3.1 Importing and Configuring the DAM Agentic App",
+    "page_path": "/module3/3-1",
+    "kind": "text-url",
+    "label": "https://autobot.live/app#/library](https://autobot.live/app#/library",
+    "original": "https://autobot.live/app#/library](https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library](https://autobot.live/app#/library"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Access Self Service Portal",
+    "original": "../../static/rds-open-self-service-portal.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-self-service-portal.png",
+    "local": "static/rds-open-self-service-portal.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Select Published Bot in Self Service Portal",
+    "original": "../../static/rds-self-service-portal-bots.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-self-service-portal-bots.png",
+    "local": "static/rds-self-service-portal-bots.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Click Start Button in Bot Portal",
+    "original": "../../static/rds-bot-portal-start-button.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-start-button.png",
+    "local": "static/rds-bot-portal-start-button.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Click Open Chat in Popup Banner",
+    "original": "../../static/rds-open-chat-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-chat-popup.png",
+    "local": "static/rds-open-chat-popup.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "IP Address Request",
+    "original": "../../static/ip_validation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ip_validation.png",
+    "local": "static/ip_validation.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "IAM Role Request",
+    "original": "../../static/iam_validation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/iam_validation.png",
+    "local": "static/iam_validation.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "RDS Instance Selection",
+    "original": "../../static/instance_selection.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/instance_selection.png",
+    "local": "static/instance_selection.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Database Schema Request",
+    "original": "../../static/schema_selection.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/schema_selection.png",
+    "local": "static/schema_selection.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Access Justification",
+    "original": "../../static/access_reason.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_reason.png",
+    "local": "static/access_reason.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Access Duration",
+    "original": "../../static/access_duration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_duration.png",
+    "local": "static/access_duration.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Risk Evaluation",
+    "original": "../../static/risk_evaluator.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk_evaluator.png",
+    "local": "static/risk_evaluator.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Sidebar Icon to Switch Agents",
+    "original": "../../static/rds-bot-portal-sidebar-icon.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-sidebar-icon.png",
+    "local": "static/rds-bot-portal-sidebar-icon.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Access Credentials",
+    "original": "../../static/sql_connect_command.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sql_connect_command.png",
+    "local": "static/sql_connect_command.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "CloudShell Launch",
+    "original": "../../static/create_vpc.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/create_vpc.png",
+    "local": "static/create_vpc.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "VPC Environment Config",
+    "original": "../../static/vpc_configuration.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/vpc_configuration.png",
+    "local": "static/vpc_configuration.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "MySQL Connection",
+    "original": "../../static/connect_mysql.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/connect_mysql.png",
+    "local": "static/connect_mysql.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Access Revocation",
+    "original": "../../static/revocation_agent.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/revocation_agent.png",
+    "local": "static/revocation_agent.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Activity Analysis",
+    "original": "../../static/activity_analysing.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/activity_analysing.png",
+    "local": "static/activity_analysing.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "High-Risk IP",
+    "original": "../../static/high_risk_ip_reason.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/high_risk_ip_reason.png",
+    "local": "static/high_risk_ip_reason.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Approval Interface",
+    "original": "../../static/manual_approval.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/manual_approval.png",
+    "local": "static/manual_approval.png"
+  },
+  {
+    "page": "3.2 Testing the JIT Access Workflow",
+    "page_path": "/module3/3-2",
+    "kind": "img",
+    "label": "Submit Approval",
+    "original": "../../static/user_approved.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/user_approved.png",
+    "local": "static/user_approved.png"
+  },
+  {
+    "page": "Module 4: SOC Automation - Agentic Workflow for GuardDuty",
+    "page_path": "/module4",
+    "kind": "img",
+    "label": "Before Agentic SecOps - Cluttered GuardDuty Findings",
+    "original": "../static/01.guardduty_findings.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/01.guardduty_findings.png",
+    "local": "static/01.guardduty_findings.png"
+  },
+  {
+    "page": "Module 4: SOC Automation - Agentic Workflow for GuardDuty",
+    "page_path": "/module4",
+    "kind": "img",
+    "label": "After Agentic SecOps - Remediated GuardDuty Finding",
+    "original": "../static/module4/gd-rem-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+    "local": "static/module4/gd-rem-2.png"
+  },
+  {
+    "page": "Module 4: SOC Automation - Agentic Workflow for GuardDuty",
+    "page_path": "/module4",
+    "kind": "img",
+    "label": "After Agentic SecOps - Workflow Execution UI",
+    "original": "../static/mod4-agent-view.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+    "local": "static/mod4-agent-view.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "Complete list of RDS findings",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-rds.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-rds.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "Complete list of IAM findings",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "Complete list of EC2 findings",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "GuardDuty",
+    "original": "https://console.aws.amazon.com/guardduty/",
+    "resolved": "https://console.aws.amazon.com/guardduty/"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "GuardDuty Findings Page",
+    "original": "../../static/module4-picture-1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-1.png",
+    "local": "static/module4-picture-1.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "RDS Finding Details",
+    "original": "../../static/module4-picture-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-2.png",
+    "local": "static/module4-picture-2.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "IAM Finding Details",
+    "original": "../../static/module4-picture-3.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-3.png",
+    "local": "static/module4-picture-3.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "SSH BruteForce Finding Overview",
+    "original": "../../static/4.1-ssh_bruteforce_overview.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.1-ssh_bruteforce_overview.png",
+    "local": "static/4.1-ssh_bruteforce_overview.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "Tor Client Finding Overview",
+    "original": "../../static/4.2-tor_client_overview.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.2-tor_client_overview.png",
+    "local": "static/4.2-tor_client_overview.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "img",
+    "label": "Credential Exfiltration Overview",
+    "original": "../../static/4.3-credential_exfiltration_overview.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.3-credential_exfiltration_overview.png",
+    "local": "static/4.3-credential_exfiltration_overview.png"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "GuardDuty RDS Protection Documentation",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "GuardDuty Finding Types for RDS",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-rds.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-rds.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "GuardDuty Finding Types for IAM",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "GuardDuty Finding Types for EC2",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
+  },
+  {
+    "page": "4.1 Overview of Detected Threats using GuardDuty",
+    "page_path": "/module4/4-1",
+    "kind": "a",
+    "label": "Remediating GuardDuty Findings",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediate.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediate.html"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "autobotAI Library",
+    "original": "https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "img",
+    "label": "Configure AI Agent Integration",
+    "original": "../../static/module4/gd-w-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-w-2.png",
+    "local": "static/module4/gd-w-2.png"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "img",
+    "label": "Configure AI Notification Node",
+    "original": "../../static/module4/ins-w-4.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/ins-w-4.png",
+    "local": "static/module4/ins-w-4.png"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "img",
+    "label": "AI Notification for GuardDuty Findings",
+    "original": "../../static/module4/gd-notify.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-notify.png",
+    "local": "static/module4/gd-notify.png"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "img",
+    "label": "Remediation Details",
+    "original": "../../static/module4/gd-rem-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+    "local": "static/module4/gd-rem-2.png"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "img",
+    "label": "Agent View",
+    "original": "../../static/mod4-agent-view.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+    "local": "static/mod4-agent-view.png"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "Module 5: Agentic Remediation for Security Hub & Escalation",
+    "original": "../../module5/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module5",
+    "local": "#chapter-16"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "autobotAI Documentation",
+    "original": "https://autobot.live/docs",
+    "resolved": "https://autobot.live/docs"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "Amazon GuardDuty Best Practices",
+    "original": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_best-practices.html",
+    "resolved": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_best-practices.html"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "AbuseIPDB API Documentation",
+    "original": "https://docs.abuseipdb.com/",
+    "resolved": "https://docs.abuseipdb.com/"
+  },
+  {
+    "page": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+    "page_path": "/module4/4-2",
+    "kind": "a",
+    "label": "AWS Security Best Practices",
+    "original": "https://aws.amazon.com/architecture/security-identity-compliance/",
+    "resolved": "https://aws.amazon.com/architecture/security-identity-compliance/"
+  },
+  {
+    "page": "Module 5: Agentic Remediation for Posture Violations with Federated Human-in-loop at Scale",
+    "page_path": "/module5",
+    "kind": "img",
+    "label": "Before Agentic SecOps - Cluttered Security Hub Findings",
+    "original": "../static/mod5-before-secops.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-before-secops.png",
+    "local": "static/mod5-before-secops.png"
+  },
+  {
+    "page": "Module 5: Agentic Remediation for Posture Violations with Federated Human-in-loop at Scale",
+    "page_path": "/module5",
+    "kind": "img",
+    "label": "After Agentic SecOps - Remediated Security Hub Finding",
+    "original": "../static/mod5-after-secops.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-after-secops.png",
+    "local": "static/mod5-after-secops.png"
+  },
+  {
+    "page": "Module 5: Agentic Remediation for Posture Violations with Federated Human-in-loop at Scale",
+    "page_path": "/module5",
+    "kind": "img",
+    "label": "After Agentic SecOps - DeepAgent Execution Thread",
+    "original": "../static/mod5-resolver-deepagent-thread.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-resolver-deepagent-thread.png",
+    "local": "static/mod5-resolver-deepagent-thread.png"
+  },
+  {
+    "page": "Module 5: Agentic Remediation for Posture Violations with Federated Human-in-loop at Scale",
+    "page_path": "/module5",
+    "kind": "a",
+    "label": "Module 5.1: Understanding Security Hub Findings & Escalation Architecture",
+    "original": "./5.1/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module5/5.1",
+    "local": "#chapter-17"
+  },
+  {
+    "page": "5.1 Understanding Risk Register, Security Hub Findings, Workflow & Escalation Process",
+    "page_path": "/module5/5-1",
+    "kind": "a",
+    "label": "Security Hub CSPM",
+    "original": "https://console.aws.amazon.com/securityhub/home",
+    "resolved": "https://console.aws.amazon.com/securityhub/home"
+  },
+  {
+    "page": "5.1 Understanding Risk Register, Security Hub Findings, Workflow & Escalation Process",
+    "page_path": "/module5/5-1",
+    "kind": "img",
+    "label": "Security Hub Findings",
+    "original": "../../static/securityhubfindings.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubfindings.png",
+    "local": "static/securityhubfindings.png"
+  },
+  {
+    "page": "5.1 Understanding Risk Register, Security Hub Findings, Workflow & Escalation Process",
+    "page_path": "/module5/5-1",
+    "kind": "a",
+    "label": "Module 5.2: Hands-On: Seeding & Executing the Bot via Optimus",
+    "original": "../5.2/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module5/5.2",
+    "local": "#chapter-18"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Open Optimus",
+    "original": "../../static/optimus-nav-button.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-nav-button.png",
+    "local": "static/optimus-nav-button.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "AI Model Configuration",
+    "original": "../../static/optimus-inspector-ai-model-config.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-ai-model-config.png",
+    "local": "static/optimus-inspector-ai-model-config.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Optimus presents the generated action for authorization",
+    "original": "../../static/optimus-sh-bot-creation-chat.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-creation-chat.png",
+    "local": "static/optimus-sh-bot-creation-chat.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "View and configure action parameters before saving",
+    "original": "../../static/optimus-sh-bot-node-card.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-node-card.png",
+    "local": "static/optimus-sh-bot-node-card.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Navigate to Tasks",
+    "original": "../../static/nav-to-tasks.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-tasks.png",
+    "local": "static/nav-to-tasks.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Task Register List",
+    "original": "../../static/task-register-list.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/task-register-list.png",
+    "local": "static/task-register-list.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Navigate to Risk Register",
+    "original": "../../static/nav-to-risk-register.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-risk-register.png",
+    "local": "static/nav-to-risk-register.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Risk Register List",
+    "original": "../../static/risk-register-list.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+    "local": "static/risk-register-list.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Clickable Bot Node Card in Optimus",
+    "original": "../../static/optimus-sh-green-open-button.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-green-open-button.png",
+    "local": "static/optimus-sh-green-open-button.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Engineer Email Notification",
+    "original": "../../static/optimus-sh-reminder-email.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-reminder-email.png",
+    "local": "static/optimus-sh-reminder-email.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Manager Escalation Email",
+    "original": "../../static/optimus-sh-interactive-approval-cards.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-interactive-approval-cards.png",
+    "local": "static/optimus-sh-interactive-approval-cards.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Interactive Approval Cards",
+    "original": "../../static/optimus-sh-email-notification.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-email-notification.png",
+    "local": "static/optimus-sh-email-notification.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "img",
+    "label": "Security Hub Approval Summary Email",
+    "original": "../../static/optimus-sh-manager-escalation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-manager-escalation.png",
+    "local": "static/optimus-sh-manager-escalation.png"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "a",
+    "label": "AWS Security Hub Console",
+    "original": "https://console.aws.amazon.com/securityhub/home",
+    "resolved": "https://console.aws.amazon.com/securityhub/home"
+  },
+  {
+    "page": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+    "page_path": "/module5/5-2",
+    "kind": "a",
+    "label": "Module 5.3: Implementing Automated Remediation with autobotAI (Library Import)",
+    "original": "../5.3/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module5/5.3",
+    "local": "#chapter-19"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "a",
+    "label": "autobotAI Library",
+    "original": "https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "img",
+    "label": "Configure Get All Security Hub Findings Node",
+    "original": "../../static/sh-1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-1.png",
+    "local": "static/sh-1.png"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "img",
+    "label": "Configure Threat Analyzer Agent Node",
+    "original": "../../static/sh-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-2.png",
+    "local": "static/sh-2.png"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "img",
+    "label": "Configure Approval Node",
+    "original": "../../static/sh-3.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-3.png",
+    "local": "static/sh-3.png"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "a",
+    "label": "autobotAI Documentation",
+    "original": "https://autobot.live/docs",
+    "resolved": "https://autobot.live/docs"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "a",
+    "label": "Amazon Bedrock User Guide",
+    "original": "https://docs.aws.amazon.com/bedrock/",
+    "resolved": "https://docs.aws.amazon.com/bedrock/"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "a",
+    "label": "Security Hub Automated Response",
+    "original": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html",
+    "resolved": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html"
+  },
+  {
+    "page": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module5/5-3",
+    "kind": "a",
+    "label": "AWS Security Best Practices",
+    "original": "https://docs.aws.amazon.com/security/",
+    "resolved": "https://docs.aws.amazon.com/security/"
+  },
+  {
+    "page": "Module 6: AppSec Workflow for SCA, IaC and SAST Remediation → Developer Feedback → Follow-up with Escalation → Risk Register",
+    "page_path": "/module6",
+    "kind": "img",
+    "label": "Before Agentic SecOps - Cluttered Inspector Findings",
+    "original": "../static/inspector-findings-before-remediation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-before-remediation.png",
+    "local": "static/inspector-findings-before-remediation.png"
+  },
+  {
+    "page": "Module 6: AppSec Workflow for SCA, IaC and SAST Remediation → Developer Feedback → Follow-up with Escalation → Risk Register",
+    "page_path": "/module6",
+    "kind": "img",
+    "label": "After Agentic SecOps - Remediated Inspector Finding",
+    "original": "../static/inspector-findings-after-remediation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+    "local": "static/inspector-findings-after-remediation.png"
+  },
+  {
+    "page": "Module 6: AppSec Workflow for SCA, IaC and SAST Remediation → Developer Feedback → Follow-up with Escalation → Risk Register",
+    "page_path": "/module6",
+    "kind": "img",
+    "label": "After Agentic SecOps - DeepAgent Execution Thread",
+    "original": "../static/mod6-deepagent-execution.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod6-deepagent-execution.png",
+    "local": "static/mod6-deepagent-execution.png"
+  },
+  {
+    "page": "Module 6: AppSec Workflow for SCA, IaC and SAST Remediation → Developer Feedback → Follow-up with Escalation → Risk Register",
+    "page_path": "/module6",
+    "kind": "a",
+    "label": "Module 6.1: Configuring Amazon Inspector for Code Security",
+    "original": "6.1/",
+    "resolved": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US/module6/6.1",
+    "local": "#chapter-21"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "a",
+    "label": "fusiongate-inc/sample-vulnerable-app",
+    "original": "https://github.com/fusiongate-inc/sample-vulnerable-app",
+    "resolved": "https://github.com/fusiongate-inc/sample-vulnerable-app"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Navigate to Repository",
+    "original": "../../static/module6step1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step1.png",
+    "local": "static/module6step1.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Fork the Repository",
+    "original": "../../static/module6step3.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step3.png",
+    "local": "static/module6step3.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Configure Your Fork",
+    "original": "../../static/module6step4.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step4.png",
+    "local": "static/module6step4.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Verify Your Fork",
+    "original": "../../static/module6step5.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step5.png",
+    "local": "static/module6step5.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 1 – Enable Code Security Popup",
+    "original": "../../static/inspector-1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-1.png",
+    "local": "static/inspector-1.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 2 – Code Repository Scanning Activated",
+    "original": "../../static/inspector-3.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-3.png",
+    "local": "static/inspector-3.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 3 – Activating Code Repository Scanning",
+    "original": "../../static/inspector-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-2.png",
+    "local": "static/inspector-2.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 5 – Create Scan Configuration",
+    "original": "../../static/inspector-4.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-4.png",
+    "local": "static/inspector-4.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 6 – Connect to GitHub Integration",
+    "original": "../../static/inspector-5.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-5.png",
+    "local": "static/inspector-5.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 7 – Authorize Amazon Inspector",
+    "original": "../../static/inspector-6.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-6.png",
+    "local": "static/inspector-6.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 8 – Redirect to GitHub Connection Page",
+    "original": "../../static/inspector-7.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-7.png",
+    "local": "static/inspector-7.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 9 – Install GitHub App",
+    "original": "../../static/inspector-8.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-8.png",
+    "local": "static/inspector-8.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 10 – Authorize Selected Repository",
+    "original": "../../static/inspector-9.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-9.png",
+    "local": "static/inspector-9.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 12 – Start Your First Scan",
+    "original": "../../static/inspector-10.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-10.png",
+    "local": "static/inspector-10.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Step 13 – View Scan Findings",
+    "original": "../../static/inspector-11.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-11.png",
+    "local": "static/inspector-11.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "GitHub Profile Settings Menu",
+    "original": "../../static/github-app-profile-settings-menu.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-profile-settings-menu.png",
+    "local": "static/github-app-profile-settings-menu.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Developer Settings Link",
+    "original": "../../static/github-app-developer-settings-link.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-developer-settings-link.png",
+    "local": "static/github-app-developer-settings-link.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "GitHub Apps Listing",
+    "original": "../../static/github-app-github-apps-listing.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-github-apps-listing.png",
+    "local": "static/github-app-github-apps-listing.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Create GitHub App Form",
+    "original": "../../static/github-app-create-form.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-create-form.png",
+    "local": "static/github-app-create-form.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Uncheck Webhook Active",
+    "original": "../../static/github-app-webhook-section.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-webhook-section.png",
+    "local": "static/github-app-webhook-section.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Permissions and Install Scope",
+    "original": "../../static/github-app-permissions-install.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-permissions-install.png",
+    "local": "static/github-app-permissions-install.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "General Tab — Client ID",
+    "original": "../../static/github-app-general-tab-clientid.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-general-tab-clientid.png",
+    "local": "static/github-app-general-tab-clientid.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Generate Private Key",
+    "original": "../../static/github-app-private-key-section.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-private-key-section.png",
+    "local": "static/github-app-private-key-section.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Install App Tab",
+    "original": "../../static/github-app-install-tab.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-install-tab.png",
+    "local": "static/github-app-install-tab.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Select Repository and Install",
+    "original": "../../static/github-app-select-repo-install.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-select-repo-install.png",
+    "local": "static/github-app-select-repo-install.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Integrations > Applications",
+    "original": "../../static/github-app-integrations-menu.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-integrations-menu.png",
+    "local": "static/github-app-integrations-menu.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "Settings > Applications",
+    "original": "../../static/github-app-settings-applications.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-settings-applications.png",
+    "local": "static/github-app-settings-applications.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "autobotAI Search for GitHub App",
+    "original": "../../static/github-app-autobotai-search.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-search.png",
+    "local": "static/github-app-autobotai-search.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "img",
+    "label": "autobotAI GitHub App Integration Form",
+    "original": "../../static/github-app-autobotai-form.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-form.png",
+    "local": "static/github-app-autobotai-form.png"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "text-url",
+    "label": "https://github.com/YOUR-USERNAME/sample-vulnerable-app",
+    "original": "https://github.com/YOUR-USERNAME/sample-vulnerable-app",
+    "resolved": "https://github.com/YOUR-USERNAME/sample-vulnerable-app"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "text-url",
+    "label": "https://autobot.live",
+    "original": "https://autobot.live",
+    "resolved": "https://autobot.live"
+  },
+  {
+    "page": "6.1 Configuring Amazon Inspector for Code Security",
+    "page_path": "/module6/6-1",
+    "kind": "text-url",
+    "label": "https://github.com/settings/installations/12345678",
+    "original": "https://github.com/settings/installations/12345678",
+    "resolved": "https://github.com/settings/installations/12345678"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Open Optimus",
+    "original": "../../static/optimus-nav-button.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-nav-button.png",
+    "local": "static/optimus-nav-button.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Browse All Templates",
+    "original": "../../static/optimus-inspector-home-browse-templates.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-home-browse-templates.png",
+    "local": "static/optimus-inspector-home-browse-templates.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Template Library",
+    "original": "../../static/optimus-inspector-template-library.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-template-library.png",
+    "local": "static/optimus-inspector-template-library.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "AI Model Configuration",
+    "original": "../../static/optimus-inspector-ai-model-config.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-ai-model-config.png",
+    "local": "static/optimus-inspector-ai-model-config.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Model Parameters",
+    "original": "../../static/optimus-inspector-model-parameters.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-model-parameters.png",
+    "local": "static/optimus-inspector-model-parameters.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Enable GitHub MCP",
+    "original": "../../static/optimus-github-mcp-tools.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-github-mcp-tools.png",
+    "local": "static/optimus-github-mcp-tools.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Knowledge Skills",
+    "original": "../../static/optimus-inspector-knowledge-skills.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-knowledge-skills.png",
+    "local": "static/optimus-inspector-knowledge-skills.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Optimus Workflow Generation",
+    "original": "../../static/optimus-workflow-creation-tasks.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-workflow-creation-tasks.png",
+    "local": "static/optimus-workflow-creation-tasks.png"
+  },
+  {
+    "page": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+    "page_path": "/module6/6-2",
+    "kind": "img",
+    "label": "Bot List",
+    "original": "../../static/optimus-bots-created-list.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-bots-created-list.png",
+    "local": "static/optimus-bots-created-list.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Bot Execution Page",
+    "original": "../../static/bot-execution-page-nav.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bot-execution-page-nav.png",
+    "local": "static/bot-execution-page-nav.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Open Scanner Chat",
+    "original": "../../static/scanner-open-chat-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-open-chat-popup.png",
+    "local": "static/scanner-open-chat-popup.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Inspector Findings",
+    "original": "../../static/inspector-findings-before-remediation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-before-remediation.png",
+    "local": "static/inspector-findings-before-remediation.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Scanner Execution Log",
+    "original": "../../static/scanner-bot-task-execution.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-bot-task-execution.png",
+    "local": "static/scanner-bot-task-execution.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Scanner Registering Task",
+    "original": "../../static/scanner-task-registered.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-task-registered.png",
+    "local": "static/scanner-task-registered.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Resolver Execution List",
+    "original": "../../static/resolver-execution-page.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-execution-page.png",
+    "local": "static/resolver-execution-page.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Open Resolver Chat",
+    "original": "../../static/resolver-open-chat-popup.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-open-chat-popup.png",
+    "local": "static/resolver-open-chat-popup.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Vulnerable Repo on GitHub",
+    "original": "../../static/github-vulnerable-repo.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-vulnerable-repo.png",
+    "local": "static/github-vulnerable-repo.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Resolver Tasks",
+    "original": "../../static/resolver-bot-tasks.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-bot-tasks.png",
+    "local": "static/resolver-bot-tasks.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Open PR on GitHub",
+    "original": "../../static/github-open-pr.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-open-pr.png",
+    "local": "static/github-open-pr.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Inline Annotations",
+    "original": "../../static/github-pr-inline-annotations.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-pr-inline-annotations.png",
+    "local": "static/github-pr-inline-annotations.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "PR Review Email",
+    "original": "../../static/email-pr-review-notification.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-pr-review-notification.png",
+    "local": "static/email-pr-review-notification.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Waiting for Merge SLA",
+    "original": "../../static/resolver-waiting-merge-sla.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-waiting-merge-sla.png",
+    "local": "static/resolver-waiting-merge-sla.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Manager Escalation Email",
+    "original": "../../static/email-manager-escalation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-manager-escalation.png",
+    "local": "static/email-manager-escalation.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Final Manager Escalation",
+    "original": "../../static/email-final-manager-escalation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-manager-escalation.png",
+    "local": "static/email-final-manager-escalation.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Final Deadline Email to Reviewer",
+    "original": "../../static/email-final-reviewer-escalation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-reviewer-escalation.png",
+    "local": "static/email-final-reviewer-escalation.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Goal Evaluation Summary",
+    "original": "../../static/resolver-final-goals-summary.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-final-goals-summary.png",
+    "local": "static/resolver-final-goals-summary.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Navigate to Tasks",
+    "original": "../../static/nav-to-tasks.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-tasks.png",
+    "local": "static/nav-to-tasks.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Tasks List in Register",
+    "original": "../../static/task-register-list.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/task-register-list.png",
+    "local": "static/task-register-list.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Navigate to Risk Register",
+    "original": "../../static/nav-to-risk-register.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-risk-register.png",
+    "local": "static/nav-to-risk-register.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Risks List in Register",
+    "original": "../../static/risk-register-list.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+    "local": "static/risk-register-list.png"
+  },
+  {
+    "page": "6.3 Running the Workflow and Managing Escalations",
+    "page_path": "/module6/6-3",
+    "kind": "img",
+    "label": "Resolved Findings",
+    "original": "../../static/inspector-findings-after-remediation.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+    "local": "static/inspector-findings-after-remediation.png"
+  },
+  {
+    "page": "6.4 (Bonus) Remediating SCA and IaC with Multi-Agent Multi-Model Workflow",
+    "page_path": "/module6/6-4",
+    "kind": "a",
+    "label": "autobotAI Library",
+    "original": "https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "img",
+    "label": "Access Repository Settings",
+    "original": "../static/cleanup-1.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-1.png",
+    "local": "static/cleanup-1.png"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "img",
+    "label": "Delete Repository",
+    "original": "../static/cleanup-2.png",
+    "resolved": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-2.png",
+    "local": "static/cleanup-2.png"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "autobotAI Documentation",
+    "original": "https://autobot.live/docs",
+    "resolved": "https://autobot.live/docs"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "autobotAI Library",
+    "original": "https://autobot.live/app#/library",
+    "resolved": "https://autobot.live/app#/library"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Security Hub User Guide",
+    "original": "https://docs.aws.amazon.com/securityhub/",
+    "resolved": "https://docs.aws.amazon.com/securityhub/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Amazon GuardDuty User Guide",
+    "original": "https://docs.aws.amazon.com/guardduty/",
+    "resolved": "https://docs.aws.amazon.com/guardduty/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Amazon Inspector User Guide",
+    "original": "https://docs.aws.amazon.com/inspector/",
+    "resolved": "https://docs.aws.amazon.com/inspector/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Config User Guide",
+    "original": "https://docs.aws.amazon.com/config/",
+    "resolved": "https://docs.aws.amazon.com/config/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Amazon Bedrock User Guide",
+    "original": "https://docs.aws.amazon.com/bedrock/",
+    "resolved": "https://docs.aws.amazon.com/bedrock/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Amazon Bedrock Model Access",
+    "original": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html",
+    "resolved": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Anthropic Claude Documentation",
+    "original": "https://docs.anthropic.com/claude/docs",
+    "resolved": "https://docs.anthropic.com/claude/docs"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Meta Llama Documentation",
+    "original": "https://llama.meta.com/docs/",
+    "resolved": "https://llama.meta.com/docs/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Security Reference Architecture",
+    "original": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/",
+    "resolved": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Well-Architected Framework - Security Pillar",
+    "original": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/",
+    "resolved": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Security Best Practices",
+    "original": "https://docs.aws.amazon.com/security/",
+    "resolved": "https://docs.aws.amazon.com/security/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "AWS Security Blog",
+    "original": "https://aws.amazon.com/blogs/security/",
+    "resolved": "https://aws.amazon.com/blogs/security/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "Amazon SES Documentation",
+    "original": "https://docs.aws.amazon.com/ses/",
+    "resolved": "https://docs.aws.amazon.com/ses/"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "a",
+    "label": "GitHub Integration Guide",
+    "original": "https://docs.github.com/en/developers",
+    "resolved": "https://docs.github.com/en/developers"
+  },
+  {
+    "page": "Summary",
+    "page_path": "/summary",
+    "kind": "text-url",
+    "label": "https://github.com/YOUR-USERNAME/sample-vulnerable-app",
+    "original": "https://github.com/YOUR-USERNAME/sample-vulnerable-app",
+    "resolved": "https://github.com/YOUR-USERNAME/sample-vulnerable-app"
+  }
+]

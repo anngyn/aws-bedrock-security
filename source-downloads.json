@@ -1,0 +1,158 @@
+[
+  {
+    "path": "/content/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/index.en.md",
+    "bytes": 9107,
+    "sha256": "b96fd09d89141b7f5ebe0fa6aea2e87a84e58d4500388aa911e0e50c14cf58ff"
+  },
+  {
+    "path": "/content/module0/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module0/index.en.md",
+    "bytes": 25158,
+    "sha256": "65667dd092a6f37aacddee280e2a2689348586db763cdd237c4b79a39afb980f"
+  },
+  {
+    "path": "/content/module0.5-preparation/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module0.5-preparation/index.en.md",
+    "bytes": 13120,
+    "sha256": "bbd385581cc596a58e178b9528cf031d708860e73a46d14515ecffbb8ff57db3"
+  },
+  {
+    "path": "/content/module1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module1/index.en.md",
+    "bytes": 2737,
+    "sha256": "ae8eda86f2aa2bf115ef179be9bc6735eff055e00eb2c12bd4160e7416830702"
+  },
+  {
+    "path": "/content/module1/1.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module1/1.1/index.en.md",
+    "bytes": 2685,
+    "sha256": "108d0442b9fff3a60d995697716f26923b3f179906ec00fe13b5ab86ee87256c"
+  },
+  {
+    "path": "/content/module1/1.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module1/1.2/index.en.md",
+    "bytes": 11224,
+    "sha256": "9903578f733a3338de9c65c6c1285893855021c668031e4201f01539795783b6"
+  },
+  {
+    "path": "/content/module1/1.3/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module1/1.3/index.en.md",
+    "bytes": 6355,
+    "sha256": "2b1d8d0943d4a2c843d97cb3553e67c9633ce38cdb359dca6cad2b9cce2c185f"
+  },
+  {
+    "path": "/content/module2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module2/index.en.md",
+    "bytes": 7116,
+    "sha256": "510b25b904b2fb3057b97962e9e3c765e7ebe88a7830aa788e5a26400f4a31e8"
+  },
+  {
+    "path": "/content/module2/2.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module2/2.1/index.en.md",
+    "bytes": 6433,
+    "sha256": "7a4557b1c02e5afd12bae8860435be7541382c86687fa63283851abcfb83dc40"
+  },
+  {
+    "path": "/content/module2/2.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module2/2.2/index.en.md",
+    "bytes": 6323,
+    "sha256": "6b0922ea715f294cfa449867d9fe132f9ab0f1618b398c4694e29390fb7778a8"
+  },
+  {
+    "path": "/content/module3/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module3/index.en.md",
+    "bytes": 9942,
+    "sha256": "ea1dd912f926f0ae445d440778c8f8d20425f8b8c08eabdc53d3c564299c6696"
+  },
+  {
+    "path": "/content/module3/3.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module3/3.1/index.en.md",
+    "bytes": 7595,
+    "sha256": "97ce6a1c6d0b50311fc86da45a9c2b8c956cbb40fcb63e5160202d1cba73c500"
+  },
+  {
+    "path": "/content/module3/3.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module3/3.2/index.en.md",
+    "bytes": 20226,
+    "sha256": "d116fbe1c60db0f700dec54640a21a7d92f9e7db6fd2e41e8b44c857b9877672"
+  },
+  {
+    "path": "/content/module4/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module4/index.en.md",
+    "bytes": 7574,
+    "sha256": "5fc8df56ea8403d00732b46e31215326718f1d2de8085592ae3e49566a874f0d"
+  },
+  {
+    "path": "/content/module4/4.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module4/4.1/index.en.md",
+    "bytes": 8628,
+    "sha256": "3100417c87b53c3388819463cf3325f1f47c6d62787614b6cf7e78369472f425"
+  },
+  {
+    "path": "/content/module4/4.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module4/4.2/index.en.md",
+    "bytes": 14317,
+    "sha256": "20db024bf51d69dfcb9facae113cdcd7f509826aee235cc5d2b4a86f223388ba"
+  },
+  {
+    "path": "/content/module5/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module5/index.en.md",
+    "bytes": 7710,
+    "sha256": "64b18c46cb0fc60a8e5b22fd7dec7d54fff5878bd44618dfc5e0c16ffe89222d"
+  },
+  {
+    "path": "/content/module5/5.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module5/5.1/index.en.md",
+    "bytes": 17575,
+    "sha256": "682ac77443015eeb9287a4e49b1f0f7fcfd840e288c7071a22643540e45df20f"
+  },
+  {
+    "path": "/content/module5/5.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module5/5.2/index.en.md",
+    "bytes": 10832,
+    "sha256": "4b7471141aa0eb12583cfc1fe90657a6f3944e61a20808741488d13c9e344a1c"
+  },
+  {
+    "path": "/content/module5/5.3/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module5/5.3/index.en.md",
+    "bytes": 9808,
+    "sha256": "99fcebc9141d951e49a618c064807bfc114cba2b2f49960fe57950981f932aab"
+  },
+  {
+    "path": "/content/module6/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module6/index.en.md",
+    "bytes": 6108,
+    "sha256": "5a6143ecbda97d0abbb8ac76cae036b3a9f34e290bec16f9ab7d71023a1cce53"
+  },
+  {
+    "path": "/content/module6/6.1/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module6/6.1/index.en.md",
+    "bytes": 10989,
+    "sha256": "50e1fe8fcbda0446b43b915f324fe2363737a67329564b847d7b542e473f4005"
+  },
+  {
+    "path": "/content/module6/6.2/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module6/6.2/index.en.md",
+    "bytes": 6656,
+    "sha256": "18cdd183afba615400b3e0588ebfaeb2e1f8426c72f1888243b12ea988a93473"
+  },
+  {
+    "path": "/content/module6/6.3/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module6/6.3/index.en.md",
+    "bytes": 7222,
+    "sha256": "e3514fb9c618e1ab030a1a35673838e56bd26ac4607f82c7d21af34d71f35bb3"
+  },
+  {
+    "path": "/content/module6/6.4/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/module6/6.4/index.en.md",
+    "bytes": 4101,
+    "sha256": "1908089280784330271ccc288882d2eafcce2248e6b31c68d96095725444d79a"
+  },
+  {
+    "path": "/content/summary/index.en.md",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/content/summary/index.en.md",
+    "bytes": 11705,
+    "sha256": "1e0e3cfd2b92ac6c5677045f218fb268afb36a4e02a18cb2f53bf1cca3429658"
+  }
+]

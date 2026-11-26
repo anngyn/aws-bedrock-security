@@ -1,0 +1,12 @@
+{
+  "pages": 26,
+  "exact_code_blocks": 16,
+  "assets": 166,
+  "embedded_image_placements": 175,
+  "unique_html_ids": true,
+  "all_local_anchors_valid": true,
+  "no_external_file_dependencies": true,
+  "source_and_asset_hashes_verified": true,
+  "html_sha256": "7547edee8c8211d7adb32418791b7e52f71d5d7295e8e2db28cd733f60c28d4f",
+  "html_bytes": 63390494
+}

@@ -1,0 +1,227 @@
+{
+  "description": "Public reference images; no personal lab execution claim.",
+  "groups": [
+    {
+      "id": "platform",
+      "title": "Platform & GitHub integration",
+      "weight": 1,
+      "module": "/module1",
+      "intro": "Compare the integration entry point and the successful connection check.",
+      "images": [
+        {
+          "asset": "evidence/autobot-add-integration.png",
+          "title": "Open Integrations",
+          "caption": "The Integrations view provides the Add integration entry point.",
+          "kind": "public_reference",
+          "source_url": "https://autobot.live/docs/github",
+          "sha256": "67a9ecf021a4ed10b969252e80bb6585094bcd91243f551b5ad70ecb15be28d5"
+        },
+        {
+          "asset": "evidence/autobot-github-validation.png",
+          "title": "Successful connection check",
+          "caption": "The Test action returns a successful connection message in this example.",
+          "kind": "public_reference",
+          "source_url": "https://autobot.live/docs/github",
+          "sha256": "9e1feb47fbc5dac5328a80edffbb2ae0f2a80bbb31ace8802361e790fa9d55bd"
+        },
+        {
+          "asset": "mod1-ai-configuration.png",
+          "title": "Configure the AI integration",
+          "caption": "Compare the AI integration configuration with the provider settings required by the lesson.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-ai-configuration.png",
+          "sha256": "40f7dda02f770560dcd7ff97c2121222afcd6dedf67c319ccb2f43d955b76ba9"
+        }
+      ]
+    },
+    {
+      "id": "waf",
+      "title": "WAF threat analysis",
+      "weight": 2,
+      "module": "/module2",
+      "intro": "Follow the analysis output and the resulting view of WAF rules.",
+      "images": [
+        {
+          "asset": "optimus-waf-analysis.png",
+          "title": "Analyze WAF activity",
+          "caption": "Example of the Optimus analysis conversation for WAF activity.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-analysis.png",
+          "sha256": "ab802c6b14c81a564f68c6784698e1f9b6f47d0385de454dc19766c54207de09"
+        },
+        {
+          "asset": "optimus-waf-report.png",
+          "title": "Review the analysis report",
+          "caption": "Review the generated report before choosing a remediation action.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-report.png",
+          "sha256": "99c258de11a129b44594f86353758fb835eede3f95f4528c2662122e041a343f"
+        },
+        {
+          "asset": "mod2-after-secops.png",
+          "title": "Inspect the resulting WAF configuration",
+          "caption": "Example screen used to compare the rule configuration after the workflow.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-after-secops.png",
+          "sha256": "b9bbd2c6f4b959c89a3c9b2757590421446f41f653852a06d5750bb3f9796457"
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "title": "Just-in-time database access",
+      "weight": 3,
+      "module": "/module3",
+      "intro": "Compare the access request, risk assessment and approval stages.",
+      "images": [
+        {
+          "asset": "risk_evaluator.png",
+          "title": "Review the risk evaluation",
+          "caption": "The evaluator stage provides the assessment used by the access workflow.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk_evaluator.png",
+          "sha256": "ab303b5644207a81072131e07bc243f0ea10482b23a30f6e9c01d97922fc1fbb"
+        },
+        {
+          "asset": "user_approved.png",
+          "title": "Check the approval state",
+          "caption": "Example of the approval step in the temporary-access workflow.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/user_approved.png",
+          "sha256": "01e57e4456b889e4ff234f5f45e8f7703f12a0e46b3aa9ad93008d24e5b84501"
+        },
+        {
+          "asset": "revocation_agent.png",
+          "title": "Review the revocation stage",
+          "caption": "The revocation stage belongs to the end of the temporary-access lifecycle.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/revocation_agent.png",
+          "sha256": "d006e1960143a0447c4feec6c9654bcaa671e7b3074e7785a1299f5d47d8a583"
+        }
+      ]
+    },
+    {
+      "id": "guardduty",
+      "title": "GuardDuty investigation & remediation",
+      "weight": 4,
+      "module": "/module4",
+      "intro": "Use the findings and workflow screenshots as visual checkpoints.",
+      "images": [
+        {
+          "asset": "01.guardduty_findings.png",
+          "title": "Inspect the GuardDuty finding",
+          "caption": "Example findings view before investigating the alert.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/01.guardduty_findings.png",
+          "sha256": "54a8d0c68624aa0b95fb395a68b39398a90d771ada5df1d5abe62ab945c2297b"
+        },
+        {
+          "asset": "module4/gd-rem-2.png",
+          "title": "Review the remediation workflow",
+          "caption": "Compare the workflow configuration and the selected remediation steps.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+          "sha256": "54eb2d67f1efe81e7c3dc899aec24965509efe7a007449710a9c21ccae81876b"
+        },
+        {
+          "asset": "mod4-agent-view.png",
+          "title": "Inspect the agent execution view",
+          "caption": "Example agent execution screen for the GuardDuty workflow.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+          "sha256": "f04ac44958d6aae8f75666657c7a1ad24fc6b085f3a795df62fc24ec7e797eb7"
+        }
+      ]
+    },
+    {
+      "id": "securityhub",
+      "title": "Security Hub approvals & risk register",
+      "weight": 5,
+      "module": "/module5",
+      "intro": "Review the approval interaction and the place where risks are tracked.",
+      "images": [
+        {
+          "asset": "optimus-sh-interactive-approval-cards.png",
+          "title": "Review interactive approval cards",
+          "caption": "Example of the human approval interaction in the bot conversation.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-interactive-approval-cards.png",
+          "sha256": "b6cd39fc46276b0ec8b8acfb74e81b0d3e50aea2016bcf549f5f0bef7f7d3765"
+        },
+        {
+          "asset": "risk-register-list.png",
+          "title": "Inspect the risk register",
+          "caption": "The register provides a view of the tracked risk records.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+          "sha256": "662388f0fffe2a07394dbc7d7263b5249e5a7ec20edbdc48733c244ad69d25e1"
+        },
+        {
+          "asset": "mod5-after-secops.png",
+          "title": "Compare Security Hub findings",
+          "caption": "Example findings view used by the module after the remediation workflow.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-after-secops.png",
+          "sha256": "a21537d7c356c180c6920c0a0101409335ee63e432c8dbfe89af78813b7fa259"
+        }
+      ]
+    },
+    {
+      "id": "appsec",
+      "title": "Inspector code security & pull requests",
+      "weight": 6,
+      "module": "/module6",
+      "intro": "Compare scan setup, code findings, fix recommendations and pull-request annotations.",
+      "images": [
+        {
+          "asset": "evidence/inspector-code-security.png",
+          "title": "Open Code Security",
+          "caption": "The Code Security page shows the source-code integration entry point.",
+          "kind": "public_reference",
+          "source_url": "https://aws.amazon.com/blogs/security/shifting-vulnerability-detection-left-with-amazon-inspector-code-security-capabilities/",
+          "sha256": "c94ee408621c3f76d2f7e1b0170c2f17d428accced809e4e64b6231b60031370"
+        },
+        {
+          "asset": "evidence/inspector-scan-types.png",
+          "title": "Select SAST, IaC and SCA",
+          "caption": "The scan analysis configuration lets you select the checks for the repository.",
+          "kind": "public_reference",
+          "source_url": "https://aws.amazon.com/blogs/security/shifting-vulnerability-detection-left-with-amazon-inspector-code-security-capabilities/",
+          "sha256": "2b8649a9007a1d183cec95009450ac83ecb2ec1d631070ba2d8e476c246f42ca"
+        },
+        {
+          "asset": "evidence/inspector-scan-configurations.png",
+          "title": "Review scan configurations",
+          "caption": "The configuration list shows the defined scan policies.",
+          "kind": "public_reference",
+          "source_url": "https://aws.amazon.com/blogs/security/shifting-vulnerability-detection-left-with-amazon-inspector-code-security-capabilities/",
+          "sha256": "e0c6b11665d8f7e71a8d488e1bf1d3733347d26113fb1f41a5f944e2b1e595b8"
+        },
+        {
+          "asset": "evidence/inspector-fix-recommendation.png",
+          "title": "Inspect a finding and suggested fix",
+          "caption": "This example highlights a public-read bucket ACL and a suggested change.",
+          "kind": "public_reference",
+          "source_url": "https://aws.amazon.com/blogs/security/shifting-vulnerability-detection-left-with-amazon-inspector-code-security-capabilities/",
+          "sha256": "2c14a3288fdc3346aeec3f45741abeca1b72964956e9f1c544ac030d1194172d"
+        },
+        {
+          "asset": "github-pr-inline-annotations.png",
+          "title": "Review pull-request annotations",
+          "caption": "Example security annotations alongside the code review.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-pr-inline-annotations.png",
+          "sha256": "9cfeab24f8cf88abf5caa6513c98457853422a601534b08a0892ad144d62b538"
+        },
+        {
+          "asset": "inspector-findings-after-remediation.png",
+          "title": "Review the findings after remediation",
+          "caption": "Use the example findings screen as a comparison point for your own scan results.",
+          "kind": "public_reference",
+          "source_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+          "sha256": "f5195662c62302491ee3676ef7df366c74d9bfdabee37df3efe929458bed7d40"
+        }
+      ]
+    }
+  ]
+}

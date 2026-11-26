@@ -1,0 +1,1496 @@
+[
+  {
+    "relative": "static/ServiceIntegrationPage0.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegrationPage0.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegrationPage0.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegrationPage0.png",
+    "status": "ok",
+    "bytes": 140333,
+    "sha256": "89720aba0203ea43f1508d57e3dd7e8b750b6a53e4bbf7b33e911acf1c98edaa"
+  },
+  {
+    "relative": "static/Cybersecurity-agent-factory-use-cases.gif",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/Cybersecurity-agent-factory-use-cases.gif",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/Cybersecurity-agent-factory-use-cases.gif",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/Cybersecurity-agent-factory-use-cases.gif",
+    "status": "ok",
+    "bytes": 326117,
+    "sha256": "438b586563300739db9c927f933518456045fbbe3ac6a27e8eca72497a6a85e2"
+  },
+  {
+    "relative": "static/how-it-works.gif",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/how-it-works.gif",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/how-it-works.gif",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/how-it-works.gif",
+    "status": "ok",
+    "bytes": 620250,
+    "sha256": "06182e66fc40aeddf682d9d79395b6bdc66298245fa51cccf8f25878b6be3b80"
+  },
+  {
+    "relative": "static/autobotAI-data-and-permissions.drawio.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/autobotAI-data-and-permissions.drawio.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/autobotAI-data-and-permissions.drawio.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/autobotAI-data-and-permissions.drawio.png",
+    "status": "ok",
+    "bytes": 281574,
+    "sha256": "4594c48a7261f9900f21e68bd7efbfe75ce1d8e4ae9cad862e6f4f0a92d69be1"
+  },
+  {
+    "relative": "static/ServiceIntegration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ServiceIntegration.png",
+    "status": "ok",
+    "bytes": 111181,
+    "sha256": "d9d1723eb763fc840fbae075d0d317d476ed1caa8f753f1dd81e7f3087330f0f"
+  },
+  {
+    "relative": "static/generated-diagrams/guardduty-autobotai-flow.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/generated-diagrams/guardduty-autobotai-flow.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/generated-diagrams/guardduty-autobotai-flow.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/generated-diagrams/guardduty-autobotai-flow.png",
+    "status": "ok",
+    "bytes": 65076,
+    "sha256": "540de786bfeb34da3fcf1a3c0aef6906a2b4fed885c783e8771e98b3abd1897b"
+  },
+  {
+    "relative": "static/securityhubmultiaccount.drawio.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubmultiaccount.drawio.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubmultiaccount.drawio.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubmultiaccount.drawio.png",
+    "status": "ok",
+    "bytes": 42521,
+    "sha256": "81eb9514b3a25287efeca1573e27b851398bc6f7939047c03770aa048187b870"
+  },
+  {
+    "relative": "static/preparation/1-sign-in.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/1-sign-in.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/1-sign-in.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/1-sign-in.png",
+    "status": "ok",
+    "bytes": 145328,
+    "sha256": "3dcd33f40f07dae068a7fb029c9a6b09f9a6addfee7edff73ab6f5ca30c68a62"
+  },
+  {
+    "relative": "static/preparation/2-otp-email.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/2-otp-email.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/2-otp-email.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/2-otp-email.png",
+    "status": "ok",
+    "bytes": 108734,
+    "sha256": "ec67c8811d31f8b81c53a09a52c646f958a25ecd246aaa5a7ec6e806e1201607"
+  },
+  {
+    "relative": "static/preparation/3-outlook-screenshot.jpg",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/3-outlook-screenshot.jpg",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/3-outlook-screenshot.jpg",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/3-outlook-screenshot.jpg",
+    "status": "ok",
+    "bytes": 55133,
+    "sha256": "0f3301f225547dd0ad0c0de2635413e5a9ac38c39dce1c3c17a02591870654f2"
+  },
+  {
+    "relative": "static/preparation/4-otp-passcode.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/4-otp-passcode.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/4-otp-passcode.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/4-otp-passcode.png",
+    "status": "ok",
+    "bytes": 127719,
+    "sha256": "942ea3f5ad6f9dc05e96a4f0d48868e5ff40daa8a80ee02e3ea1f0e2a2b26c99"
+  },
+  {
+    "relative": "static/preparation/5-event-access-code.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/5-event-access-code.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/5-event-access-code.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/5-event-access-code.png",
+    "status": "ok",
+    "bytes": 133453,
+    "sha256": "46f6b33b40fb06b1c27334732d0bbb658d81ee94f4a762ded83120e78ad9892d"
+  },
+  {
+    "relative": "static/preparation/6-terms-and-conditions.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/6-terms-and-conditions.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/6-terms-and-conditions.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/6-terms-and-conditions.png",
+    "status": "ok",
+    "bytes": 237498,
+    "sha256": "6ab531a3211f1996aaeedcdc9598567d151e5bc84e59a691dc1bb3eb7623affb"
+  },
+  {
+    "relative": "static/preparation/consolelogin.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/consolelogin.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/consolelogin.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/preparation/consolelogin.png",
+    "status": "ok",
+    "bytes": 528470,
+    "sha256": "e2f9a06324dc05288d5cee3eb18f5981ef331a67a07e82760c5e828de9ebaa77"
+  },
+  {
+    "relative": "static/cfn-self-paced.yaml",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/static/cfn-self-paced.yaml",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cfn-self-paced.yaml",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cfn-self-paced.yaml",
+    "status": "ok",
+    "bytes": 60193,
+    "sha256": "2a3bb60bf04ca043f644209bc7c790cf5bb0e0ac47b44f7e04c0fd3646c01f22"
+  },
+  {
+    "relative": "static/IntegrationArchitecture.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/IntegrationArchitecture.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/IntegrationArchitecture.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/IntegrationArchitecture.png",
+    "status": "ok",
+    "bytes": 84745,
+    "sha256": "04bc32b63f3e24c3dfc403ad017923881d91492bd69c1efc9ae52add5490cfd5"
+  },
+  {
+    "relative": "static/sign-up.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sign-up.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sign-up.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sign-up.png",
+    "status": "ok",
+    "bytes": 262517,
+    "sha256": "db128fbfab36dd3afe9cf616ec5a7ac2745b4c586c6fccc0d716fbbea197c826"
+  },
+  {
+    "relative": "static/community-edition-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/community-edition-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/community-edition-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/community-edition-popup.png",
+    "status": "ok",
+    "bytes": 747897,
+    "sha256": "0fc824e0bb7b7483e1deb9d4c21b3287f9ffc9ca1b4227b9c7cebbbbf4e0695a"
+  },
+  {
+    "relative": "static/subscription-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/subscription-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/subscription-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/subscription-popup.png",
+    "status": "ok",
+    "bytes": 90074,
+    "sha256": "88bc1673dc198e3c868f59442666ee35b881012e550072a0df0684787d42a406"
+  },
+  {
+    "relative": "static/coupon-code-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/coupon-code-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/coupon-code-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/coupon-code-popup.png",
+    "status": "ok",
+    "bytes": 24580,
+    "sha256": "0fd85a80cc3a1e93975e0a1c9e83335d0ed112bf054f42ddc7e772b50375ab52"
+  },
+  {
+    "relative": "static/mod1-overview-page.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-overview-page.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-overview-page.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-overview-page.png",
+    "status": "ok",
+    "bytes": 396956,
+    "sha256": "380d55b0f7b469a687563210121a1bb724b1204dbde27706e6a3e99448964eb3"
+  },
+  {
+    "relative": "static/mod1-aws-integration-setup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-aws-integration-setup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-aws-integration-setup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-aws-integration-setup.png",
+    "status": "ok",
+    "bytes": 389344,
+    "sha256": "a770ba05f7b11dd3fa85fd26562596dd0f34523b1d4bc3bd26ad007711977e0b"
+  },
+  {
+    "relative": "static/mod1-select-additional-integrations.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-select-additional-integrations.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-select-additional-integrations.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-select-additional-integrations.png",
+    "status": "ok",
+    "bytes": 204250,
+    "sha256": "dfc5e82c17ad321c5b0be826f0c22300515f70f6a7ca56d90a56d24e0d2be07b"
+  },
+  {
+    "relative": "static/mod1-launch-stack.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-launch-stack.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-launch-stack.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-launch-stack.png",
+    "status": "ok",
+    "bytes": 401192,
+    "sha256": "a8af71d86cfda0c263b9656f1bf821a936ee6a5e8d63b7379ca2861f2284fb58"
+  },
+  {
+    "relative": "static/region.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/region.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/region.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/region.png",
+    "status": "ok",
+    "bytes": 76208,
+    "sha256": "5add65b41de297b5edffc1f09edf2eef4676add8037e0ef6dd57dc4100d42d2e"
+  },
+  {
+    "relative": "static/aws-launch-stack2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/aws-launch-stack2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/aws-launch-stack2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/aws-launch-stack2.png",
+    "status": "ok",
+    "bytes": 128822,
+    "sha256": "6e746721ffc26c26cd6e6df7844e6b4c10384a92d2a45fe250fed2ccefd2957e"
+  },
+  {
+    "relative": "static/test-button-appearing-new.jpg",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/test-button-appearing-new.jpg",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/test-button-appearing-new.jpg",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/test-button-appearing-new.jpg",
+    "status": "ok",
+    "bytes": 83787,
+    "sha256": "5d40df7f7134cae940ecb7a8292cf08bf97760515bed79e8438558f1f3a4c574"
+  },
+  {
+    "relative": "static/ses-verify1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify1.png",
+    "status": "ok",
+    "bytes": 152883,
+    "sha256": "ef4bf71a6cdbb6e27c52d98406edc7bb7ae64fadc607cc3ac9ba6c1113549121"
+  },
+  {
+    "relative": "static/ses-verify2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses-verify2.png",
+    "status": "ok",
+    "bytes": 384792,
+    "sha256": "8779ffa57147ca275a19d71194855a801a1273e70464472929a92af1bb0a5851"
+  },
+  {
+    "relative": "static/mod1-ai-configuration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-ai-configuration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-ai-configuration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-ai-configuration.png",
+    "status": "ok",
+    "bytes": 643700,
+    "sha256": "40f7dda02f770560dcd7ff97c2121222afcd6dedf67c319ccb2f43d955b76ba9"
+  },
+  {
+    "relative": "static/bedrock.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bedrock.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bedrock.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bedrock.png",
+    "status": "ok",
+    "bytes": 64198,
+    "sha256": "599af9be67cc7fcb631b6fda6bda6b1920e95612aa3524a8352cca819ac33afa"
+  },
+  {
+    "relative": "static/athena-search.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena-search.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena-search.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena-search.png",
+    "status": "ok",
+    "bytes": 315845,
+    "sha256": "1e62a31369ff534744bc3cf14728303488203a802fbbd397e4a51af953e74220"
+  },
+  {
+    "relative": "static/athena.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/athena.png",
+    "status": "ok",
+    "bytes": 236848,
+    "sha256": "d6fb51f708280b322da1ad15effe226e571b6c16eb86c1cb6891a61a18acab28"
+  },
+  {
+    "relative": "static/ses.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ses.png",
+    "status": "ok",
+    "bytes": 62951,
+    "sha256": "e8ff97acee14533565ad7b94d04b09137aece0526c38c1e799230462a12737ff"
+  },
+  {
+    "relative": "static/github-1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-1.png",
+    "status": "ok",
+    "bytes": 57820,
+    "sha256": "f471aaba5022196f34af8969c2f3d5fd1c7a945b7fbd344782655e4093fbf3eb"
+  },
+  {
+    "relative": "static/github-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-2.png",
+    "status": "ok",
+    "bytes": 42424,
+    "sha256": "ac31e352f899ea6e6685f86488dda1be1389dbd3d4bc094fe2fc4d8bbf675576"
+  },
+  {
+    "relative": "static/mod1-github-setup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-github-setup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-github-setup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod1-github-setup.png",
+    "status": "ok",
+    "bytes": 221287,
+    "sha256": "75f905b699901d34e6ab89fcb25c94cb5c086ac3814f3b55d96c279824ed782c"
+  },
+  {
+    "relative": "static/abdb.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb.png",
+    "status": "ok",
+    "bytes": 82532,
+    "sha256": "1dce58bbc4376032f6f3b4590fc314e36ea668b2889d26321f2bf2fa3c835e91"
+  },
+  {
+    "relative": "static/abdb-verify.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-verify.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-verify.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-verify.png",
+    "status": "ok",
+    "bytes": 61470,
+    "sha256": "5bf7310f9aac52e88f2e5f06c9161d3e091df0c5ee7c03657f9dde31d092fa5f"
+  },
+  {
+    "relative": "static/abdb-apikey.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-apikey.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-apikey.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/abdb-apikey.png",
+    "status": "ok",
+    "bytes": 51095,
+    "sha256": "3981671083bf35c530ccc6e3ee2581aca56a7266dc470029209aed3a57d52504"
+  },
+  {
+    "relative": "static/mod2-before-secops.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-before-secops.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-before-secops.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-before-secops.png",
+    "status": "ok",
+    "bytes": 858219,
+    "sha256": "9dcd7af81b510ba7c806c2209d2fdcf4b478c96648cb0bd37660f8333c8954ae"
+  },
+  {
+    "relative": "static/mod2-after-secops.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-after-secops.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-after-secops.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-after-secops.png",
+    "status": "ok",
+    "bytes": 637076,
+    "sha256": "b9bbd2c6f4b959c89a3c9b2757590421446f41f653852a06d5750bb3f9796457"
+  },
+  {
+    "relative": "static/optimus-header.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-header.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-header.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-header.png",
+    "status": "ok",
+    "bytes": 30600,
+    "sha256": "df532b349939f8265a7f7346fb52529bb1381044d7d192ceac9314aa4ed1624d"
+  },
+  {
+    "relative": "static/mod2-provider-image.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-provider-image.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-provider-image.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-provider-image.png",
+    "status": "ok",
+    "bytes": 434037,
+    "sha256": "3fcaf293c7a2e6749d294933a9a78546ecb03e93d6699b0cb72ab9655f9b58b1"
+  },
+  {
+    "relative": "static/mod2-parameter-image.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-parameter-image.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-parameter-image.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-parameter-image.png",
+    "status": "ok",
+    "bytes": 111652,
+    "sha256": "f39bca2c2aada27acfab736b3383226e65dcd191a76a5af990cb810c1bfb4ed8"
+  },
+  {
+    "relative": "static/mod2-knowledge-image.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-knowledge-image.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-knowledge-image.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod2-knowledge-image.png",
+    "status": "ok",
+    "bytes": 405579,
+    "sha256": "ba07a38023fa1de46437d861dfb49b8be6419af14446d7a3feb1edfc87704d3f"
+  },
+  {
+    "relative": "static/optimus-waf-template-box.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-template-box.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-template-box.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-template-box.png",
+    "status": "ok",
+    "bytes": 76072,
+    "sha256": "5f8c265fc1de26bc2790f869f09ae5f552b93e5977010953203efdd4dafc1ae6"
+  },
+  {
+    "relative": "static/optimus-waf-analysis.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-analysis.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-analysis.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-analysis.png",
+    "status": "ok",
+    "bytes": 526647,
+    "sha256": "ab802c6b14c81a564f68c6784698e1f9b6f47d0385de454dc19766c54207de09"
+  },
+  {
+    "relative": "static/optimus-waf-report.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-report.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-report.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-waf-report.png",
+    "status": "ok",
+    "bytes": 720213,
+    "sha256": "99c258de11a129b44594f86353758fb835eede3f95f4528c2662122e041a343f"
+  },
+  {
+    "relative": "static/jit-access-workflow.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/jit-access-workflow.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/jit-access-workflow.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/jit-access-workflow.png",
+    "status": "ok",
+    "bytes": 276542,
+    "sha256": "2e053d3c102c9af008485f5f399bb93cb58d40fcc089d4ba2b151b1f0137266e"
+  },
+  {
+    "relative": "static/model_configuration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/model_configuration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/model_configuration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/model_configuration.png",
+    "status": "ok",
+    "bytes": 308277,
+    "sha256": "b65d742f68001047f6e1848780244f404a4f1a38c57a9bcce6582a5ff4aee76c"
+  },
+  {
+    "relative": "static/ai_model.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ai_model.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ai_model.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ai_model.png",
+    "status": "ok",
+    "bytes": 337080,
+    "sha256": "fb1d8b5c009357e173e197683f1d19923a12a08812b75e617c50b1edb7fdc15c"
+  },
+  {
+    "relative": "static/update-model-in-Risk-eval-node.jpg",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/update-model-in-Risk-eval-node.jpg",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/update-model-in-Risk-eval-node.jpg",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/update-model-in-Risk-eval-node.jpg",
+    "status": "ok",
+    "bytes": 273048,
+    "sha256": "aed15ef21a2db2fa108d9262ffce31f224b5d8a715644732f4f77a9b92ab2d12"
+  },
+  {
+    "relative": "static/notification_node_configuration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/notification_node_configuration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/notification_node_configuration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/notification_node_configuration.png",
+    "status": "ok",
+    "bytes": 303023,
+    "sha256": "930e6e1117fe99fe8d7d9b4058dde6ac37b69e8838dd853f458acf7c138a5071"
+  },
+  {
+    "relative": "static/rds-nav-to-bots-page.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-nav-to-bots-page.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-nav-to-bots-page.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-nav-to-bots-page.png",
+    "status": "ok",
+    "bytes": 270547,
+    "sha256": "f723b5049f50f1cb6301546f166566e787d8c2aabf2ae8ce6fc01876b55dd8bb"
+  },
+  {
+    "relative": "static/rds-publish-to-service-portal.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-publish-to-service-portal.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-publish-to-service-portal.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-publish-to-service-portal.png",
+    "status": "ok",
+    "bytes": 207470,
+    "sha256": "049fa0bf9d347aed0d6f1fea81b2d916dfd6f40391d39be8b6709068f464ec43"
+  },
+  {
+    "relative": "static/rds-open-self-service-portal.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-self-service-portal.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-self-service-portal.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-self-service-portal.png",
+    "status": "ok",
+    "bytes": 100171,
+    "sha256": "49be27b41b651f03c0cce2f00d733a14c9a58daf825c0d17762e8518421e0443"
+  },
+  {
+    "relative": "static/rds-self-service-portal-bots.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-self-service-portal-bots.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-self-service-portal-bots.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-self-service-portal-bots.png",
+    "status": "ok",
+    "bytes": 108029,
+    "sha256": "48d2af44dfc19956d8833d272fa7411967b97d1a0397f3d2664622bca86aa7c5"
+  },
+  {
+    "relative": "static/rds-bot-portal-start-button.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-start-button.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-start-button.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-start-button.png",
+    "status": "ok",
+    "bytes": 210857,
+    "sha256": "fff18786686078857ab40b6eaa4580d30dc57abf8ed69ced09ebe5ef58bfd8fc"
+  },
+  {
+    "relative": "static/rds-open-chat-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-chat-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-chat-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-open-chat-popup.png",
+    "status": "ok",
+    "bytes": 234013,
+    "sha256": "1487a289a107ef1f8aeaa12005452bd0418edd5f85343f2c58f890073555fb09"
+  },
+  {
+    "relative": "static/ip_validation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ip_validation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ip_validation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/ip_validation.png",
+    "status": "ok",
+    "bytes": 255161,
+    "sha256": "35b340109062bca1feed0e02606c1332306dd5092d74a6098e631737492e018e"
+  },
+  {
+    "relative": "static/iam_validation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/iam_validation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/iam_validation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/iam_validation.png",
+    "status": "ok",
+    "bytes": 394592,
+    "sha256": "ac4fdf03d02c4c186578711dcdeac19e077b169af15515fcb7b71afe4ed88ae3"
+  },
+  {
+    "relative": "static/instance_selection.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/instance_selection.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/instance_selection.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/instance_selection.png",
+    "status": "ok",
+    "bytes": 408740,
+    "sha256": "7246a45ba7e14d5d7b60802a43e820ab95e75fee3fb191f42c10d8ebf5e99fd1"
+  },
+  {
+    "relative": "static/schema_selection.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/schema_selection.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/schema_selection.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/schema_selection.png",
+    "status": "ok",
+    "bytes": 296300,
+    "sha256": "3b8536cc7edccd332a56c666fd1caaf8bb8e29e59c9ab9069d7f097c2990c63d"
+  },
+  {
+    "relative": "static/access_reason.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_reason.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_reason.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_reason.png",
+    "status": "ok",
+    "bytes": 345196,
+    "sha256": "17d3ad8c018570c50ea7c45b7d23cd14f8db3e8837e6e038d863910a65adc47a"
+  },
+  {
+    "relative": "static/access_duration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_duration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_duration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/access_duration.png",
+    "status": "ok",
+    "bytes": 180460,
+    "sha256": "ceba3e2fcb65038f9f55758d04267dc5c8c73c56c590f8fe7c7ec7898f687b6a"
+  },
+  {
+    "relative": "static/risk_evaluator.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk_evaluator.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk_evaluator.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk_evaluator.png",
+    "status": "ok",
+    "bytes": 87085,
+    "sha256": "ab303b5644207a81072131e07bc243f0ea10482b23a30f6e9c01d97922fc1fbb"
+  },
+  {
+    "relative": "static/rds-bot-portal-sidebar-icon.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-sidebar-icon.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-sidebar-icon.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/rds-bot-portal-sidebar-icon.png",
+    "status": "ok",
+    "bytes": 95728,
+    "sha256": "2fe5c4048f57f3d63ae63a399b855a747356d115230f05629f6d522bc52b494b"
+  },
+  {
+    "relative": "static/sql_connect_command.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sql_connect_command.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sql_connect_command.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sql_connect_command.png",
+    "status": "ok",
+    "bytes": 551590,
+    "sha256": "01894d3717217103302193a0c1f3fd59cd3f15a72a65f6f2d19c5f4fc1f927f4"
+  },
+  {
+    "relative": "static/create_vpc.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/create_vpc.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/create_vpc.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/create_vpc.png",
+    "status": "ok",
+    "bytes": 92002,
+    "sha256": "09c48574e8b985f7ef3178392e0457a350dab223c60c31af082414954b8cb372"
+  },
+  {
+    "relative": "static/vpc_configuration.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/vpc_configuration.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/vpc_configuration.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/vpc_configuration.png",
+    "status": "ok",
+    "bytes": 1497207,
+    "sha256": "533a0c1b6bcff25d5784c14581c77cf53ca1d4d23043576b6a4bb1fb52ede05d"
+  },
+  {
+    "relative": "static/connect_mysql.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/connect_mysql.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/connect_mysql.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/connect_mysql.png",
+    "status": "ok",
+    "bytes": 541194,
+    "sha256": "d1e076525a83edae46386f2e3f57fb91d2f62133cb8d3ca8b756e62232f4ff48"
+  },
+  {
+    "relative": "static/revocation_agent.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/revocation_agent.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/revocation_agent.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/revocation_agent.png",
+    "status": "ok",
+    "bytes": 150409,
+    "sha256": "d006e1960143a0447c4feec6c9654bcaa671e7b3074e7785a1299f5d47d8a583"
+  },
+  {
+    "relative": "static/activity_analysing.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/activity_analysing.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/activity_analysing.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/activity_analysing.png",
+    "status": "ok",
+    "bytes": 84837,
+    "sha256": "3cec18d3720a3bd376e0e14d2742806259ce7a76a26f1bfdd8ecd2df4b5c4dc2"
+  },
+  {
+    "relative": "static/high_risk_ip_reason.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/high_risk_ip_reason.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/high_risk_ip_reason.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/high_risk_ip_reason.png",
+    "status": "ok",
+    "bytes": 719535,
+    "sha256": "7c96a51ce4bbdb815c41e6ad161b8e0f50ae59fb3ee667b4c30bd1e656bd7742"
+  },
+  {
+    "relative": "static/manual_approval.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/manual_approval.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/manual_approval.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/manual_approval.png",
+    "status": "ok",
+    "bytes": 498868,
+    "sha256": "7630486f18015daba6f180da405aec408b6ecebba48f9bf2680b01f4686d5518"
+  },
+  {
+    "relative": "static/user_approved.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/user_approved.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/user_approved.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/user_approved.png",
+    "status": "ok",
+    "bytes": 447392,
+    "sha256": "01e57e4456b889e4ff234f5f45e8f7703f12a0e46b3aa9ad93008d24e5b84501"
+  },
+  {
+    "relative": "static/01.guardduty_findings.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/01.guardduty_findings.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/01.guardduty_findings.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/01.guardduty_findings.png",
+    "status": "ok",
+    "bytes": 233351,
+    "sha256": "54a8d0c68624aa0b95fb395a68b39398a90d771ada5df1d5abe62ab945c2297b"
+  },
+  {
+    "relative": "static/module4/gd-rem-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-rem-2.png",
+    "status": "ok",
+    "bytes": 40221,
+    "sha256": "54eb2d67f1efe81e7c3dc899aec24965509efe7a007449710a9c21ccae81876b"
+  },
+  {
+    "relative": "static/mod4-agent-view.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod4-agent-view.png",
+    "status": "ok",
+    "bytes": 622386,
+    "sha256": "f04ac44958d6aae8f75666657c7a1ad24fc6b085f3a795df62fc24ec7e797eb7"
+  },
+  {
+    "relative": "static/module4-picture-1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-1.png",
+    "status": "ok",
+    "bytes": 130422,
+    "sha256": "346fbef7f4cfd8cd881dbdd2550ad0dc28d0525e983406e5d1350ed6c6de70ea"
+  },
+  {
+    "relative": "static/module4-picture-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-2.png",
+    "status": "ok",
+    "bytes": 196016,
+    "sha256": "878f34ccfeb4d177db9f20682162f06bdb1729bc38a365b7925596c0cf1892b0"
+  },
+  {
+    "relative": "static/module4-picture-3.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-3.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-3.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4-picture-3.png",
+    "status": "ok",
+    "bytes": 111009,
+    "sha256": "4b119cd212e5992b9e3267d6b429a189f853329bdf2018539c234f7b51528341"
+  },
+  {
+    "relative": "static/4.1-ssh_bruteforce_overview.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.1-ssh_bruteforce_overview.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.1-ssh_bruteforce_overview.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.1-ssh_bruteforce_overview.png",
+    "status": "ok",
+    "bytes": 109522,
+    "sha256": "9d6ef3bc39f2f290ea07cc44d401ec5c6c70f371eb633aaceefef50b6cb89ab6"
+  },
+  {
+    "relative": "static/4.2-tor_client_overview.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.2-tor_client_overview.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.2-tor_client_overview.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.2-tor_client_overview.png",
+    "status": "ok",
+    "bytes": 110144,
+    "sha256": "705d453eb51c6fae85063bc907d923621a5b4a27898d757013c737b8135d44ff"
+  },
+  {
+    "relative": "static/4.3-credential_exfiltration_overview.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.3-credential_exfiltration_overview.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.3-credential_exfiltration_overview.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/4.3-credential_exfiltration_overview.png",
+    "status": "ok",
+    "bytes": 99463,
+    "sha256": "e098948d62a9aa3283f56d2b8d0dede86ba10c56987a0b317f82b6dcd32851dd"
+  },
+  {
+    "relative": "static/module4/gd-w-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-w-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-w-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-w-2.png",
+    "status": "ok",
+    "bytes": 137105,
+    "sha256": "6b1c892d514bc8b4c6f653748a25ada44ad02f1135c532a1ff3a6dbcdaac8021"
+  },
+  {
+    "relative": "static/module4/ins-w-4.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/ins-w-4.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/ins-w-4.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/ins-w-4.png",
+    "status": "ok",
+    "bytes": 141886,
+    "sha256": "85f182860f312e31179ff6cc4b4ed6660e85ca290e1097417cf532c05a2a94ce"
+  },
+  {
+    "relative": "static/module4/gd-notify.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-notify.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-notify.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module4/gd-notify.png",
+    "status": "ok",
+    "bytes": 101844,
+    "sha256": "0165883365ded582e97debbcf800506922e551ce915e4e35d58d97ca2fdb0a3f"
+  },
+  {
+    "relative": "static/mod5-before-secops.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-before-secops.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-before-secops.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-before-secops.png",
+    "status": "ok",
+    "bytes": 217992,
+    "sha256": "9d1d54ffee6a50250ba459c90edc7901f46fc82d2db174cdc92513d4f0ee0811"
+  },
+  {
+    "relative": "static/mod5-after-secops.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-after-secops.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-after-secops.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-after-secops.png",
+    "status": "ok",
+    "bytes": 755120,
+    "sha256": "a21537d7c356c180c6920c0a0101409335ee63e432c8dbfe89af78813b7fa259"
+  },
+  {
+    "relative": "static/mod5-resolver-deepagent-thread.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-resolver-deepagent-thread.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-resolver-deepagent-thread.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod5-resolver-deepagent-thread.png",
+    "status": "ok",
+    "bytes": 686628,
+    "sha256": "a7f3da956f0f6f749b369dea6e8558237366fa7abff061cef79d06da3f74fec0"
+  },
+  {
+    "relative": "static/securityhubfindings.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubfindings.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubfindings.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/securityhubfindings.png",
+    "status": "ok",
+    "bytes": 653059,
+    "sha256": "2d849d0a3f715e2a875d08ad88bc60c64e64fe684f88bad1030a21b2521113cd"
+  },
+  {
+    "relative": "static/optimus-nav-button.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-nav-button.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-nav-button.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-nav-button.png",
+    "status": "ok",
+    "bytes": 17904,
+    "sha256": "3742e7f0a2cc02823c52f2f1ccc704518e6997c68ee403cff35a3138b7020ac8"
+  },
+  {
+    "relative": "static/optimus-inspector-ai-model-config.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-ai-model-config.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-ai-model-config.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-ai-model-config.png",
+    "status": "ok",
+    "bytes": 223637,
+    "sha256": "d83f14dbf2ecab22238cb2e8bf663f8e34b08d8604349d2a3ff4782f041a83ca"
+  },
+  {
+    "relative": "static/optimus-sh-bot-creation-chat.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-creation-chat.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-creation-chat.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-creation-chat.png",
+    "status": "ok",
+    "bytes": 184511,
+    "sha256": "ee5c6ff00c352cc9d3c0900035ff11ae1bcc3afd322b81bbc9b9f742f6bc6b61"
+  },
+  {
+    "relative": "static/optimus-sh-bot-node-card.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-node-card.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-node-card.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-bot-node-card.png",
+    "status": "ok",
+    "bytes": 185067,
+    "sha256": "5185f24ba6aaadb76ad1f4857091c1f842d97f6badb66550a824a1cad08831ef"
+  },
+  {
+    "relative": "static/nav-to-tasks.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-tasks.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-tasks.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-tasks.png",
+    "status": "ok",
+    "bytes": 157762,
+    "sha256": "2462d6c8774fb93d2362c5897bfb72e48c6109c57345394d909532f69486887b"
+  },
+  {
+    "relative": "static/task-register-list.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/task-register-list.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/task-register-list.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/task-register-list.png",
+    "status": "ok",
+    "bytes": 820170,
+    "sha256": "eda78622a7ac2506b79d7db61ffbcc9e6899e361d06c597e6be4769cfeaffd9b"
+  },
+  {
+    "relative": "static/nav-to-risk-register.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-risk-register.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-risk-register.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/nav-to-risk-register.png",
+    "status": "ok",
+    "bytes": 160055,
+    "sha256": "2b2f938ad6c41411c8ab745375a486f6b61f7e0da837e42778b2380b5cfc3298"
+  },
+  {
+    "relative": "static/risk-register-list.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/risk-register-list.png",
+    "status": "ok",
+    "bytes": 691974,
+    "sha256": "662388f0fffe2a07394dbc7d7263b5249e5a7ec20edbdc48733c244ad69d25e1"
+  },
+  {
+    "relative": "static/optimus-sh-green-open-button.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-green-open-button.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-green-open-button.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-green-open-button.png",
+    "status": "ok",
+    "bytes": 141123,
+    "sha256": "62acc50f51c52798ca941ce828f771e142d5840a116fbd235eea1e0ff9d2a9bd"
+  },
+  {
+    "relative": "static/optimus-sh-reminder-email.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-reminder-email.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-reminder-email.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-reminder-email.png",
+    "status": "ok",
+    "bytes": 241668,
+    "sha256": "c1372407f7ad1f9492d5b2182d2eee81220f7bad7b590b4cfc76a381858e3777"
+  },
+  {
+    "relative": "static/optimus-sh-interactive-approval-cards.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-interactive-approval-cards.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-interactive-approval-cards.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-interactive-approval-cards.png",
+    "status": "ok",
+    "bytes": 245169,
+    "sha256": "b6cd39fc46276b0ec8b8acfb74e81b0d3e50aea2016bcf549f5f0bef7f7d3765"
+  },
+  {
+    "relative": "static/optimus-sh-email-notification.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-email-notification.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-email-notification.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-email-notification.png",
+    "status": "ok",
+    "bytes": 249447,
+    "sha256": "1068c7d465a6a1d59318f59ecdb7701d0b467cf8b5a6d95dfba63f285b9f6bc8"
+  },
+  {
+    "relative": "static/optimus-sh-manager-escalation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-manager-escalation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-manager-escalation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-sh-manager-escalation.png",
+    "status": "ok",
+    "bytes": 239560,
+    "sha256": "ef1ccf5e8f9ae979ba1c4856970fe95f9b105189e7e7927f4f72f2263558179c"
+  },
+  {
+    "relative": "static/sh-1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-1.png",
+    "status": "ok",
+    "bytes": 104367,
+    "sha256": "d88721b7b53aa3b5ac067580351c86ef83fa8eca8519999987b610161cba767b"
+  },
+  {
+    "relative": "static/sh-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-2.png",
+    "status": "ok",
+    "bytes": 159399,
+    "sha256": "8f0d867d1411d54cd762a3709a55db01df75513a003773dc68828de63b7676e0"
+  },
+  {
+    "relative": "static/sh-3.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-3.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-3.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/sh-3.png",
+    "status": "ok",
+    "bytes": 168230,
+    "sha256": "2bab9ae4f3d431f1092a7dc704c3d0ed6351cac089c9bc93b850331d0f9a9755"
+  },
+  {
+    "relative": "static/inspector-findings-before-remediation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-before-remediation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-before-remediation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-before-remediation.png",
+    "status": "ok",
+    "bytes": 479260,
+    "sha256": "43536254dcffad8dee9111e0a64f49d255001060f8b6e3792cf779c337054a99"
+  },
+  {
+    "relative": "static/inspector-findings-after-remediation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-findings-after-remediation.png",
+    "status": "ok",
+    "bytes": 442671,
+    "sha256": "f5195662c62302491ee3676ef7df366c74d9bfdabee37df3efe929458bed7d40"
+  },
+  {
+    "relative": "static/mod6-deepagent-execution.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod6-deepagent-execution.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod6-deepagent-execution.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/mod6-deepagent-execution.png",
+    "status": "ok",
+    "bytes": 739499,
+    "sha256": "39e802633992bdc3523cc584792e72b89cffe6a1849e1ecc632451e1dda318e6"
+  },
+  {
+    "relative": "static/module6step1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step1.png",
+    "status": "ok",
+    "bytes": 545074,
+    "sha256": "cbaf312185a86cea45cfed16d1a502be8cc78168a53364b437384c4bdbf09d63"
+  },
+  {
+    "relative": "static/module6step3.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step3.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step3.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step3.png",
+    "status": "ok",
+    "bytes": 532096,
+    "sha256": "a3cc3e68296c62bc3270ea116b21bc132e33c3b7ea9bede42a11ef45381061c9"
+  },
+  {
+    "relative": "static/module6step4.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step4.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step4.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step4.png",
+    "status": "ok",
+    "bytes": 409403,
+    "sha256": "0ed9b92ea176b98c2a510c42cb7779038f6eaeaa75850d9200be3bc62fafbbe6"
+  },
+  {
+    "relative": "static/module6step5.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step5.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step5.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/module6step5.png",
+    "status": "ok",
+    "bytes": 405522,
+    "sha256": "b535b0670a48d1bc6449cce4baca1d79d301b3612676ea966d2ef6c9b095d9e5"
+  },
+  {
+    "relative": "static/inspector-1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-1.png",
+    "status": "ok",
+    "bytes": 33794,
+    "sha256": "339210f2f89e0893fb466b3f88cd768e43b1b6feb761b802f8e18ec3a2c1d43b"
+  },
+  {
+    "relative": "static/inspector-3.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-3.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-3.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-3.png",
+    "status": "ok",
+    "bytes": 68726,
+    "sha256": "b2dc5512ef01463d6e8bab55ead925bdac38109b018cc0225a45b81ecc8ce9f1"
+  },
+  {
+    "relative": "static/inspector-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-2.png",
+    "status": "ok",
+    "bytes": 23503,
+    "sha256": "567f50a11ed7c7988f80f7bc09b26a070a29a959c49eb49fc015cd8da5fd4480"
+  },
+  {
+    "relative": "static/inspector-4.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-4.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-4.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-4.png",
+    "status": "ok",
+    "bytes": 70495,
+    "sha256": "c4c832f74de22cbe647e343c1e1b043647e0128f9c224017c36dc2324e11bb0c"
+  },
+  {
+    "relative": "static/inspector-5.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-5.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-5.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-5.png",
+    "status": "ok",
+    "bytes": 36747,
+    "sha256": "3ed4cbd2a7ab039c58917c42b58379bb4e805f5df89ecb22bc3d6b71f96ca255"
+  },
+  {
+    "relative": "static/inspector-6.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-6.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-6.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-6.png",
+    "status": "ok",
+    "bytes": 62980,
+    "sha256": "98576f845b5f2f06cc23f01eb724a605fb6032a6ea44c5a5215ff908a77d8bfc"
+  },
+  {
+    "relative": "static/inspector-7.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-7.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-7.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-7.png",
+    "status": "ok",
+    "bytes": 14383,
+    "sha256": "58e1dd970a6a28fc0ac4240df872d14133be1b4d01de291bace92165d8d49b57"
+  },
+  {
+    "relative": "static/inspector-8.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-8.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-8.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-8.png",
+    "status": "ok",
+    "bytes": 52698,
+    "sha256": "a90e8021553e689a2f1bb1794bde26cb152610f1c8e4cd364a2edfe151ba3625"
+  },
+  {
+    "relative": "static/inspector-9.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-9.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-9.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-9.png",
+    "status": "ok",
+    "bytes": 62604,
+    "sha256": "42751bb8a199bb010e0040fa264237ede5da16d5421ac9ef4c58ca49df9e00f8"
+  },
+  {
+    "relative": "static/inspector-10.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-10.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-10.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-10.png",
+    "status": "ok",
+    "bytes": 52372,
+    "sha256": "f2b64cd7aeb4d37973217d8ff91f7c83d0024c65a526ed3f37c7ae9a4626392a"
+  },
+  {
+    "relative": "static/inspector-11.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-11.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-11.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/inspector-11.png",
+    "status": "ok",
+    "bytes": 115938,
+    "sha256": "cea63d81e01cea2fb0f03804d0f1f7bc68c72661146f7433fc4c231e43fb57cc"
+  },
+  {
+    "relative": "static/github-app-profile-settings-menu.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-profile-settings-menu.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-profile-settings-menu.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-profile-settings-menu.png",
+    "status": "ok",
+    "bytes": 181806,
+    "sha256": "1f134a39e45dbbe56b72f4465891669d0dd759e773def259c854c56b9106dba9"
+  },
+  {
+    "relative": "static/github-app-developer-settings-link.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-developer-settings-link.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-developer-settings-link.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-developer-settings-link.png",
+    "status": "ok",
+    "bytes": 49973,
+    "sha256": "f98f0588b51e18bd8d1a0fa81d85b2ad9be3a4fd4a149209c76ff6ae09defde4"
+  },
+  {
+    "relative": "static/github-app-github-apps-listing.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-github-apps-listing.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-github-apps-listing.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-github-apps-listing.png",
+    "status": "ok",
+    "bytes": 149067,
+    "sha256": "8de0275d3ef2387182a1fb2b5c2de662804fb096f07cb0a421fae08ee33bfcec"
+  },
+  {
+    "relative": "static/github-app-create-form.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-create-form.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-create-form.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-create-form.png",
+    "status": "ok",
+    "bytes": 124190,
+    "sha256": "9de50dd3d87e520c189d835898a380dd5952ada4430c7283e6458f6556298da1"
+  },
+  {
+    "relative": "static/github-app-webhook-section.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-webhook-section.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-webhook-section.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-webhook-section.png",
+    "status": "ok",
+    "bytes": 79972,
+    "sha256": "25768df9a5f90f5c85c18a564f1d81c86ee391424bcbbcbe445ac292c3e5eefc"
+  },
+  {
+    "relative": "static/github-app-permissions-install.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-permissions-install.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-permissions-install.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-permissions-install.png",
+    "status": "ok",
+    "bytes": 201415,
+    "sha256": "0ae890e429dbec62029733decd24b6975e840c3804437dad0b583c74faafe0fd"
+  },
+  {
+    "relative": "static/github-app-general-tab-clientid.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-general-tab-clientid.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-general-tab-clientid.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-general-tab-clientid.png",
+    "status": "ok",
+    "bytes": 250741,
+    "sha256": "c0c8ea9903d6c57ee624f4f796307ca4fcab03f5a6b18830e7550f62736788ca"
+  },
+  {
+    "relative": "static/github-app-private-key-section.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-private-key-section.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-private-key-section.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-private-key-section.png",
+    "status": "ok",
+    "bytes": 66242,
+    "sha256": "cdd6c9bf51646d994b16b9a26e215d4976c75314456c2c4863c86babaae50863"
+  },
+  {
+    "relative": "static/github-app-install-tab.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-install-tab.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-install-tab.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-install-tab.png",
+    "status": "ok",
+    "bytes": 112718,
+    "sha256": "2b99309c237021c4bcb214ab63edd7ba97fdfd1560f4402d141c08736d753386"
+  },
+  {
+    "relative": "static/github-app-select-repo-install.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-select-repo-install.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-select-repo-install.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-select-repo-install.png",
+    "status": "ok",
+    "bytes": 187188,
+    "sha256": "1d9debcaa60f3b8b2e16ac181a624d5f7980f26eccf42ba79bfe2dff0e827a6f"
+  },
+  {
+    "relative": "static/github-app-integrations-menu.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-integrations-menu.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-integrations-menu.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-integrations-menu.png",
+    "status": "ok",
+    "bytes": 22780,
+    "sha256": "552b5a50453876bd0499efd87c7eced06adf3a6c646bc1e4ab8a9900e715a1da"
+  },
+  {
+    "relative": "static/github-app-settings-applications.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-settings-applications.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-settings-applications.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-settings-applications.png",
+    "status": "ok",
+    "bytes": 327266,
+    "sha256": "d7c13273be1f2805775a88b84f17548800fb72ee5492a39e5f4b9d1252e87287"
+  },
+  {
+    "relative": "static/github-app-autobotai-search.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-search.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-search.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-search.png",
+    "status": "ok",
+    "bytes": 153598,
+    "sha256": "536f51b64d4fe9851a58bcc9db0f183ad70926b2818c643aead917d9b871796f"
+  },
+  {
+    "relative": "static/github-app-autobotai-form.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-form.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-form.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-app-autobotai-form.png",
+    "status": "ok",
+    "bytes": 195964,
+    "sha256": "ad18af8a60585fb4dd3f61b2c3dbd04c1b26dbd1b73c963282ea2fb73e034ddb"
+  },
+  {
+    "relative": "static/optimus-inspector-home-browse-templates.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-home-browse-templates.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-home-browse-templates.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-home-browse-templates.png",
+    "status": "ok",
+    "bytes": 254278,
+    "sha256": "3aef9d285ee1c421f66dc8f4e0bd1243d38ff1ea0db52c74a49822c22e0f7be4"
+  },
+  {
+    "relative": "static/optimus-inspector-template-library.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-template-library.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-template-library.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-template-library.png",
+    "status": "ok",
+    "bytes": 355009,
+    "sha256": "bf8f6676ad4ebad34416c2f1d672ec34f7a7064d32704221ce2d08c6065371a2"
+  },
+  {
+    "relative": "static/optimus-inspector-model-parameters.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-model-parameters.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-model-parameters.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-model-parameters.png",
+    "status": "ok",
+    "bytes": 107891,
+    "sha256": "d455c37c9e162c5a7d0e8e4cf97106b2b88bef205767e715fd635773deca28a8"
+  },
+  {
+    "relative": "static/optimus-github-mcp-tools.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-github-mcp-tools.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-github-mcp-tools.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-github-mcp-tools.png",
+    "status": "ok",
+    "bytes": 330378,
+    "sha256": "9663d647a7a1779a3e3970fe4131342e94a62f714d5841ec03516db57c44d4a9"
+  },
+  {
+    "relative": "static/optimus-inspector-knowledge-skills.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-knowledge-skills.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-knowledge-skills.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-inspector-knowledge-skills.png",
+    "status": "ok",
+    "bytes": 267046,
+    "sha256": "314bd365f6104b0b5a2ac67584383615d40bb4cd2a2f00e222b9c4ee25073f35"
+  },
+  {
+    "relative": "static/optimus-workflow-creation-tasks.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-workflow-creation-tasks.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-workflow-creation-tasks.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-workflow-creation-tasks.png",
+    "status": "ok",
+    "bytes": 288336,
+    "sha256": "51f043c9d3b141985b5834725e919fe1d5c53be5a10ee8b320ee35f196c31622"
+  },
+  {
+    "relative": "static/optimus-bots-created-list.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-bots-created-list.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-bots-created-list.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/optimus-bots-created-list.png",
+    "status": "ok",
+    "bytes": 134116,
+    "sha256": "51cd1a9fe1f32ec5f3935ed647a134903a1986092dee1987fee664b35c26b048"
+  },
+  {
+    "relative": "static/bot-execution-page-nav.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bot-execution-page-nav.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bot-execution-page-nav.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/bot-execution-page-nav.png",
+    "status": "ok",
+    "bytes": 50336,
+    "sha256": "b53cbd451ab432b778bc4bb505da26e2880fd48ef9258e670ce33ffb275a5373"
+  },
+  {
+    "relative": "static/scanner-open-chat-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-open-chat-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-open-chat-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-open-chat-popup.png",
+    "status": "ok",
+    "bytes": 343184,
+    "sha256": "5f63da9b372a205387a63d9d759f511bb126a6008f1a3f4fb7c3542dfc5a343e"
+  },
+  {
+    "relative": "static/scanner-bot-task-execution.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-bot-task-execution.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-bot-task-execution.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-bot-task-execution.png",
+    "status": "ok",
+    "bytes": 130920,
+    "sha256": "81efcccdf6fee9519ec53226b3537b94b5067c5b3dff5d584e5afd97713b8351"
+  },
+  {
+    "relative": "static/scanner-task-registered.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-task-registered.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-task-registered.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/scanner-task-registered.png",
+    "status": "ok",
+    "bytes": 265081,
+    "sha256": "6c3c368d4b27bb001ca1091f64f2357c72a647df86f4732151cdb07d2480ce0c"
+  },
+  {
+    "relative": "static/resolver-execution-page.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-execution-page.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-execution-page.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-execution-page.png",
+    "status": "ok",
+    "bytes": 95058,
+    "sha256": "efbcda6ae93dc9081f17b6192ef3a05cafe09e3176280a6c5a8da196f0e45058"
+  },
+  {
+    "relative": "static/resolver-open-chat-popup.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-open-chat-popup.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-open-chat-popup.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-open-chat-popup.png",
+    "status": "ok",
+    "bytes": 424291,
+    "sha256": "be1104ca234477e1224c8ff8b20654de9be8226a5a61754890a2df109f8026d5"
+  },
+  {
+    "relative": "static/github-vulnerable-repo.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-vulnerable-repo.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-vulnerable-repo.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-vulnerable-repo.png",
+    "status": "ok",
+    "bytes": 505736,
+    "sha256": "54fa1aa840bc56442b49defbc3885523f2f52c2c3831ef04f3f7a42617d66a40"
+  },
+  {
+    "relative": "static/resolver-bot-tasks.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-bot-tasks.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-bot-tasks.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-bot-tasks.png",
+    "status": "ok",
+    "bytes": 270918,
+    "sha256": "79afbff6745222980bd36a31b61676eb35ee9ca6dc2c59960a9ab92f764ecc0b"
+  },
+  {
+    "relative": "static/github-open-pr.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-open-pr.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-open-pr.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-open-pr.png",
+    "status": "ok",
+    "bytes": 193247,
+    "sha256": "6aa97acde3f0750847dba86ee83a8cf735631f89c51b3d98cef36c991941aeb6"
+  },
+  {
+    "relative": "static/github-pr-inline-annotations.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-pr-inline-annotations.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-pr-inline-annotations.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/github-pr-inline-annotations.png",
+    "status": "ok",
+    "bytes": 732916,
+    "sha256": "9cfeab24f8cf88abf5caa6513c98457853422a601534b08a0892ad144d62b538"
+  },
+  {
+    "relative": "static/email-pr-review-notification.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-pr-review-notification.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-pr-review-notification.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-pr-review-notification.png",
+    "status": "ok",
+    "bytes": 301123,
+    "sha256": "34abcee63e457f82ff2085e8e358ae13a81a99d1c93bb0736bf4d3367ee8309b"
+  },
+  {
+    "relative": "static/resolver-waiting-merge-sla.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-waiting-merge-sla.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-waiting-merge-sla.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-waiting-merge-sla.png",
+    "status": "ok",
+    "bytes": 261522,
+    "sha256": "3448477995b3cc3994148c331ab564a3322e635f0ecc8974af2e75826af4868c"
+  },
+  {
+    "relative": "static/email-manager-escalation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-manager-escalation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-manager-escalation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-manager-escalation.png",
+    "status": "ok",
+    "bytes": 451525,
+    "sha256": "5765cdfd5f868a6e53f870d9b9cdd07d35dda33b14c1916446e980388d4f354d"
+  },
+  {
+    "relative": "static/email-final-manager-escalation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-manager-escalation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-manager-escalation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-manager-escalation.png",
+    "status": "ok",
+    "bytes": 200339,
+    "sha256": "b7e518b88506f376ab30b894a583bf3b466c80185a4cc1574501442fb9e9bfdb"
+  },
+  {
+    "relative": "static/email-final-reviewer-escalation.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-reviewer-escalation.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-reviewer-escalation.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/email-final-reviewer-escalation.png",
+    "status": "ok",
+    "bytes": 143719,
+    "sha256": "13a5c2e50a56e03022bcee1cd9b150adf14e531fde5565e870bc9c461f7c8415"
+  },
+  {
+    "relative": "static/resolver-final-goals-summary.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-final-goals-summary.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-final-goals-summary.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/resolver-final-goals-summary.png",
+    "status": "ok",
+    "bytes": 598241,
+    "sha256": "b1a6b40ebff35a241c1237493c3465d3254ed5cb0f877d5463b83765b3c8856c"
+  },
+  {
+    "relative": "static/cleanup-1.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-1.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-1.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-1.png",
+    "status": "ok",
+    "bytes": 408437,
+    "sha256": "c628650a7040bae974012e39882f0e060713c28afe50ded1119b44dcaf433d15"
+  },
+  {
+    "relative": "static/cleanup-2.png",
+    "url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-2.png",
+    "fallback": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-2.png",
+    "downloaded_url": "https://static.us-east-1.prod.workshops.aws/public/c4660d38-851e-45db-9894-729d4fa65763/static/cleanup-2.png",
+    "status": "ok",
+    "bytes": 247691,
+    "sha256": "dac5609fa81320a31c9b7ddec459eddffe91f65acd9bf6595a1da31a9d137afe"
+  }
+]

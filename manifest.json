@@ -1,0 +1,1558 @@
+{
+  "contentGuideId": "1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef",
+  "defaultLocaleCode": "en-US",
+  "version": 2,
+  "localeCodes": {
+    "de-DE": {
+      "languageName": "Deutsch",
+      "weight": 60
+    },
+    "en-US": {
+      "languageName": "English",
+      "weight": 1
+    },
+    "es-US": {
+      "languageName": "Español",
+      "weight": 10
+    },
+    "fr-FR": {
+      "languageName": "Français",
+      "weight": 30
+    },
+    "it-IT": {
+      "languageName": "Italiano",
+      "weight": 70
+    },
+    "ja-JP": {
+      "languageName": "日本語",
+      "weight": 20
+    },
+    "ko-KR": {
+      "languageName": "한국어",
+      "weight": 40
+    },
+    "zh-CN": {
+      "languageName": "中文(简体)",
+      "weight": 80
+    }
+  },
+  "content": {
+    "de-DE": {
+      "id": "c814c5e6-4793-47a8-912c-e042e9672f32",
+      "path": "/",
+      "resource": "/content/index.de.md",
+      "title": "Agentischer Workflow für den Sicherheitsbetrieb mit Amazon Bedrock",
+      "navigation": [
+        {
+          "id": "1d754f0b-c532-420b-9f82-2f487dc7b064",
+          "path": "/module0",
+          "resource": "/content/module0/index.de.md",
+          "title": "Modul 0: Einrichtung der Umgebung \u0026 Einführung in die Services",
+          "navigation": []
+        },
+        {
+          "id": "2b75214f-6f2b-4234-9b82-4acc36331be0",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.de.md",
+          "title": "Vorbereitung",
+          "navigation": []
+        },
+        {
+          "id": "a89fb83c-2278-4a63-92cf-c02a990ca5d4",
+          "path": "/module1",
+          "resource": "/content/module1/index.de.md",
+          "title": "Modul 1: Einrichtung \u0026 Integration der autobotAI-Plattform",
+          "navigation": [
+            {
+              "id": "435ca2ec-bdfd-4fc5-bf9a-2498955839c8",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.de.md",
+              "title": "1.1 Registrierung auf der autobotAI-Plattform",
+              "navigation": []
+            },
+            {
+              "id": "0018f34a-32be-44ce-9332-1b05daf9ac64",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.de.md",
+              "title": "1.2 Erstellen von AWS-Integrationen",
+              "navigation": []
+            },
+            {
+              "id": "44117e0d-8d50-4ceb-838e-5682118d03d0",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.de.md",
+              "title": "1.3 Hinzufügen der GitHub- und AbuseIPDB-Integrationen",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "5fbeef29-4719-4770-850f-1ed3b9b9a2a6",
+          "path": "/module2",
+          "resource": "/content/module2/index.de.md",
+          "title": "Modul 2: WAF-Protokollanalyse \u0026 Regelerstellung mit dem autonomen Orchestrator (Optimus)",
+          "navigation": [
+            {
+              "id": "a508e571-e4c8-4d7c-9f34-26b18e9b1771",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.de.md",
+              "title": "2.1 Optimus konfigurieren \u0026 WAF-Protokollanalyse ausführen",
+              "navigation": []
+            },
+            {
+              "id": "8b27e435-c369-4fd1-ab27-d6cb05ea7e40",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.de.md",
+              "title": "2.2 WAF-Regeln aus den Bedrohungs-Findings erstellen",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "3ae716e3-674c-401f-815c-e7b171bc68af",
+          "path": "/module3",
+          "resource": "/content/module3/index.de.md",
+          "title": "Modul 3: Agentisches Datenbank-Zugriffsmanagement (DAM) mit Just-in-time-Zugriff",
+          "navigation": [
+            {
+              "id": "4dd325fe-7097-48c5-a186-c02e58c54b11",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.de.md",
+              "title": "3.1 Importieren und Konfigurieren der agentischen DAM-App",
+              "navigation": []
+            },
+            {
+              "id": "52535a77-ae34-4c2f-a5b4-13c9e84809bb",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.de.md",
+              "title": "3.2 Testen des JIT-Zugriffs-Workflows",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "32bc8652-b225-468f-bbdd-e83a1e7d675f",
+          "path": "/module4",
+          "resource": "/content/module4/index.de.md",
+          "title": "Modul 4: SOC-Automatisierung - Agentischer Workflow für GuardDuty",
+          "navigation": [
+            {
+              "id": "5e6e936f-cd10-42ce-8046-7c1a5aa67384",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.de.md",
+              "title": "4.1 Überblick über die mit GuardDuty erkannten Bedrohungen",
+              "navigation": []
+            },
+            {
+              "id": "2c974629-e851-4584-b563-68cc6e1d9c64",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.de.md",
+              "title": "4.2 Automatisierte Behebung mit föderierter Human-in-the-Loop-Genehmigung durch Risikoverantwortliche",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "c2a0ed7e-bbf1-426a-9395-ca64dc36fe7f",
+          "path": "/module5",
+          "resource": "/content/module5/index.de.md",
+          "title": "Modul 5: Agentische Behebung von Verstößen gegen den Sicherheitsstatus mit föderiertem Human-in-the-Loop im großen Maßstab",
+          "navigation": [
+            {
+              "id": "fd2618d9-e568-49ae-9fd1-61ad35a18328",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.de.md",
+              "title": "5.1 Risikoregister, Security-Hub-Findings, Workflow und Eskalationsprozess verstehen",
+              "navigation": []
+            },
+            {
+              "id": "f820d17d-3745-44f6-9aab-422a7988951a",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.de.md",
+              "title": "5.2 Verstöße gegen den Sicherheitsstatus → Risikoverantwortliche → Genehmigung → Ausnahmemanagement → Behebung und Risikoregister",
+              "navigation": []
+            },
+            {
+              "id": "d5477639-609f-452f-87e1-1ef0214f83e6",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.de.md",
+              "title": "5.3 (Bonus) Behebung von Verstößen gegen den Sicherheitsstatus mit einem Multi-Agent-Multi-Model-Workflow",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "d95ce3ce-3ba0-44ee-8790-27e815197c03",
+          "path": "/module6",
+          "resource": "/content/module6/index.de.md",
+          "title": "Modul 6: AppSec-Workflow für die Behebung von SCA, IaC und SAST → Entwickler-Feedback → Nachverfolgung mit Eskalation → Risikoregister",
+          "navigation": [
+            {
+              "id": "cfc2662c-4e38-4cb2-8f3e-46bef2922b6b",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.de.md",
+              "title": "6.1 Amazon Inspector für Code Security konfigurieren",
+              "navigation": []
+            },
+            {
+              "id": "052eb994-4398-4826-abee-a76a4651c23c",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.de.md",
+              "title": "6.2 Amazon Inspector → Code-Korrektur / Patch → Entwickler-Feedback → PR erstellen → Absicherung mit WAF → Risikoregister",
+              "navigation": []
+            },
+            {
+              "id": "0c0e88cd-f2b8-44c3-9c50-a3410ffa8b31",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.de.md",
+              "title": "6.3 Den Workflow ausführen und Eskalationen verwalten",
+              "navigation": []
+            },
+            {
+              "id": "9683d731-ce4d-4366-be60-dd2dc544eeee",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.de.md",
+              "title": "6.4 (Bonus) SCA und IaC mit einem Multi-Agent-Multi-Model-Workflow beheben",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "8cfc8007-7366-4756-a965-dc3f017a1c5a",
+          "path": "/summary",
+          "resource": "/content/summary/index.de.md",
+          "title": "Zusammenfassung",
+          "navigation": []
+        }
+      ]
+    },
+    "en-US": {
+      "id": "604731ed-cc25-413c-80da-3be8838a9245",
+      "path": "/",
+      "resource": "/content/index.en.md",
+      "title": "Agentic Security Operations Workflow with Amazon Bedrock",
+      "navigation": [
+        {
+          "id": "757e4bb1-8a9b-4929-8385-1171c4f149c2",
+          "path": "/module0",
+          "resource": "/content/module0/index.en.md",
+          "title": "Module 0: Environment Setup \u0026 Service Introduction",
+          "navigation": []
+        },
+        {
+          "id": "1dbdda12-760c-44ad-8d59-a42086d43734",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.en.md",
+          "title": "Preparation",
+          "navigation": []
+        },
+        {
+          "id": "ff258df5-f170-4826-a528-971dbac18ae7",
+          "path": "/module1",
+          "resource": "/content/module1/index.en.md",
+          "title": "Module 1: autobotAI Platform Setup \u0026 Integration",
+          "navigation": [
+            {
+              "id": "f9715616-ff18-4de1-8d32-64f4c0289bd5",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.en.md",
+              "title": "1.1 Signing Up on autobotAI Platform",
+              "navigation": []
+            },
+            {
+              "id": "38281f38-b806-4866-9c29-9ca8d5b346c5",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.en.md",
+              "title": "1.2 Creating AWS Integrations",
+              "navigation": []
+            },
+            {
+              "id": "cffb1bb3-5069-4f52-8678-1d318ac710b0",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.en.md",
+              "title": "1.3 Adding GitHub and AbuseIPDB Integrations",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "758b0f0f-6afe-4fa2-81f4-35cae2114241",
+          "path": "/module2",
+          "resource": "/content/module2/index.en.md",
+          "title": "Module 2: WAF Log Analysis \u0026 Rule Building with Autonomous Orchestrator (Optimus)",
+          "navigation": [
+            {
+              "id": "3621bec6-fd7d-4b8e-8443-001f0dd0fba5",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.en.md",
+              "title": "2.1 Configuring Optimus \u0026 Running WAF Log Analysis",
+              "navigation": []
+            },
+            {
+              "id": "ac74bf97-8043-41ce-ba21-70a99b625b4c",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.en.md",
+              "title": "2.2 Building WAF Rules from the Threat Findings",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "c2380430-ca6d-43da-ac3b-b1515f0f57e8",
+          "path": "/module3",
+          "resource": "/content/module3/index.en.md",
+          "title": "Module 3: Agentic Database Access Management (DAM) with Just-in-time Access",
+          "navigation": [
+            {
+              "id": "2e12252f-69d2-4b93-b173-176e7bc3fc48",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.en.md",
+              "title": "3.1 Importing and Configuring the DAM Agentic App",
+              "navigation": []
+            },
+            {
+              "id": "4ac98b9a-6cb8-47f4-8b40-4aad035082b2",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.en.md",
+              "title": "3.2 Testing the JIT Access Workflow",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "1cd726ca-c367-4279-b27e-3cd84b2a0173",
+          "path": "/module4",
+          "resource": "/content/module4/index.en.md",
+          "title": "Module 4: SOC Automation - Agentic Workflow for GuardDuty",
+          "navigation": [
+            {
+              "id": "7495218c-a621-43ac-874a-60c4564ef48b",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.en.md",
+              "title": "4.1 Overview of Detected Threats using GuardDuty",
+              "navigation": []
+            },
+            {
+              "id": "21bc4ffe-e89f-46fb-bd15-3ed851ff2f0d",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.en.md",
+              "title": "4.2 Automated Remediation with Federated Risk Owner Human-in-the-Loop Approval",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "6eb77b06-f8d2-48d7-8c67-e76d0208cef1",
+          "path": "/module5",
+          "resource": "/content/module5/index.en.md",
+          "title": "Module 5: Agentic Remediation for Posture Violations with Federated Human-in-loop at Scale",
+          "navigation": [
+            {
+              "id": "15d45717-ef78-4fe6-b059-21a49b48bd20",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.en.md",
+              "title": "5.1 Understanding Risk Register, Security Hub Findings, Workflow \u0026 Escalation Process",
+              "navigation": []
+            },
+            {
+              "id": "984fac4d-b7c4-403b-a28e-99269af71c1d",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.en.md",
+              "title": "5.2 Posture Violations → Risk Owner → Approval → Exception Management → Remediation and Risk Register",
+              "navigation": []
+            },
+            {
+              "id": "30ec6430-404c-4dff-8f82-a830254f42d5",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.en.md",
+              "title": "5.3 (Bonus) Remediating Posture Violations with Multi-Agent Multi-Model Workflow",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "39a20e30-b82e-4ce6-afff-75fb8c7674fb",
+          "path": "/module6",
+          "resource": "/content/module6/index.en.md",
+          "title": "Module 6: AppSec Workflow for SCA, IaC and SAST Remediation → Developer Feedback → Follow-up with Escalation → Risk Register",
+          "navigation": [
+            {
+              "id": "cf95adcd-1582-42b4-927a-b8ed413b324a",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.en.md",
+              "title": "6.1 Configuring Amazon Inspector for Code Security",
+              "navigation": []
+            },
+            {
+              "id": "e10e5b2f-c0f9-45fd-ad59-ec11f3649644",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.en.md",
+              "title": "6.2 Amazon Inspector → Fix Code / Patch → Dev Feedback → Raise PR → Mitigate with WAF → Risk Register",
+              "navigation": []
+            },
+            {
+              "id": "7652e4b6-0785-469e-b029-f3c2c17261c6",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.en.md",
+              "title": "6.3 Running the Workflow and Managing Escalations",
+              "navigation": []
+            },
+            {
+              "id": "0f3e0c8e-8c5e-4de0-8af4-0852b10f25e0",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.en.md",
+              "title": "6.4 (Bonus) Remediating SCA and IaC with Multi-Agent Multi-Model Workflow",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "8d462920-398d-4c4b-a7ce-9ad89be6b718",
+          "path": "/summary",
+          "resource": "/content/summary/index.en.md",
+          "title": "Summary",
+          "navigation": []
+        }
+      ]
+    },
+    "es-US": {
+      "id": "9a92ce12-68d2-4c72-b4c1-c34b27b2756d",
+      "path": "/",
+      "resource": "/content/index.es.md",
+      "title": "Flujo de trabajo agéntico de operaciones de seguridad con Amazon Bedrock",
+      "navigation": [
+        {
+          "id": "0308012c-5313-4b19-92b5-e649d6c8b7d9",
+          "path": "/module0",
+          "resource": "/content/module0/index.es.md",
+          "title": "Módulo 0: Configuración del entorno e introducción a los servicios",
+          "navigation": []
+        },
+        {
+          "id": "a33360dc-1e06-4c4f-936e-36839f01ba57",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.es.md",
+          "title": "Preparación",
+          "navigation": []
+        },
+        {
+          "id": "f10ab8b6-7ebf-4f2f-9555-e65a4c069b2e",
+          "path": "/module1",
+          "resource": "/content/module1/index.es.md",
+          "title": "Módulo 1: Configuración e integración de la plataforma autobotAI",
+          "navigation": [
+            {
+              "id": "5b03666c-d20a-49c3-8898-3f06e505608a",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.es.md",
+              "title": "1.1 Registro en la plataforma autobotAI",
+              "navigation": []
+            },
+            {
+              "id": "a29364fa-3c3f-4395-9075-0946d0719e0a",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.es.md",
+              "title": "1.2 Creación de integraciones de AWS",
+              "navigation": []
+            },
+            {
+              "id": "c23bf5c4-570e-4a23-8e83-c547cfaf79a6",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.es.md",
+              "title": "1.3 Incorporación de las integraciones de GitHub y AbuseIPDB",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "747a11e7-43e6-452b-ae21-3cddf591a9d4",
+          "path": "/module2",
+          "resource": "/content/module2/index.es.md",
+          "title": "Módulo 2: Análisis de registros de WAF y creación de reglas con el orquestador autónomo (Optimus)",
+          "navigation": [
+            {
+              "id": "53da9133-85ce-4904-8183-83b0784a4889",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.es.md",
+              "title": "2.1 Configuración de Optimus y ejecución del análisis de registros de WAF",
+              "navigation": []
+            },
+            {
+              "id": "f519cde5-8fd5-4064-a324-6c9a4f806b6d",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.es.md",
+              "title": "2.2 Creación de reglas de WAF a partir de los hallazgos de amenazas",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "e86fd5e0-eb9b-4abf-8b8b-6af4f3b45a69",
+          "path": "/module3",
+          "resource": "/content/module3/index.es.md",
+          "title": "Módulo 3: Administración agéntica del acceso a bases de datos (DAM) con acceso Just-in-Time",
+          "navigation": [
+            {
+              "id": "4c928e25-2c92-4e7e-9976-6ad39ed59f9e",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.es.md",
+              "title": "3.1 Importación y configuración de la aplicación agéntica DAM",
+              "navigation": []
+            },
+            {
+              "id": "342fb6c3-f44a-4eb6-81cb-d05a68cdd1c5",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.es.md",
+              "title": "3.2 Prueba del flujo de trabajo de acceso JIT",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "41d04b5f-d746-4be4-8aba-464028d3935b",
+          "path": "/module4",
+          "resource": "/content/module4/index.es.md",
+          "title": "Módulo 4: Automatización del SOC - Flujo de trabajo agéntico para GuardDuty",
+          "navigation": [
+            {
+              "id": "f151db19-f8a5-4055-8347-545f106d0568",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.es.md",
+              "title": "4.1 Descripción general de las amenazas detectadas con GuardDuty",
+              "navigation": []
+            },
+            {
+              "id": "091857ae-a627-4259-bbfe-1c9d470c38a4",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.es.md",
+              "title": "4.2 Corrección automatizada con aprobación human-in-the-loop del responsable federado del riesgo",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "7a792513-1357-428f-9e00-7796d62bf7ea",
+          "path": "/module5",
+          "resource": "/content/module5/index.es.md",
+          "title": "Módulo 5: Corrección agéntica de infracciones de la postura con human-in-the-loop federado a escala",
+          "navigation": [
+            {
+              "id": "5c2454da-f195-46b4-bcfe-8553e78b623c",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.es.md",
+              "title": "5.1 Comprensión del registro de riesgos, los hallazgos de Security Hub, el flujo de trabajo y el proceso de escalamiento",
+              "navigation": []
+            },
+            {
+              "id": "36034d99-e11f-476e-910d-8033dfa5ab47",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.es.md",
+              "title": "5.2 Infracciones de la postura → Responsable del riesgo → Aprobación → Gestión de excepciones → Corrección y registro de riesgos",
+              "navigation": []
+            },
+            {
+              "id": "7a04b565-0375-4231-9efe-ab8e5990eaae",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.es.md",
+              "title": "5.3 (Extra) Corrección de infracciones de la postura con un flujo de trabajo multiagente y multimodelo",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "bc600a13-b014-4c93-bef6-d8a3c54a1bc6",
+          "path": "/module6",
+          "resource": "/content/module6/index.es.md",
+          "title": "Módulo 6: Flujo de trabajo de AppSec para la corrección de SCA, IaC y SAST → Comentarios de los desarrolladores → Seguimiento con escalamiento → Registro de riesgos",
+          "navigation": [
+            {
+              "id": "b2e6fe51-4051-4a92-8c93-fa29d28e3c7e",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.es.md",
+              "title": "6.1 Configuración de Amazon Inspector para Code Security",
+              "navigation": []
+            },
+            {
+              "id": "f79f14fa-75fa-4a62-b222-61e01fab8616",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.es.md",
+              "title": "6.2 Amazon Inspector → Corrección de código / parche → Comentarios de los desarrolladores → Creación de PR → Mitigación con WAF → Registro de riesgos",
+              "navigation": []
+            },
+            {
+              "id": "1896fbc4-7a02-405b-a82c-556debc4feb8",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.es.md",
+              "title": "6.3 Ejecución del flujo de trabajo y administración de escalamientos",
+              "navigation": []
+            },
+            {
+              "id": "84aa467c-2cdf-4b9a-a02e-5b51051af14e",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.es.md",
+              "title": "6.4 (Extra) Corrección de SCA e IaC con un flujo de trabajo multiagente y multimodelo",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "bb5eda84-2ee9-4b96-9b9d-dc1bb511fb2f",
+          "path": "/summary",
+          "resource": "/content/summary/index.es.md",
+          "title": "Resumen",
+          "navigation": []
+        }
+      ]
+    },
+    "fr-FR": {
+      "id": "c74df590-bd71-4964-b279-a3bb360e7269",
+      "path": "/",
+      "resource": "/content/index.fr.md",
+      "title": "Flux de travail d'opérations de sécurité agentiques avec Amazon Bedrock",
+      "navigation": [
+        {
+          "id": "ce9882ca-f65c-410c-a7fc-125f06ae1a00",
+          "path": "/module0",
+          "resource": "/content/module0/index.fr.md",
+          "title": "Module 0: Configuration de l'environnement et présentation des services",
+          "navigation": []
+        },
+        {
+          "id": "79fccb96-f474-4f36-b964-88e7488a0599",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.fr.md",
+          "title": "Préparation",
+          "navigation": []
+        },
+        {
+          "id": "814149af-bc29-4acf-9c11-ab6dcc5025ce",
+          "path": "/module1",
+          "resource": "/content/module1/index.fr.md",
+          "title": "Module 1: Configuration et intégration de la plateforme autobotAI",
+          "navigation": [
+            {
+              "id": "c9119b79-62db-4b56-a717-398da02e0744",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.fr.md",
+              "title": "1.1 Inscription sur la plateforme autobotAI",
+              "navigation": []
+            },
+            {
+              "id": "c69a7ede-920c-460a-be49-088973d1049e",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.fr.md",
+              "title": "1.2 Création des intégrations AWS",
+              "navigation": []
+            },
+            {
+              "id": "9a58041b-c0cf-4d78-ad83-7ae38312954d",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.fr.md",
+              "title": "1.3 Ajout des intégrations GitHub et AbuseIPDB",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "e57c3199-e9aa-48d2-89ee-77e85d73f6c7",
+          "path": "/module2",
+          "resource": "/content/module2/index.fr.md",
+          "title": "Module 2: Analyse des journaux WAF et création de règles avec l'orchestrateur autonome (Optimus)",
+          "navigation": [
+            {
+              "id": "62606ff9-9a70-406b-ab2d-306cf75acaec",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.fr.md",
+              "title": "2.1 Configuration d'Optimus et exécution de l'analyse des journaux WAF",
+              "navigation": []
+            },
+            {
+              "id": "71e00f74-afd9-4b6d-a7f0-b56f735c5a90",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.fr.md",
+              "title": "2.2 Création de règles WAF à partir des résultats sur les menaces",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "edcc7eb3-6468-4bc7-984c-13a5ad3742ae",
+          "path": "/module3",
+          "resource": "/content/module3/index.fr.md",
+          "title": "Module 3: Gestion agentique des accès aux bases de données (DAM) avec accès juste-à-temps",
+          "navigation": [
+            {
+              "id": "f5a4644a-cddf-447d-8e61-0f68d237ce44",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.fr.md",
+              "title": "3.1 Importation et configuration de l'application agentique DAM",
+              "navigation": []
+            },
+            {
+              "id": "ed47f9a6-b911-4308-923f-dee6bfde5324",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.fr.md",
+              "title": "3.2 Test du flux de travail d'accès JIT",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "328766ad-14a7-45b8-b2dd-bfc523bec3a7",
+          "path": "/module4",
+          "resource": "/content/module4/index.fr.md",
+          "title": "Module 4: Automatisation du SOC - Flux de travail agentique pour GuardDuty",
+          "navigation": [
+            {
+              "id": "2ee0a954-4a63-44dd-b04e-c9cfa36c133b",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.fr.md",
+              "title": "4.1 Présentation des menaces détectées à l'aide de GuardDuty",
+              "navigation": []
+            },
+            {
+              "id": "93513a41-3f5b-4c61-8069-a7f3594515c4",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.fr.md",
+              "title": "4.2 Correction automatisée avec approbation human-in-the-loop d'un responsable du risque fédéré",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "878eeca7-49c1-45a4-83cb-25f27cd8ef51",
+          "path": "/module5",
+          "resource": "/content/module5/index.fr.md",
+          "title": "Module 5: Correction agentique des violations de posture avec human-in-the-loop fédéré à grande échelle",
+          "navigation": [
+            {
+              "id": "01d9b55c-c712-4638-a866-d35fcd23646c",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.fr.md",
+              "title": "5.1 Comprendre le registre des risques, les résultats Security Hub, le flux de travail et le processus d'escalade",
+              "navigation": []
+            },
+            {
+              "id": "d3e1418b-8430-4338-a3d9-673ce50ca879",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.fr.md",
+              "title": "5.2 Violations de posture → Responsable du risque → Approbation → Gestion des exceptions → Correction et registre des risques",
+              "navigation": []
+            },
+            {
+              "id": "de8d9045-3219-43b3-891e-72c619994732",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.fr.md",
+              "title": "5.3 (Bonus) Correction des violations de posture avec un flux de travail multi-agent et multi-modèle",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "7e31a2e3-421e-44fe-b7f3-b3e348152042",
+          "path": "/module6",
+          "resource": "/content/module6/index.fr.md",
+          "title": "Module 6: Flux de travail AppSec pour la correction SCA, IaC et SAST → Retour des développeurs → Suivi avec escalade → Registre des risques",
+          "navigation": [
+            {
+              "id": "5d23e931-5306-4574-a38e-ed8add66f320",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.fr.md",
+              "title": "6.1 Configuration d'Amazon Inspector pour Code Security",
+              "navigation": []
+            },
+            {
+              "id": "9730e706-fd16-4df2-ade3-178e6a1e33d2",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.fr.md",
+              "title": "6.2 Amazon Inspector → Corriger le code / appliquer un correctif → Retour des développeurs → Ouvrir une PR → Atténuer avec WAF → Registre des risques",
+              "navigation": []
+            },
+            {
+              "id": "253882fe-4ffa-4362-baef-bd12e5cccfbf",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.fr.md",
+              "title": "6.3 Exécution du flux de travail et gestion des escalades",
+              "navigation": []
+            },
+            {
+              "id": "b8fd8fd3-7221-4da0-8b08-37654552c872",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.fr.md",
+              "title": "6.4 (Bonus) Correction SCA et IaC avec un flux de travail multi-agent et multi-modèle",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "67bba625-a0f7-412f-8bcb-8a55bb39ac70",
+          "path": "/summary",
+          "resource": "/content/summary/index.fr.md",
+          "title": "Résumé",
+          "navigation": []
+        }
+      ]
+    },
+    "it-IT": {
+      "id": "9fc004fc-1b0d-4bf3-a760-1d78e7704e20",
+      "path": "/",
+      "resource": "/content/index.it.md",
+      "title": "Flusso di lavoro agentico per le operazioni di sicurezza con Amazon Bedrock",
+      "navigation": [
+        {
+          "id": "af754b72-b42c-4e5f-a104-9c5589fe7cce",
+          "path": "/module0",
+          "resource": "/content/module0/index.it.md",
+          "title": "Modulo 0: Configurazione dell'ambiente e introduzione ai servizi",
+          "navigation": []
+        },
+        {
+          "id": "345017e7-bc8a-4148-85a0-29e52e54e830",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.it.md",
+          "title": "Preparazione",
+          "navigation": []
+        },
+        {
+          "id": "8ee95622-0c9a-4e08-b2a8-1a54653b915f",
+          "path": "/module1",
+          "resource": "/content/module1/index.it.md",
+          "title": "Modulo 1: Configurazione e integrazione della piattaforma autobotAI",
+          "navigation": [
+            {
+              "id": "1b1a9103-179d-40d9-93ef-5eaaff545bdd",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.it.md",
+              "title": "1.1 Registrazione sulla piattaforma autobotAI",
+              "navigation": []
+            },
+            {
+              "id": "851ef43c-40f2-469e-b652-dc8323a34714",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.it.md",
+              "title": "1.2 Creazione delle integrazioni AWS",
+              "navigation": []
+            },
+            {
+              "id": "e77b1c77-5ddd-4910-bb8a-fd8ef1ec4c60",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.it.md",
+              "title": "1.3 Aggiunta delle integrazioni GitHub e AbuseIPDB",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "28de6d38-1608-4fbb-aa91-2852f2698e1a",
+          "path": "/module2",
+          "resource": "/content/module2/index.it.md",
+          "title": "Modulo 2: Analisi dei log WAF e creazione di regole con l'orchestratore autonomo (Optimus)",
+          "navigation": [
+            {
+              "id": "dd6de823-145b-4f34-8226-2af9ecac855e",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.it.md",
+              "title": "2.1 Configurazione di Optimus ed esecuzione dell'analisi dei log WAF",
+              "navigation": []
+            },
+            {
+              "id": "32046805-08a0-44a4-a1ce-5b157bb54c95",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.it.md",
+              "title": "2.2 Creazione delle regole WAF a partire dai risultati sulle minacce",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "577a521b-c646-45f5-907e-677ed4e1941d",
+          "path": "/module3",
+          "resource": "/content/module3/index.it.md",
+          "title": "Modulo 3: Gestione agentica dell'accesso ai database (DAM) con accesso Just-in-time",
+          "navigation": [
+            {
+              "id": "c7e55dcc-3b0b-488b-b5c4-926ace1ce886",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.it.md",
+              "title": "3.1 Importazione e configurazione dell'app agentica DAM",
+              "navigation": []
+            },
+            {
+              "id": "60d0d0f6-593a-4df3-b0fa-918fa8f59f58",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.it.md",
+              "title": "3.2 Test del flusso di lavoro di accesso JIT",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "0255ecd1-6f7b-406b-bbfc-9a44b4e0c1b1",
+          "path": "/module4",
+          "resource": "/content/module4/index.it.md",
+          "title": "Modulo 4: Automazione del SOC - Flusso di lavoro agentico per GuardDuty",
+          "navigation": [
+            {
+              "id": "652b9a3f-5919-4791-8f89-de827dcc94d5",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.it.md",
+              "title": "4.1 Panoramica delle minacce rilevate con GuardDuty",
+              "navigation": []
+            },
+            {
+              "id": "ae6434fe-1c8f-404e-a8e0-e81cc132af58",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.it.md",
+              "title": "4.2 Correzione automatica con approvazione human-in-the-loop del responsabile del rischio federato",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "ae7dcf71-20ea-4d17-b8d0-44171ae6a146",
+          "path": "/module5",
+          "resource": "/content/module5/index.it.md",
+          "title": "Modulo 5: Correzione agentica delle violazioni della postura con human-in-the-loop federato su larga scala",
+          "navigation": [
+            {
+              "id": "8f1732f9-b120-4293-8b99-a4e8df0a1969",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.it.md",
+              "title": "5.1 Comprendere il registro dei rischi, i risultati di Security Hub, il flusso di lavoro e il processo di escalation",
+              "navigation": []
+            },
+            {
+              "id": "d3db70af-de37-4ddc-9190-2edce12f384e",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.it.md",
+              "title": "5.2 Violazioni della postura → Responsabile del rischio → Approvazione → Gestione delle eccezioni → Correzione e registro dei rischi",
+              "navigation": []
+            },
+            {
+              "id": "6573c264-b00f-4ee2-99fc-21d2c9aa5113",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.it.md",
+              "title": "5.3 (Bonus) Correzione delle violazioni della postura con un flusso di lavoro multi-agente e multi-modello",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "15d5e403-8bad-4bb7-9c11-388a426be8a9",
+          "path": "/module6",
+          "resource": "/content/module6/index.it.md",
+          "title": "Modulo 6: Flusso di lavoro AppSec per la correzione di SCA, IaC e SAST → Feedback degli sviluppatori → Follow-up con escalation → Registro dei rischi",
+          "navigation": [
+            {
+              "id": "d7af88f7-c584-4beb-a349-392875c9ebed",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.it.md",
+              "title": "6.1 Configurazione di Amazon Inspector per Code Security",
+              "navigation": []
+            },
+            {
+              "id": "21d02a45-5329-4693-97a0-da4832ad58c8",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.it.md",
+              "title": "6.2 Amazon Inspector → Correzione del codice / patch → Feedback degli sviluppatori → Apertura della PR → Mitigazione con WAF → Registro dei rischi",
+              "navigation": []
+            },
+            {
+              "id": "97b3c2f1-2871-45c6-bfde-02936f6bec48",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.it.md",
+              "title": "6.3 Esecuzione del flusso di lavoro e gestione delle escalation",
+              "navigation": []
+            },
+            {
+              "id": "8cdbf670-925f-4b0d-905c-5f7d86c827ca",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.it.md",
+              "title": "6.4 (Bonus) Correzione di SCA e IaC con un flusso di lavoro multi-agente e multi-modello",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "fd3a538d-d99a-4a7f-abd9-c04333437bd8",
+          "path": "/summary",
+          "resource": "/content/summary/index.it.md",
+          "title": "Riepilogo",
+          "navigation": []
+        }
+      ]
+    },
+    "ja-JP": {
+      "id": "0def6cdf-957f-4e52-8cd0-f62069eb0f78",
+      "path": "/",
+      "resource": "/content/index.ja.md",
+      "title": "Amazon Bedrock によるエージェンティックセキュリティ運用ワークフロー",
+      "navigation": [
+        {
+          "id": "4ffb620e-a5df-480a-9b5b-f3d9cc723ac6",
+          "path": "/module0",
+          "resource": "/content/module0/index.ja.md",
+          "title": "モジュール 0: 環境セットアップとサービス紹介",
+          "navigation": []
+        },
+        {
+          "id": "67625786-f58d-46a1-a1a6-1a06bb88bbcc",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.ja.md",
+          "title": "事前準備",
+          "navigation": []
+        },
+        {
+          "id": "0f0e7fdb-e460-4546-8d8e-c10064ed931d",
+          "path": "/module1",
+          "resource": "/content/module1/index.ja.md",
+          "title": "モジュール 1: autobotAI プラットフォームのセットアップと統合",
+          "navigation": [
+            {
+              "id": "8029baca-891a-4ec6-9549-a4c1e315c302",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.ja.md",
+              "title": "1.1 autobotAI プラットフォームへのサインアップ",
+              "navigation": []
+            },
+            {
+              "id": "0243d6e4-1056-4a71-a895-f5e0dce7ab1e",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.ja.md",
+              "title": "1.2 AWS 統合の作成",
+              "navigation": []
+            },
+            {
+              "id": "dca51861-fc5c-4970-883b-fe276026b5df",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.ja.md",
+              "title": "1.3 GitHub と AbuseIPDB 統合の追加",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "2a3e8ca4-ce70-4c02-a143-2ab167140a90",
+          "path": "/module2",
+          "resource": "/content/module2/index.ja.md",
+          "title": "モジュール 2: 自律型オーケストレーター（Optimus）による WAF ログ分析とルール構築",
+          "navigation": [
+            {
+              "id": "6959cca0-b983-4f64-a179-5515f00e32a5",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.ja.md",
+              "title": "2.1 Optimus の設定と WAF ログ分析の実行",
+              "navigation": []
+            },
+            {
+              "id": "ef6c1fd2-d690-42f2-a802-d5421d411f80",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.ja.md",
+              "title": "2.2 脅威の検出結果からの WAF ルール構築",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "d6a6ae81-0548-4bfe-9b38-640d3348e07d",
+          "path": "/module3",
+          "resource": "/content/module3/index.ja.md",
+          "title": "モジュール 3: エージェンティック DAM と Just-in-Time アクセス",
+          "navigation": [
+            {
+              "id": "5ffc652e-91ed-41f7-a6a7-e79bfc2d0961",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.ja.md",
+              "title": "3.1 DAM エージェンティックアプリのインポートと設定",
+              "navigation": []
+            },
+            {
+              "id": "f21b1f7e-483d-45c2-ba25-832a3031f2c5",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.ja.md",
+              "title": "3.2 JIT アクセスワークフローのテスト",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "cb125661-edca-4849-bfaa-6eb28f873b1b",
+          "path": "/module4",
+          "resource": "/content/module4/index.ja.md",
+          "title": "モジュール 4: SOC 自動化 - GuardDuty のエージェンティックワークフロー",
+          "navigation": [
+            {
+              "id": "c714df97-0643-4d67-b0fb-a962b8d498cd",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.ja.md",
+              "title": "4.1 GuardDuty で検出された脅威の概要",
+              "navigation": []
+            },
+            {
+              "id": "20c6c2bc-0163-43e4-a71c-2580fbaaf2b6",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.ja.md",
+              "title": "4.2 Human-in-the-Loop 承認による自動修復",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "686a9d37-4e78-4f3a-99dd-b1137153139b",
+          "path": "/module5",
+          "resource": "/content/module5/index.ja.md",
+          "title": "モジュール 5: セキュリティ態勢違反のエージェンティック修復",
+          "navigation": [
+            {
+              "id": "31ab5a11-f55f-4f07-85ca-e414679e7c37",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.ja.md",
+              "title": "5.1 リスク登録簿、Security Hub 検出結果、ワークフローとエスカレーションプロセス",
+              "navigation": []
+            },
+            {
+              "id": "703eb771-327c-4e43-b6f1-3b8aebe8175f",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.ja.md",
+              "title": "5.2 セキュリティ態勢違反 → リスクオーナー → 承認 → 例外管理 → 修復とリスク登録簿",
+              "navigation": []
+            },
+            {
+              "id": "150086a0-1dc8-436e-9d90-d238ae5410aa",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.ja.md",
+              "title": "5.3 （ボーナス）マルチエージェント・マルチモデルワークフローによるセキュリティ態勢違反の修復",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "c8d76066-762e-47bb-b7ae-700722046ab8",
+          "path": "/module6",
+          "resource": "/content/module6/index.ja.md",
+          "title": "モジュール 6: AppSec ワークフロー - 修復からエスカレーション、リスク登録簿まで",
+          "navigation": [
+            {
+              "id": "863c5498-a45c-4614-b375-1a3c8312c755",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.ja.md",
+              "title": "6.1 コードセキュリティ向け Amazon Inspector の設定",
+              "navigation": []
+            },
+            {
+              "id": "78acb9a8-ac2a-4ed6-8899-6c6f1612d3b3",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.ja.md",
+              "title": "6.2 Amazon Inspector → コード修正 / パッチ → 開発者へのフィードバック → PR 作成 → WAF で緩和 → リスク登録簿",
+              "navigation": []
+            },
+            {
+              "id": "f06a49df-8b25-43f3-b38f-371e250c8484",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.ja.md",
+              "title": "6.3 ワークフローの実行とエスカレーションの管理",
+              "navigation": []
+            },
+            {
+              "id": "b61e7f37-60e5-4170-9296-f907b94584ed",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.ja.md",
+              "title": "6.4 （ボーナス）マルチエージェント・マルチモデルワークフローによる SCA と IaC の修復",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "9c286889-d88a-4424-b00b-1f147acd72c0",
+          "path": "/summary",
+          "resource": "/content/summary/index.ja.md",
+          "title": "まとめ",
+          "navigation": []
+        }
+      ]
+    },
+    "ko-KR": {
+      "id": "eb44ef4d-8f9f-4305-b954-3b16022f71a8",
+      "path": "/",
+      "resource": "/content/index.ko.md",
+      "title": "Amazon Bedrock 기반 에이전틱 보안 운영 워크플로우",
+      "navigation": [
+        {
+          "id": "2dfeda31-84a7-4f1a-9ae4-f9d2b9dc4a80",
+          "path": "/module0",
+          "resource": "/content/module0/index.ko.md",
+          "title": "모듈 0: 환경 설정 및 서비스 소개",
+          "navigation": []
+        },
+        {
+          "id": "fd2da0cc-2d99-4519-abb9-19773c98e677",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.ko.md",
+          "title": "사전 준비",
+          "navigation": []
+        },
+        {
+          "id": "ff5e3c7b-413e-41a6-b623-1b2163c618d9",
+          "path": "/module1",
+          "resource": "/content/module1/index.ko.md",
+          "title": "모듈 1: autobotAI 플랫폼 설정 및 통합",
+          "navigation": [
+            {
+              "id": "dc690bce-6017-4583-aa3a-dc1293781926",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.ko.md",
+              "title": "1.1 autobotAI 플랫폼 가입",
+              "navigation": []
+            },
+            {
+              "id": "39476a0a-d80c-4f15-ade7-46429cbdcea1",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.ko.md",
+              "title": "1.2 AWS 통합 생성",
+              "navigation": []
+            },
+            {
+              "id": "52b82204-1784-4095-a274-1f8dad4a66d5",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.ko.md",
+              "title": "1.3 GitHub 및 AbuseIPDB 통합 추가",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "e0390f25-54ed-4bac-956d-be93d9aeeda0",
+          "path": "/module2",
+          "resource": "/content/module2/index.ko.md",
+          "title": "모듈 2: 자율 오케스트레이터(Optimus)를 활용한 WAF 로그 분석 및 규칙 구축",
+          "navigation": [
+            {
+              "id": "ac884f02-d62b-44cf-a85c-7e9f6dc99a26",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.ko.md",
+              "title": "2.1 Optimus 구성 및 WAF 로그 분석 실행",
+              "navigation": []
+            },
+            {
+              "id": "75eb4235-43ff-4074-93d6-9de36ff81714",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.ko.md",
+              "title": "2.2 위협 탐지 결과로 WAF 규칙 만들기",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "c419bbef-8bc2-4565-aeaf-2d4b3e022ab3",
+          "path": "/module3",
+          "resource": "/content/module3/index.ko.md",
+          "title": "모듈 3: Just-in-Time 액세스 기반 에이전틱 데이터베이스 액세스 관리(DAM)",
+          "navigation": [
+            {
+              "id": "b6de29d8-b42e-425f-a84c-8e72da99176d",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.ko.md",
+              "title": "3.1 DAM 에이전틱 앱 가져오기 및 구성",
+              "navigation": []
+            },
+            {
+              "id": "ee4527ce-8161-4f9e-bd1d-047078c87959",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.ko.md",
+              "title": "3.2 JIT 액세스 워크플로우 테스트",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "69c5a656-6403-448d-b7e3-838964dc5fd2",
+          "path": "/module4",
+          "resource": "/content/module4/index.ko.md",
+          "title": "모듈 4: SOC 자동화 - GuardDuty를 위한 에이전틱 워크플로우",
+          "navigation": [
+            {
+              "id": "4c3ceded-e641-40c5-ad37-89a5baa9f2b5",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.ko.md",
+              "title": "4.1 GuardDuty로 탐지한 위협 살펴보기",
+              "navigation": []
+            },
+            {
+              "id": "eb25cbec-04de-405e-a4c4-d785970226ea",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.ko.md",
+              "title": "4.2 위험 소유자별 Human-in-the-Loop 승인을 통한 자동 조치",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "b9d4a87d-bf0e-446d-a82e-471fc0c43fa4",
+          "path": "/module5",
+          "resource": "/content/module5/index.ko.md",
+          "title": "모듈 5: 대규모 Human-in-the-Loop 승인 기반 보안 상태 위반 에이전틱 조치",
+          "navigation": [
+            {
+              "id": "125e3793-22a8-44be-a422-49bac840a5ab",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.ko.md",
+              "title": "5.1 위험 등록부, Security Hub 탐지 결과, 워크플로우 및 에스컬레이션 프로세스 이해",
+              "navigation": []
+            },
+            {
+              "id": "2978cf1a-c718-49b2-b851-968a34e3f66e",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.ko.md",
+              "title": "5.2 보안 상태 위반 → 위험 소유자 → 승인 → 예외 관리 → 조치 및 위험 등록부",
+              "navigation": []
+            },
+            {
+              "id": "77ed199b-9e0e-4af3-820f-6ed37be79a4e",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.ko.md",
+              "title": "5.3 (보너스) 멀티 에이전트·멀티 모델 워크플로우로 보안 상태 위반 조치하기",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "e23244ae-8c02-4a41-a8ae-29b247d9a87e",
+          "path": "/module6",
+          "resource": "/content/module6/index.ko.md",
+          "title": "모듈 6: SCA·IaC·SAST 조치를 위한 AppSec 워크플로우 → 개발자 피드백 → 에스컬레이션 후속 조치 → 위험 등록부",
+          "navigation": [
+            {
+              "id": "dc5ba84f-f712-4ebb-9cf1-1c4db98594d8",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.ko.md",
+              "title": "6.1 코드 보안을 위한 Amazon Inspector 구성",
+              "navigation": []
+            },
+            {
+              "id": "338c96f0-e24e-44a6-b4aa-81edb2c639c1",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.ko.md",
+              "title": "6.2 Amazon Inspector → 코드 수정/패치 → 개발자 피드백 → PR 생성 → WAF 완화 → 위험 등록부",
+              "navigation": []
+            },
+            {
+              "id": "4e485e83-3d0f-41cd-bc30-92f4e4e167ab",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.ko.md",
+              "title": "6.3 워크플로우 실행 및 에스컬레이션 관리",
+              "navigation": []
+            },
+            {
+              "id": "4b8cc632-ac9c-40ae-b74a-63a10a1e3e79",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.ko.md",
+              "title": "6.4 (보너스) 멀티 에이전트·멀티 모델 워크플로우로 SCA 및 IaC 조치하기",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "75a4d37e-a720-4917-9178-1cbf8bd603b9",
+          "path": "/summary",
+          "resource": "/content/summary/index.ko.md",
+          "title": "마무리",
+          "navigation": []
+        }
+      ]
+    },
+    "zh-CN": {
+      "id": "7b92633c-f5c9-4cf3-a2ac-7b1af4d41aec",
+      "path": "/",
+      "resource": "/content/index.zh.md",
+      "title": "基于 Amazon Bedrock 的 Agentic 安全运营工作流",
+      "navigation": [
+        {
+          "id": "7151f70e-722c-4e03-ba4a-4f9bf2915aef",
+          "path": "/module0",
+          "resource": "/content/module0/index.zh.md",
+          "title": "模块 0: 环境搭建与服务介绍",
+          "navigation": []
+        },
+        {
+          "id": "215826b9-2253-4527-9c5b-839d3fda6da4",
+          "path": "/module0-5-preparation",
+          "resource": "/content/module0.5-preparation/index.zh.md",
+          "title": "前期准备",
+          "navigation": []
+        },
+        {
+          "id": "8c61673c-1f9e-427b-8578-dad2d091b5f9",
+          "path": "/module1",
+          "resource": "/content/module1/index.zh.md",
+          "title": "模块 1: autobotAI 平台设置与集成",
+          "navigation": [
+            {
+              "id": "6b52dabb-c3b5-4b60-8e1d-11a9ad4ef557",
+              "path": "/module1/1-1",
+              "resource": "/content/module1/1.1/index.zh.md",
+              "title": "1.1 注册 autobotAI 平台",
+              "navigation": []
+            },
+            {
+              "id": "5bb8b590-a035-4f21-bf72-050d9aa1a476",
+              "path": "/module1/1-2",
+              "resource": "/content/module1/1.2/index.zh.md",
+              "title": "1.2 创建 AWS 集成",
+              "navigation": []
+            },
+            {
+              "id": "9db45f73-cd8a-4c69-a9ab-654b4e353a76",
+              "path": "/module1/1-3",
+              "resource": "/content/module1/1.3/index.zh.md",
+              "title": "1.3 添加 GitHub 与 AbuseIPDB 集成",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "49932eb9-ba4c-44dc-96ba-f8351e6057bc",
+          "path": "/module2",
+          "resource": "/content/module2/index.zh.md",
+          "title": "模块 2: 使用自主编排器（Optimus）进行 WAF 日志分析与规则构建",
+          "navigation": [
+            {
+              "id": "8539b0bd-7f1d-43d9-aedd-a75531ddbf5b",
+              "path": "/module2/2-1",
+              "resource": "/content/module2/2.1/index.zh.md",
+              "title": "2.1 配置 Optimus 并运行 WAF 日志分析",
+              "navigation": []
+            },
+            {
+              "id": "760b7d86-dbda-41d8-89ad-6fbad0e4d4cf",
+              "path": "/module2/2-2",
+              "resource": "/content/module2/2.2/index.zh.md",
+              "title": "2.2 根据威胁检查项构建 WAF 规则",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "e44ea99b-4586-4555-bfa5-e4b36f130b5e",
+          "path": "/module3",
+          "resource": "/content/module3/index.zh.md",
+          "title": "模块 3: 基于 Just-in-time 访问的智能体数据库访问管理（DAM）",
+          "navigation": [
+            {
+              "id": "bfa91c58-9cb7-45ec-886a-fdd45ea63a27",
+              "path": "/module3/3-1",
+              "resource": "/content/module3/3.1/index.zh.md",
+              "title": "3.1 导入并配置 DAM 智能体应用",
+              "navigation": []
+            },
+            {
+              "id": "63fa087f-14c6-4501-9fd2-18c558b27e3a",
+              "path": "/module3/3-2",
+              "resource": "/content/module3/3.2/index.zh.md",
+              "title": "3.2 测试 JIT 访问工作流",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "ef647b1b-cc56-4c4c-b920-ab3818a43924",
+          "path": "/module4",
+          "resource": "/content/module4/index.zh.md",
+          "title": "模块 4: SOC 自动化 - 面向 GuardDuty 的智能体工作流",
+          "navigation": [
+            {
+              "id": "041fe804-af5f-4f31-9c71-306ea6dd9b09",
+              "path": "/module4/4-1",
+              "resource": "/content/module4/4.1/index.zh.md",
+              "title": "4.1 使用 GuardDuty 检测到的威胁概述",
+              "navigation": []
+            },
+            {
+              "id": "5f1d2053-c565-49d0-b46c-711420e1de36",
+              "path": "/module4/4-2",
+              "resource": "/content/module4/4.2/index.zh.md",
+              "title": "4.2 通过联邦风险责任人 Human-in-the-Loop 审批实现自动修复",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "34085cf1-37b4-492a-a02e-7adaeb0c7416",
+          "path": "/module5",
+          "resource": "/content/module5/index.zh.md",
+          "title": "模块 5: 大规模联邦化 Human-in-loop 的安全态势违规智能体修复",
+          "navigation": [
+            {
+              "id": "483429fe-1e21-4c20-b941-4529327edccc",
+              "path": "/module5/5-1",
+              "resource": "/content/module5/5.1/index.zh.md",
+              "title": "5.1 理解风险登记册、Security Hub 检查项、工作流与升级流程",
+              "navigation": []
+            },
+            {
+              "id": "e38943b7-828c-4744-ac12-2259f1403cdc",
+              "path": "/module5/5-2",
+              "resource": "/content/module5/5.2/index.zh.md",
+              "title": "5.2 态势违规 → 风险责任人 → 审批 → 例外管理 → 修复与风险登记册",
+              "navigation": []
+            },
+            {
+              "id": "f38b50fb-0df2-4a29-969a-2f1eb1479a84",
+              "path": "/module5/5-3",
+              "resource": "/content/module5/5.3/index.zh.md",
+              "title": "5.3 （附加）使用多智能体多模型工作流修复态势违规",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "8111fd49-2443-47e0-afd5-580c61a71fe1",
+          "path": "/module6",
+          "resource": "/content/module6/index.zh.md",
+          "title": "模块 6: 用于 SCA、IaC 和 SAST 修复的 AppSec 工作流 → 开发者反馈 → 升级跟进 → 风险登记册",
+          "navigation": [
+            {
+              "id": "a1d791b6-7257-464a-8fa0-b6cc200dc8a2",
+              "path": "/module6/6-1",
+              "resource": "/content/module6/6.1/index.zh.md",
+              "title": "6.1 为代码安全配置 Amazon Inspector",
+              "navigation": []
+            },
+            {
+              "id": "d19346f9-7372-44ef-9a9c-9be0b2f3cf5b",
+              "path": "/module6/6-2",
+              "resource": "/content/module6/6.2/index.zh.md",
+              "title": "6.2 Amazon Inspector → 修复代码 / 打补丁 → 开发者反馈 → 提交 PR → 使用 WAF 缓解 → 风险登记册",
+              "navigation": []
+            },
+            {
+              "id": "42db308d-1765-4ba8-9454-30e1b4fb0993",
+              "path": "/module6/6-3",
+              "resource": "/content/module6/6.3/index.zh.md",
+              "title": "6.3 运行工作流并管理升级",
+              "navigation": []
+            },
+            {
+              "id": "e1414672-77df-4b4f-a337-7237a658932d",
+              "path": "/module6/6-4",
+              "resource": "/content/module6/6.4/index.zh.md",
+              "title": "6.4 （附加）使用多智能体多模型工作流修复 SCA 和 IaC",
+              "navigation": []
+            }
+          ]
+        },
+        {
+          "id": "1abd4095-71a4-4f9b-8165-0cbfdec749d5",
+          "path": "/summary",
+          "resource": "/content/summary/index.zh.md",
+          "title": "总结",
+          "navigation": []
+        }
+      ]
+    }
+  },
+  "params": {
+    "description": "Security Issues Mitigation with Autobot - Container Security Workshop",
+    "themeVariant": "aws"
+  },
+  "additionalLinks": []
+}

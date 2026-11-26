@@ -1,0 +1,14 @@
+{
+  "source": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef/en-US",
+  "build_id": "c4660d38-851e-45db-9894-729d4fa65763",
+  "retrieved_at": "2026-11-10T02:37:14.255571+00:00",
+  "pages_expected": 26,
+  "pages_downloaded": 26,
+  "images_and_attachments_expected": 166,
+  "assets_downloaded": 166,
+  "asset_failures": [],
+  "unmapped_internal_links": [],
+  "resource_entries": 241,
+  "html_bytes": 63390494,
+  "event_build_match": "Public overview and module structure match observed event; event build ID unverified."
+}

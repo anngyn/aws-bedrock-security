@@ -1,0 +1,4 @@
+{
+  "description": "This workshop is intended to help candidates mitigate Security risks at scale with agentic security workflows and custom autonomous agents.  this workflow contains agentic Incident response integrated with Amazon GuardDuty, IAM operations automation, Agentic Vulnerability management remediation workflow integrated with Amazon inspector, and Automated Posture violation remediation integration with aws security hub.",
+  "title": "Agentic SecOps with Cybersecurity Agent Factory and Amazon Bedrock"
+}

@@ -1,0 +1,15 @@
+:root {
+  --PRIMARY-color: #d9790c;
+  --MAIN-LINK-color: #ac5b00;
+  --MAIN-LINK-HOVER-color: #7b4200;
+  --MENU-HEADER-BG-color: #172a3a;
+  --MENU-HEADER-color: #ffffff;
+}
+.workshop-brand { display: block; text-align: left; padding: 1.25rem 1rem; text-decoration: none; color: inherit; }
+#R-header a.workshop-brand, #R-header a.workshop-brand:hover { color: #ffffff; }
+.workshop-brand-kicker { display: block; font-size: .67rem; letter-spacing: .17em; font-weight: 700; opacity: .72; }
+.workshop-brand-title { display: block; font-size: 1.65rem; font-weight: 750; line-height: 1.4; }
+.workshop-brand-subtitle { display: block; font-size: .85rem; opacity: .8; }
+#R-body h1 { font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.2; text-transform: none; font-weight: 650; }
+#R-body-inner img { height: auto; max-width: 100%; }
+#R-body-inner table { font-size: .94rem; }
