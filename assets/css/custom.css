@@ -6,7 +6,7 @@
   --MENU-HEADER-color: #ffffff;
 }
 .workshop-brand { display: block; text-align: left; padding: 1.25rem 1rem; text-decoration: none; color: inherit; }
-#R-header a.workshop-brand, #R-header a.workshop-brand:hover { color: #ffffff; }
+#R-header-wrapper a.workshop-brand, #R-header-wrapper a.workshop-brand:hover { color: #ffffff; }
 .workshop-brand-kicker { display: block; font-size: .67rem; letter-spacing: .17em; font-weight: 700; opacity: .72; }
 .workshop-brand-title { display: block; font-size: 1.65rem; font-weight: 750; line-height: 1.4; }
 .workshop-brand-subtitle { display: block; font-size: .85rem; opacity: .8; }
